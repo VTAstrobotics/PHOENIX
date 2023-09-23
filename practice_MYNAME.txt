@@ -5,4 +5,4 @@ So this is your first task.
 Once you've cloned this repository locally and made your own branch, edit this file to include your name 
 where it says YOUR_NAME and fill in the date.
 
-I, YOUR_NAME, have successfully completed the Astrobotics Github intro on __/__/____.
+I, Hayley Wisman, have successfully completed the Astrobotics Github intro on 09/23/2023.

@@ -45,7 +45,7 @@ switch(nextByte){
   digitalWrite(stepPin, LOW);
   delayMicroseconds(900);
   break;
-  case '3':
+  case '2':
   Serial.println("Branch 3");
   setDirection(0);
   digitalWrite(stepPin, HIGH);
@@ -53,7 +53,7 @@ switch(nextByte){
   digitalWrite(stepPin, LOW);
   delayMicroseconds(800);
   break;
-  case '4':
+  case '3':
   Serial.println("Branch 4");
   setDirection(1);
   digitalWrite(stepPin, HIGH);
@@ -61,7 +61,7 @@ switch(nextByte){
   digitalWrite(stepPin, LOW);
   delayMicroseconds(800);
   break;
-  case '5':
+  case '4':
   Serial.println("Branch 5");
   exit(0);
   break;

@@ -6,6 +6,7 @@ void setDirection(int dir){
   if(dir ==0){
     //clockwise
     digitalWrite(dirPin, HIGH);
+}
     if(dir == 1){
       //counter clockwise
       digitalWrite(dirPin, LOW);

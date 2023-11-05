@@ -1,0 +1,73 @@
+#define dirPin 2
+#define stepPin 3
+int value = 0;
+
+void setDirection(int x){
+  int dir = x;
+  if(dir == 0){
+    //clockwise
+    digitalWrite(dirPin, HIGH);
+    if(dir == 1){
+      //counter clockwise
+      digitalWrite(dirPin, LOW);
+    }
+  }
+}
+
+void setup() {
+  pinMode(dirPin, OUTPUT);
+  pinMode(stepPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if(Serial.available() > 0){
+    value = Serial.read();
+    delay(5);
+  }
+
+  //I added the serial print to test if the correct case was being activated
+switch(value){
+  case '1':
+  Serial.println("Branch 1");
+  //clockwise, 10% duty cycle
+  setDirection(0);
+  digitalWrite(stepPin, HIGH);
+  delayMicroseconds(100);
+  digitalWrite(stepPin, LOW);
+  delayMicroseconds(900);
+  break;
+  case '2':
+  Serial.println("Branch 2");
+  //counterclockwise, 10% duty cycle
+  setDirection(1);
+  digitalWrite(stepPin, HIGH);
+  delayMicroseconds(100);
+  digitalWrite(stepPin, LOW);
+  delayMicroseconds(900);
+  break;
+  case '3':
+  Serial.println("Branch 3");
+  setDirection(0);
+  digitalWrite(stepPin, HIGH);
+  delayMicroseconds(200);
+  digitalWrite(stepPin, LOW);
+  delayMicroseconds(800);
+  break;
+  case '4':
+  Serial.println("Branch 4");
+  setDirection(1);
+  digitalWrite(stepPin, HIGH);
+  delayMicroseconds(200);
+  digitalWrite(stepPin, LOW);
+  delayMicroseconds(800);
+  break;
+  case '5':
+  Serial.println("Branch 5");
+  exit(0);
+  break;
+}
+
+
+Serial.flush();
+}

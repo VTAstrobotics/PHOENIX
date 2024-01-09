@@ -1,5 +1,7 @@
 FROM ros:humble-ros-base-jammy
 
+WORKDIR /workspaces/PHOENIX
+
 # general installs
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-desktop=0.10.0-1* \

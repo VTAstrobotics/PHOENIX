@@ -2,7 +2,7 @@ FROM osrf/ros:humble-desktop
 
 # Add vscode user with same UID and GID as your host system
 # (copied from https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
-ARG USERNAME=vscode
+ARG USERNAME=astro-dev
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 RUN groupadd --gid $USER_GID $USERNAME \

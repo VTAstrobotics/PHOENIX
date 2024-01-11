@@ -28,3 +28,9 @@ RUN rosdep update
 
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
+
+###############################################################################
+#                                                                             #
+# Add dependencies below using RUN <command you used to install>              #
+#                                                                             #
+###############################################################################

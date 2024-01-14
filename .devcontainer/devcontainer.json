@@ -1,0 +1,23 @@
+{
+  "name": "astro dev environment",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "--privileged",
+    "--network=host"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/${localWorkspaceFolderBasename}",
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-iot.vscode-ros",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}

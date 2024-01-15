@@ -1,0 +1,29 @@
+[0.057s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j8 -l8
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target drivetrain[0m
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target dig[0m
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target dump[0m
+[0.125s] [ 33%] Built target drivetrain
+[0.127s] [ 66%] Built target dig
+[0.128s] [100%] Built target dump
+[0.141s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j8 -l8
+[0.184s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop
+[0.192s] -- Install configuration: ""
+[0.192s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/lib/teleop/drivetrain
+[0.192s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/lib/teleop/dig
+[0.193s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/lib/teleop/dump
+[0.193s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop
+[0.193s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop
+[0.193s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.sh
+[0.193s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.dsv
+[0.194s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.sh
+[0.194s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.dsv
+[0.194s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.bash
+[0.194s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.sh
+[0.194s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.zsh
+[0.195s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.dsv
+[0.195s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv
+[0.195s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/packages/teleop
+[0.196s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig.cmake
+[0.196s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig-version.cmake
+[0.196s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.xml
+[0.199s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop

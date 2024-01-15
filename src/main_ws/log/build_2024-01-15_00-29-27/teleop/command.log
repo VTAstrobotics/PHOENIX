@@ -1,0 +1,4 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j8 -l8
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j8 -l8
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop

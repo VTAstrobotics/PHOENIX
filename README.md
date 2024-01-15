@@ -8,4 +8,4 @@ No. This repository is not designed for open-source collaborators per the nature
 It is only public because we need paid features for free.
 
 ## Docs
-This repository has documentation available via its [GitHub Wikis](https://github.com/VTAstrobotics/PHOENIX/wiki). Please read them carefully.
+This repository has documentation available via our [GitHub Wikis](https://github.com/VTAstrobotics/Documentation/wiki). Please read them carefully.

@@ -1,0 +1,4 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls -- -j8 -l8
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls -- -j8 -l8
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls

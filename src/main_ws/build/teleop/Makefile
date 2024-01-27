@@ -197,117 +197,6 @@ teleop_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/teleop_uninstall.dir/build.make CMakeFiles/teleop_uninstall.dir/build
 .PHONY : teleop_uninstall/fast
 
-#=============================================================================
-# Target rules for targets named drivetrain
-
-# Build rule for target.
-drivetrain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drivetrain
-.PHONY : drivetrain
-
-# fast build rule for target.
-drivetrain/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drivetrain.dir/build.make CMakeFiles/drivetrain.dir/build
-.PHONY : drivetrain/fast
-
-#=============================================================================
-# Target rules for targets named dig
-
-# Build rule for target.
-dig: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dig
-.PHONY : dig
-
-# fast build rule for target.
-dig/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dig.dir/build.make CMakeFiles/dig.dir/build
-.PHONY : dig/fast
-
-#=============================================================================
-# Target rules for targets named dump
-
-# Build rule for target.
-dump: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dump
-.PHONY : dump
-
-# fast build rule for target.
-dump/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dump.dir/build.make CMakeFiles/dump.dir/build
-.PHONY : dump/fast
-
-src/dig.o: src/dig.cpp.o
-.PHONY : src/dig.o
-
-# target to build an object file
-src/dig.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dig.dir/build.make CMakeFiles/dig.dir/src/dig.cpp.o
-.PHONY : src/dig.cpp.o
-
-src/dig.i: src/dig.cpp.i
-.PHONY : src/dig.i
-
-# target to preprocess a source file
-src/dig.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dig.dir/build.make CMakeFiles/dig.dir/src/dig.cpp.i
-.PHONY : src/dig.cpp.i
-
-src/dig.s: src/dig.cpp.s
-.PHONY : src/dig.s
-
-# target to generate assembly for a file
-src/dig.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dig.dir/build.make CMakeFiles/dig.dir/src/dig.cpp.s
-.PHONY : src/dig.cpp.s
-
-src/drivetrain.o: src/drivetrain.cpp.o
-.PHONY : src/drivetrain.o
-
-# target to build an object file
-src/drivetrain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drivetrain.dir/build.make CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
-.PHONY : src/drivetrain.cpp.o
-
-src/drivetrain.i: src/drivetrain.cpp.i
-.PHONY : src/drivetrain.i
-
-# target to preprocess a source file
-src/drivetrain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drivetrain.dir/build.make CMakeFiles/drivetrain.dir/src/drivetrain.cpp.i
-.PHONY : src/drivetrain.cpp.i
-
-src/drivetrain.s: src/drivetrain.cpp.s
-.PHONY : src/drivetrain.s
-
-# target to generate assembly for a file
-src/drivetrain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drivetrain.dir/build.make CMakeFiles/drivetrain.dir/src/drivetrain.cpp.s
-.PHONY : src/drivetrain.cpp.s
-
-src/dump.o: src/dump.cpp.o
-.PHONY : src/dump.o
-
-# target to build an object file
-src/dump.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dump.dir/build.make CMakeFiles/dump.dir/src/dump.cpp.o
-.PHONY : src/dump.cpp.o
-
-src/dump.i: src/dump.cpp.i
-.PHONY : src/dump.i
-
-# target to preprocess a source file
-src/dump.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dump.dir/build.make CMakeFiles/dump.dir/src/dump.cpp.i
-.PHONY : src/dump.cpp.i
-
-src/dump.s: src/dump.cpp.s
-.PHONY : src/dump.s
-
-# target to generate assembly for a file
-src/dump.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dump.dir/build.make CMakeFiles/dump.dir/src/dump.cpp.s
-.PHONY : src/dump.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -323,18 +212,6 @@ help:
 	@echo "... test"
 	@echo "... teleop_uninstall"
 	@echo "... uninstall"
-	@echo "... dig"
-	@echo "... drivetrain"
-	@echo "... dump"
-	@echo "... src/dig.o"
-	@echo "... src/dig.i"
-	@echo "... src/dig.s"
-	@echo "... src/drivetrain.o"
-	@echo "... src/drivetrain.i"
-	@echo "... src/drivetrain.s"
-	@echo "... src/dump.o"
-	@echo "... src/dump.i"
-	@echo "... src/dump.s"
 .PHONY : help
 
 

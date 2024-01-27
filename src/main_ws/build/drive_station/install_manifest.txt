@@ -1,0 +1,15 @@
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/package_run_dependencies/drive_station
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/parent_prefix_path/drive_station
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.sh
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.dsv
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.sh
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.dsv
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.bash
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.sh
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.zsh
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.dsv
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/packages/drive_station
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig.cmake
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig-version.cmake
+/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.xml

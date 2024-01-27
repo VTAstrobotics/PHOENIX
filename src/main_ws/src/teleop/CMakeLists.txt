@@ -7,10 +7,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-# dependencies to run unit tests
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -22,14 +22,5 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
-add_executable(drivetrain src/drivetrain.cpp)
-ament_target_dependencies(drivetrain rclcpp std_msgs)
-add_executable(dig src/dig.cpp)
-ament_target_dependencies(dig rclcpp std_msgs)
-add_executable(dump src/dump.cpp)
-ament_target_dependencies(dump rclcpp std_msgs)
-
-install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

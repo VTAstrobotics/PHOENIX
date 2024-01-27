@@ -16,7 +16,7 @@ set(_teleop_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT teleop_FIND_QUIETLY)
-  message(STATUS "Found teleop: 0.0.1 (${teleop_DIR})")
+  message(STATUS "Found teleop: 0.0.0 (${teleop_DIR})")
 endif()
 
 # warn when using a deprecated package

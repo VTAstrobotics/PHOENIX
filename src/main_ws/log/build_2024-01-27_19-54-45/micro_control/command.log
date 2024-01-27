@@ -1,0 +1,6 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/micro_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/micro_control -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/micro_control
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/micro_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/micro_control -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/micro_control
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/micro_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/micro_control -- -j8 -l8
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/micro_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/micro_control -- -j8 -l8
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/micro_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/micro_control
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/micro_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/micro_control

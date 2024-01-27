@@ -1,0 +1,6 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/perception -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/perception
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/perception -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/perception
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j8 -l8
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j8 -l8
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception

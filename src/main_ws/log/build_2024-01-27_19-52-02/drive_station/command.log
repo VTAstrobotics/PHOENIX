@@ -1,0 +1,6 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/drive_station -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/drive_station
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/drive_station -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/drive_station
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j8 -l8
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j8 -l8
+Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station
+Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station

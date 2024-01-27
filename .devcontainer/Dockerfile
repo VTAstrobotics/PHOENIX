@@ -22,6 +22,7 @@ RUN sudo apt update && sudo apt upgrade -y
 
 # Install Git
 RUN sudo apt install -y git
+RUN sudo apt install -y dbus-x11
 
 # Rosdep update
 RUN rosdep update

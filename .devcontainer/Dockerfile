@@ -29,6 +29,12 @@ RUN rosdep update
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 
+RUN curl -o https://downloads.arduino.cc/arduino-ide/arduino-ide_latest_Linux_64bit.AppImage
+
+RUN chmod a+x arduino-ide_2.2.1_Linux_64bit.AppImage
+
+RUN ./arduino-ide_2.2.1_Linux_64bit.AppImage
+
 ###############################################################################
 #                                                                             #
 # Add dependencies below using RUN <command you used to install>              #

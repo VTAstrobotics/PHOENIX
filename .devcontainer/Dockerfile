@@ -34,4 +34,4 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # Add dependencies below using RUN <command you used to install>              #
 #                                                                             #
 ###############################################################################
-RUN apt-get install -y clang-format
+RUN sudo apt-get install -y clang-format

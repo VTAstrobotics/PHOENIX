@@ -4,7 +4,7 @@
 #include "std_msgs/msg/string.hpp"
 using std::placeholders::_1;
 
-class Drivetrain : public rclcpp::Node      // test
+class Drivetrain : public rclcpp::Node
 {
  public:
   Drivetrain() : Node("drivetrain") {

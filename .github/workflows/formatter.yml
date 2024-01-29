@@ -1,4 +1,5 @@
 name: Check C++ Formatting
+
 on:
   pull_request:
     branches:
@@ -6,8 +7,8 @@ on:
 
 jobs:
   check_format:
-    name: Check C++ Formatting
     runs-on: ubuntu-latest
+    name: Check C++ Formatting
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -18,7 +19,7 @@ jobs:
       - name: Check C++ formatting
         run: |
           # Get list of C++ files
-          cpp_files=$(find src -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h")
+          cpp_files=$(find src/main_ws/src -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h")
 
           # Check formatting for each file
           for file in $cpp_files; do

@@ -1,16 +1,31 @@
-name: Verify C++ formatting
-
+name: Check C++ Formatting
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  clang-format-check:
+  check_format:
+    name: Check C++ Formatting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: DoozyX/clang-format-lint@v0.12
-        with:
-          source: '.'  # Check all C++ files in the repository
-          clangFormatFile: '.clang-format'  # Use the custom .clang-format file
-          failOnFormatChanges: true  # Fail immediately if any formatting issues found
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install clang-format
+        run: sudo apt-get install clang-format
+
+      - name: Check C++ formatting
+        run: |
+          # Get list of C++ files
+          cpp_files=$(find . -type f -name "*.cpp" -o -name "*.h")
+
+          # Check formatting for each file
+          for file in $cpp_files; do
+            if ! clang-format -style=file -output-replacements-xml "$file" | grep -q "<replacement "; then
+              echo "File $file is correctly formatted."
+            else
+              echo "File $file is incorrectly formatted."
+              exit 1
+            fi
+          done

@@ -4,8 +4,7 @@
 #include "std_msgs/msg/string.hpp"
 using std::placeholders::_1;
 
-class Drivetrain : public rclcpp::Node
-{
+class Drivetrain : public rclcpp::Node {
  public:
   Drivetrain() : Node("drivetrain") {
     subscription_ = this->create_subscription<std_msgs::msg::String>(

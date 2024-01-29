@@ -35,4 +35,4 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 #                                                                             #
 ###############################################################################
 RUN sudo apt-get install -y clang-format
-CMD git config --global --add safe.directory /github/workspace
+CMD git config --global --add safe.directory $PWD

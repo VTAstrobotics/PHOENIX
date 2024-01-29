@@ -1,16 +1,33 @@
-name: Formatter
+name: Verify C++ Formatting
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  clang-format:
+  verify_formatting:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - uses: AutoModality/action-ros-clang-format@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Clang-Format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format
+
+      - name: Verify C++ Formatting
+        run: |
+          # List all C++ files in the repository
+          cpp_files=$(find . -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h" -o -name "*.cc" -o -name "*.cxx")
+
+          # Check if any files need formatting
+          for file in $cpp_files; do
+            formatted=$(clang-format -style=file "$file" | cmp -s "$file" -)
+            if [ $? -ne 0 ]; then
+              echo "File $file does not match the required formatting. Please run clang-format."
+              exit 1
+            fi
+          done

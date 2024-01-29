@@ -18,7 +18,7 @@ jobs:
       - name: Check C++ formatting
         run: |
           # Get list of C++ files
-          cpp_files=$(find . -type f -name "*.cpp" -o -name "*.h")
+          cpp_files=$(find . -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h")
 
           # Check formatting for each file
           for file in $cpp_files; do

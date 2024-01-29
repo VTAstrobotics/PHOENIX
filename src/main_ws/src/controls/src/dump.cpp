@@ -4,7 +4,7 @@
 #include "std_msgs/msg/string.hpp"
 using std::placeholders::_1;
 
-class Dump : public rclcpp::Node {      // test
+class Dump : public rclcpp::Node {
  public:
   Dump() : Node("dump") {
     subscription_ = this->create_subscription<std_msgs::msg::String>(

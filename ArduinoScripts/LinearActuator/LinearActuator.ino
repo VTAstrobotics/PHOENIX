@@ -1,8 +1,6 @@
 const int HALLPIN1 =3;
 const int HALLPIN2 =2;
 int steps = 0;
-int stop = 1;
-const int TOMILLI = 17.4;
 void countPulse(){
   steps ++;
 }
@@ -17,6 +15,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(steps/17.4); //converting to mm
+  Serial.println(steps/17.4); //converting to mm, conversion rate listed on Firgelli site
+  
 
 }

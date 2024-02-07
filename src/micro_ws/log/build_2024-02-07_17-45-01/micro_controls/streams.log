@@ -1,0 +1,42 @@
+[0.071s] Invoking command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/micro_ws/src/micro_controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/micro_ws/install/micro_controls
+[0.806s] -- The C compiler identification is GNU 11.4.0
+[1.167s] -- The CXX compiler identification is GNU 11.4.0
+[1.187s] -- Detecting C compiler ABI info
+[1.360s] -- Detecting C compiler ABI info - done
+[1.373s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.375s] -- Detecting C compile features
+[1.376s] -- Detecting C compile features - done
+[1.381s] -- Detecting CXX compiler ABI info
+[1.585s] -- Detecting CXX compiler ABI info - done
+[1.596s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.597s] -- Detecting CXX compile features
+[1.597s] -- Detecting CXX compile features - done
+[1.640s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.891s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.057s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.186s] -- Added test 'lint_cmake' to check CMake code style
+[2.190s] -- Added test 'xmllint' to check XML markup files
+[2.194s] -- Configuring done
+[2.207s] -- Generating done
+[2.210s] -- Build files have been written to: /workspaces/PHOENIX/src/micro_ws/build/micro_controls
+[2.217s] Invoked command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/micro_ws/src/micro_controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/micro_ws/install/micro_controls
+[2.222s] Invoking command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/micro_ws/build/micro_controls -- -j8 -l8
+[2.280s] Invoked command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/micro_ws/build/micro_controls -- -j8 -l8
+[2.310s] Invoking command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/micro_ws/build/micro_controls
+[2.319s] -- Install configuration: ""
+[2.324s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/package_run_dependencies/micro_controls
+[2.325s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/parent_prefix_path/micro_controls
+[2.328s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/ament_prefix_path.sh
+[2.329s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/ament_prefix_path.dsv
+[2.329s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/path.sh
+[2.329s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/path.dsv
+[2.329s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.bash
+[2.330s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.sh
+[2.330s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.zsh
+[2.330s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.dsv
+[2.330s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/package.dsv
+[2.332s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/packages/micro_controls
+[2.333s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/cmake/micro_controlsConfig.cmake
+[2.334s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/cmake/micro_controlsConfig-version.cmake
+[2.334s] -- Installing: /workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/package.xml
+[2.336s] Invoked command in '/workspaces/PHOENIX/src/micro_ws/build/micro_controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/micro_ws/build/micro_controls

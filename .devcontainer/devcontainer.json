@@ -16,7 +16,8 @@
         "eamodio.gitlens",
         "ms-vscode.cpptools-extension-pack",
         "ms-iot.vscode-ros",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "xaver.clang-format"
       ]
     }
   }

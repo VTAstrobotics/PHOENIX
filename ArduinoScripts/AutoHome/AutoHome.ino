@@ -1,8 +1,8 @@
 const int HALLPIN1 =3;
 const int HALLPIN2 =2;
+const float TOMILLI = 17.4
 int steps = 0;
 int lastStep = 0;
-int prevSteps;
 bool home = false;
 void countPulse(){
   steps ++;
@@ -18,9 +18,10 @@ attachInterrupt(digitalPinToInterrupt(HALLPIN2), countPulse, RISING); //Attachin
 
 void loop() {
   if(home == false){
-    autoHome(1,2);
+    autoHome(1,2); //makeshift numbers, plug in pins which control the motion of the acutator
     home = true;
   }
+  Serial.println(steps/TOMILLI);
 }
 void autoHome(int pin1, int pin2){
   prevSteps = steps;
@@ -30,8 +31,7 @@ void autoHome(int pin1, int pin2){
     digitalWrite(pin1, HIGH); //retract motor
     digitalWrite(pin2, LOW);
     Serial.println("retracting");
-    Serial.println(steps/17.4);
-    
+    Serial.println(steps/TOMILLI);
   }
   Serial.println("Retracted"); //actuator is fully retracted
   steps = 0; // zero steps

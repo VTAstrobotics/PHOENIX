@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 # dependencies to run unit tests
 if(BUILD_TESTING)
@@ -29,6 +30,8 @@ add_executable(dig src/dig.cpp)
 ament_target_dependencies(dig rclcpp std_msgs)
 add_executable(dump src/dump.cpp)
 ament_target_dependencies(dump rclcpp std_msgs)
+
+ament_target_dependencies(drivetrain rclcpp sensor_msgs)
 
 install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
 

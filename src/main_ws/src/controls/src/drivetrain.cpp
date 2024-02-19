@@ -6,8 +6,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/joy.hpp"
-#include "teleop/Controller.hpp" 
-#include "teleop/UART.hpp"
+// #include "teleop/Controller.hpp" 
+// #include "teleop/UART.hpp"
 using std::placeholders::_1;
 
 class Drivetrain : public rclcpp::Node {
@@ -48,8 +48,8 @@ class Drivetrain : public rclcpp::Node {
   void topic_callback(const std_msgs::msg::String& msg) const {
     RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg.data.c_str());
 
-    if (!oldMsg || oldMsg != msg) { // to reduce load
-      oldMsg = msg;
+    if (strlen(oldMsg.data.c_str()) > 0 && oldMsg != msg) { // to reduce load
+      snprintf(oldMsg.data.c_str(), 69, "%s", msg.data.c_str());
     }
 
     // for the cooldown

@@ -17,7 +17,7 @@ class Dump : public rclcpp::Node
    private:
     void topic_callback(const controls_msgs::msg::Dump& dumpRaw) const
     {
-        RCLCPP_INFO(this->get_logger(), "I heard: '%lf'", dumpRaw.lin1);
+        RCLCPP_INFO(this->get_logger(), "I heard: '%lf'", dumpRaw.lins[0]);
     }
     rclcpp::Subscription<controls_msgs::msg::Dump>::SharedPtr subscription_;
 };

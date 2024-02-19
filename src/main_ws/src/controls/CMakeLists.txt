@@ -26,13 +26,12 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(drivetrain src/drivetrain.cpp)
-ament_target_dependencies(drivetrain rclcpp std_msgs)
+ament_target_dependencies(drivetrain rclcpp sensor_msgs controls_msgs)
 add_executable(dig src/dig.cpp)
 ament_target_dependencies(dig rclcpp std_msgs)
 add_executable(dump src/dump.cpp)
 ament_target_dependencies(dump rclcpp std_msgs controls_msgs)
 
-ament_target_dependencies(drivetrain rclcpp sensor_msgs)
 
 install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
 

@@ -35,3 +35,26 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 #                                                                             #
 ###############################################################################
 RUN sudo apt-get install -y clang-format
+
+# perception
+RUN sudo apt-get install -y python3-pip
+RUN pip3 install pyrealsense2 opencv-python
+RUN sudo apt install -y udev
+RUN sudo apt install -y git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev
+RUN sudo git clone https://github.com/IntelRealSense/librealsense.git
+WORKDIR /librealsense
+RUN sudo mkdir build
+WORKDIR /librealsense/build
+RUN sudo cmake ..
+RUN sudo make -j$(nproc)
+RUN sudo make install
+RUN sudo cp ../config/99-realsense-libusb.rules /etc/udev/rules.d/
+RUN sudo service udev restart
+RUN sudo udevadm control --reload
+RUN sudo udevadm trigger
+WORKDIR /
+
+
+
+# for debugging usb devices. not necessary per se
+RUN sudo apt-get install usbutils

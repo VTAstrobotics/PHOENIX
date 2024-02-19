@@ -65,7 +65,7 @@ try:
         depth_image = np.asanyarray(depth_frame.get_data())
         color_image = np.asanyarray(color_frame.get_data())
 
-        cap = cv2.VideoCapture(2)
+        cap = cv2.VideoCapture(1)
         success, vid = cap.read()
         contourVid = vid.copy()
 

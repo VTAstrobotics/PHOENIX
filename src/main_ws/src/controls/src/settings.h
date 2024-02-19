@@ -5,20 +5,43 @@
  * @defgroup dmpMac Dump Macros
  * Macros and settings related to the dump subsystem
  */
+/**
+ * @defgroup drvMac Drive Macros
+ * Macros and settings related to the drivetrain subsystem
+ */
 
 /**
- * @ingroup dmpMac
+ * @ingroup dmpMac drvMac
  * @brief Amount of velocity to ignore
  */
 #define DEADZONE_SIZE 0.1f
 
-#define DRIVE_COUNT 2
+/**
+ * @ingroup dmpMac
+ * @brief Topic name given to dump communications
+ */
+#define DUMP_TOPIC "topic"
 
 /**
- * @brief Determine if two floats are about equal
+ * @ingroup drvMac
+ * @brief Topic name given to drive communications
  */
-#define APPROX(f1, f2) \
-    (f1 > f2 ? f1 - f2 < APPROX_FUDGE : f2 - f1 < APPROX_FUDGE)
-#define APPROX_FUDGE 0.001f
+#define DRIVE_TOPIC "joy"
+
+/**
+ * @ingroup drvMac
+ * @brief Amount of motors used by the drive subsystem
+ */
+#define DRIVE_COUNT 2
+/**
+ * @ingroup drvMac
+ * @brief Use when referring to the left motor
+ */
+#define DRIVE_L_MOTOR 0
+/**
+ * @ingroup drvMac
+ * @brief Use when referring to the right motor
+ */
+#define DRIVE_R_MOTOR 1
 
 #endif

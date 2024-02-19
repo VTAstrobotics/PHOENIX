@@ -2,6 +2,7 @@
 
 #include "controls_msgs/msg/dump.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "settings.h"
 
 using std::placeholders::_1;
 
@@ -11,7 +12,7 @@ class Dump : public rclcpp::Node
     Dump() : Node("dump")
     {
         subscription_ = this->create_subscription<controls_msgs::msg::Dump>(
-            "topic", 10, std::bind(&Dump::topic_callback, this, _1));
+            DUMP_TOPIC, 10, std::bind(&Dump::topic_callback, this, _1));
     }
 
    private:

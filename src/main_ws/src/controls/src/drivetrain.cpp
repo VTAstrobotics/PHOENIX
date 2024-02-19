@@ -2,11 +2,11 @@
 #include <cmath>
 #include <memory>
 #include <thread>
-#include "settings.h"
 
 #include "controls_msgs/msg/drivetrain.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/joy.hpp"
+#include "settings.h"
+#include "utils.h"
 // #include "teleop/Controller.hpp"
 // #include "teleop/UART.hpp"
 using std::placeholders::_1;
@@ -18,12 +18,11 @@ class Drivetrain : public rclcpp::Node
     {
         subscription_ =
             this->create_subscription<controls_msgs::msg::Drivetrain>(
-                "joy", 10, std::bind(&Drivetrain::topic_callback, this, _1));
+                DRIVE_TOPIC, 10,
+                std::bind(&Drivetrain::topic_callback, this, _1));
 
         // drivetrain motor settings
         left_vel = 0, right_vel = 0, max_speed = 1;
-
-        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 
    private:
@@ -45,8 +44,8 @@ class Drivetrain : public rclcpp::Node
 
         oldDrive = driveRaw;
         /* for now just equate these here */
-        left_vel = driveRaw.motors[0];
-        right_vel = driveRaw.motors[1];
+        left_vel = driveRaw.motors[DRIVE_L_MOTOR];
+        right_vel = driveRaw.motors[DRIVE_R_MOTOR];
     }
     rclcpp::Subscription<controls_msgs::msg::Drivetrain>::SharedPtr
         subscription_;

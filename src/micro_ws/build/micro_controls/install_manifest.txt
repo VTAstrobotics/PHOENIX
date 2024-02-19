@@ -1,0 +1,15 @@
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/package_run_dependencies/micro_controls
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/parent_prefix_path/micro_controls
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/ament_prefix_path.sh
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/ament_prefix_path.dsv
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/path.sh
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/environment/path.dsv
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.bash
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.sh
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.zsh
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/local_setup.dsv
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/package.dsv
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/ament_index/resource_index/packages/micro_controls
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/cmake/micro_controlsConfig.cmake
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/cmake/micro_controlsConfig-version.cmake
+/workspaces/PHOENIX/src/micro_ws/install/micro_controls/share/micro_controls/package.xml

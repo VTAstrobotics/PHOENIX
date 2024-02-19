@@ -1,0 +1,9 @@
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/uninstall.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/micro_controls_uninstall.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/test.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/edit_cache.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/rebuild_cache.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/list_install_components.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/install.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/install/local.dir
+/workspaces/PHOENIX/src/micro_ws/build/micro_controls/CMakeFiles/install/strip.dir

@@ -21,13 +21,27 @@
  * @brief Topic name given to dump communications
  */
 #define DUMP_TOPIC "topic"
+/**
+ * @ingroup dmpMac
+ * @brief Amount of motors used for the dump subsystem
+ */
+#define DUMP_COUNT 2
+/**
+ * @ingroup drvMac
+ * @brief Use when referring to the left dump motor
+ */
+#define DUMP_L_MOTOR 0
+/**
+ * @ingroup drvMac
+ * @brief Use when referring to the right dumpmotor
+ */
+#define DUMP_R_MOTOR 1
 
 /**
  * @ingroup drvMac
  * @brief Topic name given to drive communications
  */
 #define DRIVE_TOPIC "joy"
-
 /**
  * @ingroup drvMac
  * @brief Amount of motors used by the drive subsystem
@@ -35,12 +49,12 @@
 #define DRIVE_COUNT 2
 /**
  * @ingroup drvMac
- * @brief Use when referring to the left motor
+ * @brief Use when referring to the left drive motor
  */
 #define DRIVE_L_MOTOR 0
 /**
  * @ingroup drvMac
- * @brief Use when referring to the right motor
+ * @brief Use when referring to the right drive motor
  */
 #define DRIVE_R_MOTOR 1
 

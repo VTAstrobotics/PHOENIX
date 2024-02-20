@@ -3,6 +3,7 @@
 #include "controls_msgs/msg/dump.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "settings.h"
+#include "utils.h"
 
 using std::placeholders::_1;
 
@@ -16,9 +17,23 @@ class Dump : public rclcpp::Node
     }
 
    private:
-    void topic_callback(const controls_msgs::msg::Dump& dumpRaw) const
+    controls_msgs::msg::Dump oldDump;
+
+    void topic_callback(const controls_msgs::msg::Dump& dumpRaw)
     {
-        RCLCPP_INFO(this->get_logger(), "I heard: '%lf'", dumpRaw.lins[0]);
+        /* reduce load by ignoring duplicate message */
+        for (int i = 0; i < DUMP_COUNT; i++)
+        {
+            if (!APPROX(dumpRaw.lins[i], oldDump.lins[i]))
+            {
+                goto unequal;
+            }
+        }
+        return;
+    unequal:
+
+        oldDump = dumpRaw;
+        // TODO: send message to dump motors here
     }
     rclcpp::Subscription<controls_msgs::msg::Dump>::SharedPtr subscription_;
 };

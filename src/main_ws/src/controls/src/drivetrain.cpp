@@ -1,7 +1,4 @@
-#include <chrono>
-#include <cmath>
 #include <memory>
-#include <thread>
 
 #include "controls_msgs/msg/drivetrain.hpp"
 #include "rclcpp/rclcpp.hpp"
@@ -20,14 +17,10 @@ class Drivetrain : public rclcpp::Node
             this->create_subscription<controls_msgs::msg::Drivetrain>(
                 DRIVE_TOPIC, 10,
                 std::bind(&Drivetrain::topic_callback, this, _1));
-
-        // drivetrain motor settings
-        left_vel = 0, right_vel = 0, max_speed = 1;
     }
 
    private:
     controls_msgs::msg::Drivetrain oldDrive;
-    int left_vel, right_vel, max_speed;
 
     void topic_callback(const controls_msgs::msg::Drivetrain& driveRaw)
     {
@@ -43,9 +36,7 @@ class Drivetrain : public rclcpp::Node
     unequal:
 
         oldDrive = driveRaw;
-        /* for now just equate these here */
-        left_vel = driveRaw.motors[DRIVE_L_MOTOR];
-        right_vel = driveRaw.motors[DRIVE_R_MOTOR];
+        // TODO: send message to drive motors here
     }
     rclcpp::Subscription<controls_msgs::msg::Drivetrain>::SharedPtr
         subscription_;

@@ -12,7 +12,7 @@ class Dig : public rclcpp::Node
     Dig() : Node("dig")
     {
         subscription_ = this->create_subscription<controls_msgs::msg::Dig>(
-            "topic", 10, std::bind(&Dig::topic_callback, this, _1));
+            DIG_TOPIC, 10, std::bind(&Dig::topic_callback, this, _1));
     }
 
    private:

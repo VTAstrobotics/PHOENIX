@@ -22,7 +22,7 @@ class Dump : public rclcpp::Node
     void topic_callback(const controls_msgs::msg::Dump& dumpRaw)
     {
         /* reduce load by ignoring duplicate message */
-        for (int i = 0; i < DUMP_COUNT; i++)
+        for (int i = 0; i < DUMP_A_COUNT; i++)
         {
             if (!APPROX(dumpRaw.lins[i], oldDump.lins[i]))
             {

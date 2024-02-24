@@ -9,6 +9,10 @@
  * @defgroup drvMac Drive Macros
  * Macros and settings related to the drivetrain subsystem
  */
+/**
+ * @defgroup digMac Dig Macros
+ * Macros and settings related to the dig subsystem
+ */
 
 /**
  * @ingroup dmpMac drvMac
@@ -23,19 +27,19 @@
 #define DUMP_TOPIC "topic"
 /**
  * @ingroup dmpMac
- * @brief Amount of motors used for the dump subsystem
+ * @brief Amount of actuators used for the dump subsystem
  */
-#define DUMP_COUNT 2
+#define DUMP_A_COUNT 2
 /**
  * @ingroup drvMac
- * @brief Use when referring to the left dump motor
+ * @brief Use when referring to the left dump actuator
  */
-#define DUMP_L_MOTOR 0
+#define DUMP_L_LIN 0
 /**
  * @ingroup drvMac
- * @brief Use when referring to the right dumpmotor
+ * @brief Use when referring to the right dump actuator
  */
-#define DUMP_R_MOTOR 1
+#define DUMP_R_LIN 1
 
 /**
  * @ingroup drvMac
@@ -46,7 +50,7 @@
  * @ingroup drvMac
  * @brief Amount of motors used by the drive subsystem
  */
-#define DRIVE_COUNT 2
+#define DRIVE_M_COUNT 2
 /**
  * @ingroup drvMac
  * @brief Use when referring to the left drive motor
@@ -57,5 +61,41 @@
  * @brief Use when referring to the right drive motor
  */
 #define DRIVE_R_MOTOR 1
+
+/**
+ * @ingroup digMac
+ * @brief Topic name given to drive communications
+ */
+#define DIG_TOPIC "topic"
+/**
+ * @ingroup digMac
+ * @brief Amount of motors used by the dig subsystem
+ */
+#define DIG_M_COUNT 2
+/**
+ * @ingroup digMac
+ * @brief Use when referring to the left dig motor
+ */
+#define DIG_L_MOTOR 0
+/**
+ * @ingroup digMac
+ * @brief Use when referring to the right dig motor
+ */
+#define DIG_R_MOTOR 1
+/**
+ * @ingroup digMac
+ * @brief Amount of actuators used by the dig subsystem
+ */
+#define DIG_A_COUNT 2
+/**
+ * @ingroup digMac
+ * @brief Use when referring to the left dig actuator
+ */
+#define DIG_L_LIN 0
+/**
+ * @ingroup digMac
+ * @brief Use when referring to the right dig actuator
+ */
+#define DIG_R_LIN 1
 
 #endif

@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dump.msg"
   "msg/Drivetrain.msg"
+  "msg/Dig.msg"
 )
 
 if(BUILD_TESTING)

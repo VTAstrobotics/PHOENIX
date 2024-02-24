@@ -25,7 +25,7 @@ class Drivetrain : public rclcpp::Node
     void topic_callback(const controls_msgs::msg::Drivetrain& driveRaw)
     {
         /* reduce load by ignoring duplicate message */
-        for (int i = 0; i < DRIVE_COUNT; i++)
+        for (int i = 0; i < DRIVE_M_COUNT; i++)
         {
             if (!APPROX(driveRaw.motors[i], oldDrive.motors[i]))
             {

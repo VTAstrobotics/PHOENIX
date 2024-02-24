@@ -24,7 +24,7 @@
  * @ingroup dmpMac
  * @brief Topic name given to dump communications
  */
-#define DUMP_TOPIC "topic"
+#define DUMP_TOPIC "dump"
 /**
  * @ingroup dmpMac
  * @brief Amount of actuators used for the dump subsystem
@@ -45,7 +45,7 @@
  * @ingroup drvMac
  * @brief Topic name given to drive communications
  */
-#define DRIVE_TOPIC "joy"
+#define DRIVE_TOPIC "drive"
 /**
  * @ingroup drvMac
  * @brief Amount of motors used by the drive subsystem
@@ -66,7 +66,7 @@
  * @ingroup digMac
  * @brief Topic name given to drive communications
  */
-#define DIG_TOPIC "topic"
+#define DIG_TOPIC "dig"
 /**
  * @ingroup digMac
  * @brief Amount of motors used by the dig subsystem
@@ -97,5 +97,11 @@
  * @brief Use when referring to the right dig actuator
  */
 #define DIG_R_LIN 1
+
+/**
+ * @ingroup teleop
+ * @brief Topic name given to the distributor communications
+ */
+#define DISTRIB_TOPIC "joy"
 
 #endif

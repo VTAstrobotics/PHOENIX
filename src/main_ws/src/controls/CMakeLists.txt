@@ -8,8 +8,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(sensor_msgs REQUIRED)
 find_package(controls_msgs REQUIRED)
 
 # dependencies to run unit tests
@@ -34,5 +32,8 @@ ament_target_dependencies(dump rclcpp controls_msgs)
 
 
 install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY include/ DESTINATION include)
+
+ament_export_include_directories(include)
 
 ament_package()

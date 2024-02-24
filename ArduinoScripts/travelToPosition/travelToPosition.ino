@@ -9,6 +9,7 @@ int distance;
 bool dir = true;
 bool test = true;
 int value = 0;
+bool home = false;
 void countPulse(){
   steps ++;
 }
@@ -21,9 +22,13 @@ void setup() {
 }
 
 void loop() {
+  if(!home){
+    autohome();
+    home = true;
+  }
   getPosition();
   Serial.println(pos);
-  goToPos(-20);
+  goToPos(40);
   Serial.println("out of loop");
 }
 
@@ -36,6 +41,13 @@ else{
   pos = pos - steps/17.4;
   steps = 0;
 }
+}
+void autohome(){
+  digitalWrite(ACTUATOR1, LOW);
+  digitalWrite(ACTUATOR2, HIGH);
+  delay(10000);
+  steps = 0;
+  delay(500);
 }
 void goToPos(double position){
   if(position > 0){

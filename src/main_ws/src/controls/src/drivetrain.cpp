@@ -15,7 +15,7 @@ class Drivetrain : public rclcpp::Node
     {
         subscription_ =
             this->create_subscription<controls_msgs::msg::Drivetrain>(
-                DRIVE_TOPIC, 10,
+                DRIVE_TOPIC, QOS,
                 std::bind(&Drivetrain::topic_callback, this, _1));
     }
 

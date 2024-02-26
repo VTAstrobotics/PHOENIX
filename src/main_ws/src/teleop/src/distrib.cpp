@@ -14,9 +14,15 @@ class Distributor : public rclcpp::Node
    public:
     Distributor() : Node("distrib")
     {
-        subscription_ = this->create_subscription<sensor_msgs::msg::Joy>(
-            DISTRIB_TOPIC, 10,
+        subscription = this->create_subscription<sensor_msgs::msg::Joy>(
+            DISTRIB_TOPIC, QOS,
             std::bind(&Distributor::topic_callback, this, _1));
+        digPub =
+            this->create_publisher<controls_msgs::msg::Dig>(DIG_TOPIC, QOS);
+        dumpPub =
+            this->create_publisher<controls_msgs::msg::Dump>(DUMP_TOPIC, QOS);
+        drivePub = this->create_publisher<controls_msgs::msg::Drivetrain>(
+            DRIVE_TOPIC, QOS);
     }
 
    private:
@@ -24,7 +30,11 @@ class Distributor : public rclcpp::Node
     {
         // TODO: interpret messages from joy and send messages to each subsystem
     }
-    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription_;
+
+    rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription;
+    rclcpp::Publisher<controls_msgs::msg::Dig>::SharedPtr digPub;
+    rclcpp::Publisher<controls_msgs::msg::Dump>::SharedPtr dumpPub;
+    rclcpp::Publisher<controls_msgs::msg::Drivetrain>::SharedPtr drivePub;
 };
 
 int main(int argc, char* argv[])

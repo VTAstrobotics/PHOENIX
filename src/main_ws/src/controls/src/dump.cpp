@@ -13,7 +13,7 @@ class Dump : public rclcpp::Node
     Dump() : Node("dump")
     {
         subscription_ = this->create_subscription<controls_msgs::msg::Dump>(
-            DUMP_TOPIC, 10, std::bind(&Dump::topic_callback, this, _1));
+            DUMP_TOPIC, QOS, std::bind(&Dump::topic_callback, this, _1));
     }
 
    private:

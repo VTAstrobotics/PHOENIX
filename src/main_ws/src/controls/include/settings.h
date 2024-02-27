@@ -114,6 +114,8 @@
  */
 #define DISTRIB_TOPIC "joy"
 
+#define MAX_SPEED 5
+
 /* Key bindings for current robot (2023-2024) */
 #define CTRL_DUMP_ERRORS BUTTON_B
 #define CTRL_GOTO_DIG_MODE BUTTON_A
@@ -121,8 +123,8 @@
 #define CTRL_STOP_SEQ_1 BUTTON_BACK
 #define CTRL_STOP_SEQ_2 BUTTON_START
 #define CTRL_STOP_SEQ_3 BUTTON_MANUFACTURER
-#define CTRL_TANK_LEFT_TREAD AXIS_LEFTY
-#define CTRL_TANK_RIGHT_TREAD AXIS_RIGHTY
+#define CTRL_TANK_L_TREAD AXIS_LEFTY
+#define CTRL_TANK_R_TREAD AXIS_RIGHTY
 
 /* Indexes for each button on xbox controller, NEVER USE DIRECTLY */
 #define BUTTON_A 0

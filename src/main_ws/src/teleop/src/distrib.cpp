@@ -23,14 +23,98 @@ class Distributor : public rclcpp::Node
             this->create_publisher<controls_msgs::msg::Dump>(DUMP_TOPIC, QOS);
         drivePub = this->create_publisher<controls_msgs::msg::Drivetrain>(
             DRIVE_TOPIC, QOS);
+
+        digMode = false;
+        cooldown = false;
+        last_time = 0;
     }
 
    private:
     void topic_callback(const sensor_msgs::msg::Joy& distribRaw)
     {
-        // TODO: interpret messages from joy and send messages to each subsystem
+        int32_t cur_time = distribRaw.header.stamp.sec;
+        auto digSend = controls_msgs::msg::Dig();
+        auto dumpSend = controls_msgs::msg::Dump();
+        auto driveSend = controls_msgs::msg::Drivetrain();
+
+        // handles debouncing buttons
+        if (cur_time - last_time > 1)
+        {
+            cooldown = false;
+        }
+
+        // Stop sequence activated
+        if (distribRaw.buttons[CTRL_STOP_SEQ_1] &&
+            distribRaw.buttons[CTRL_STOP_SEQ_2] &&
+            distribRaw.buttons[CTRL_STOP_SEQ_3])
+        {
+            exit(0);
+        }
+
+        // dump any errors to console (Is this needed anymore?)
+        if (distribRaw.buttons[CTRL_DUMP_ERRORS] && !cooldown)
+        {
+            cooldown = true;
+            last_time = cur_time;
+        }
+
+        // clear any errors on board (Is this needed anymore?)
+        if (distribRaw.buttons[CTRL_CLEAR_ERRORS] && !cooldown)
+        {
+            cooldown = true;
+            last_time = cur_time;
+        }
+
+        // switch to dig mode operation (Is this needed anymore?)
+        if (distribRaw.buttons[CTRL_GOTO_DIG_MODE] && !cooldown)
+        {
+            digMode = !digMode;
+            cooldown = true;
+            last_time = cur_time;
+        }
+
+        // Drive mode controls
+        if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0) &&
+            !digMode)
+        {
+            driveSend.motors[DRIVE_L_MOTOR] =
+                distribRaw.axes[CTRL_TANK_L_TREAD] * MAX_SPEED;
+        }
+        else
+        {
+            driveSend.motors[DRIVE_L_MOTOR] = 0;
+        }
+
+        if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0) &&
+            !digMode)
+        {
+            driveSend.motors[DRIVE_R_MOTOR] =
+                distribRaw.axes[CTRL_TANK_R_TREAD] * MAX_SPEED;
+        }
+        else
+        {
+            driveSend.motors[DRIVE_R_MOTOR] = 0;
+        }
+
+        // Dig mode controls
+        digSend.lins[DIG_L_LIN] = 0;
+        digSend.lins[DIG_R_LIN] = 0;
+        digSend.motors[DIG_L_MOTOR] = 0;
+        digSend.motors[DIG_R_MOTOR] = 0;
+
+        // Dump mode controls
+        dumpSend.lins[DUMP_L_LIN] = 0;
+        dumpSend.lins[DUMP_R_LIN] = 0;
+
+        // Send messages to each subsystem
+        digPub->publish(digSend);
+        dumpPub->publish(dumpSend);
+        drivePub->publish(driveSend);
     }
 
+    bool cooldown;
+    bool digMode;
+    int32_t last_time;
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription;
     rclcpp::Publisher<controls_msgs::msg::Dig>::SharedPtr digPub;
     rclcpp::Publisher<controls_msgs::msg::Dump>::SharedPtr dumpPub;

@@ -1,0 +1,59 @@
+const int HALLPIN1 =3;
+const int HALLPIN2 =2;
+const int ENA = 9;
+const int ACTUATOR1 = 5; 
+const int ACTUATOR2 = 6;
+int steps = 0;
+double pos;
+int distance;
+bool dir = true;
+bool test = true;
+int value = 0;
+bool home = false;
+
+//assumes that actuators start at home
+
+float homeValActuator = 0; 
+float scoopValActuator = 0;
+float scoopValMotor; 
+float liftValActuator = -88.1; 
+float liftValMotor; 
+float retractValActuator = -235.0; 
+float retractValMotor; 
+float dumpValActuator = -42.76; 
+
+void setup() {
+  attachInterrupt(digitalPinToInterrupt(HALLPIN2), countPulse, RISING); //Attaching digital interrupt to pin 3, if voltage increases the method countPulse is run
+  Serial.begin(9600); //Starting serial monitor at 9600 baud
+  pinMode(ACTUATOR1, OUTPUT);
+  pinMode(ACTUATOR2, OUTPUT);
+  pinMode(ENA, OUTPUT);
+}
+
+//lifts the bucket, brings the bucket up to dump, then goes back home 
+void loop() { 
+    lift();
+    retract();
+    goToPos(0);
+}
+
+//methods
+ 
+void lift() {
+    goToPos(liftValActuator);
+}
+
+void retract() {
+    goToPos(retractValActuator);
+}
+
+void allTheWayOut(int number) {
+  while(pos < number) {
+    digitalWrite(ACTUATOR1, HIGH);
+    digitalWrite(ACTUATOR2, LOW);
+    Serial.print(pos);
+  }
+}
+void retractTo(int number) {
+  goToPos(number);
+}

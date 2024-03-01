@@ -1,8 +1,8 @@
-const int HALLPIN1 =3;
-const int HALLPIN2 =2;
+const int HALLPIN1 = 3;
+const int HALLPIN2 = 2;
 const int ENA = 9;
-const int LIN1  = 5; 
-const int LIN2 = 6;
+const int LIN1 = 14; 
+const int LIN2 = 15;
 int steps = 0;
 bool dir = false;
 double pos;
@@ -13,7 +13,6 @@ enum MOTOR_ID { UNDEF,
                 LIN,
                 SCR,
                 DBLT };
-//assumes that actuators start at home
 
 void countPulse(){
   steps ++; //position = steps/17.4
@@ -78,18 +77,22 @@ void moveLinearActuator(int pin1, int pin2, int val) {
   if (1 == val) {
     digitalWrite(pin1, HIGH);
     digitalWrite(pin2, LOW);
-  } else if (-1 == val) {
+  }
+  else if (-1 == val) {
     digitalWrite(pin1, LOW);
     digitalWrite(pin2, HIGH);
-  } else {
+  }
+  else {
     digitalWrite(pin1, LOW);
     digitalWrite(pin2, LOW);
   }
 }
+
   void stopLinearActuators() {
   digitalWrite(LIN1, LOW);
   digitalWrite(LIN2, LOW);
 }
+
 void goToPos(double targetPos){
   if(targetPos > pos){
     dir = false;
@@ -112,8 +115,9 @@ void goToPos(double targetPos){
     Serial.println(pos);
     Serial.println("loop 2");
   }
+  }
 }
-}
+
 void getPosition(void){
 if(dir == false){
   pos = pos + steps/17.4;

@@ -65,17 +65,8 @@ class Distributor : public rclcpp::Node
             last_time = cur_time;
         }
 
-        // switch to dig mode operation (Is this needed anymore?)
-        if (distribRaw.buttons[CTRL_GOTO_DIG_MODE] && !cooldown)
-        {
-            digMode = !digMode;
-            cooldown = true;
-            last_time = cur_time;
-        }
-
-        // Drive mode controls
-        if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0) &&
-            !digMode)
+        // Drive controls
+        if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0))
         {
             driveSend.motors[DRIVE_L_MOTOR] =
                 distribRaw.axes[CTRL_TANK_L_TREAD] * MAX_SPEED;
@@ -85,8 +76,7 @@ class Distributor : public rclcpp::Node
             driveSend.motors[DRIVE_L_MOTOR] = 0;
         }
 
-        if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0) &&
-            !digMode)
+        if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0))
         {
             driveSend.motors[DRIVE_R_MOTOR] =
                 distribRaw.axes[CTRL_TANK_R_TREAD] * MAX_SPEED;
@@ -96,15 +86,41 @@ class Distributor : public rclcpp::Node
             driveSend.motors[DRIVE_R_MOTOR] = 0;
         }
 
-        // Dig mode controls
-        digSend.lins[DIG_L_LIN] = 0;
-        digSend.lins[DIG_R_LIN] = 0;
+        // Dig controls
+        if (distribRaw.buttons[CTRL_EXTEND_SCOOP])
+        {
+            digSend.lins[DIG_L_LIN] = MAX_SPEED;
+            digSend.lins[DIG_R_LIN] = MAX_SPEED;
+        }
+        else if (distribRaw.buttons[CTRL_RETRACT_SCOOP])
+        {
+            digSend.lins[DIG_L_LIN] = -MAX_SPEED;
+            digSend.lins[DIG_R_LIN] = -MAX_SPEED;
+        }
+        else
+        {
+            digSend.lins[DIG_L_LIN] = 0;
+            digSend.lins[DIG_R_LIN] = 0;
+        }
         digSend.motors[DIG_L_MOTOR] = 0;
         digSend.motors[DIG_R_MOTOR] = 0;
 
-        // Dump mode controls
-        dumpSend.lins[DUMP_L_LIN] = 0;
-        dumpSend.lins[DUMP_R_LIN] = 0;
+        // Dump controls
+        if (distribRaw.buttons[CTRL_EXTEND_BUCKET])
+        {
+            dumpSend.lins[DUMP_L_LIN] = MAX_SPEED;
+            dumpSend.lins[DUMP_R_LIN] = MAX_SPEED;
+        }
+        else if (distribRaw.buttons[CTRL_RETRACT_BUCKET])
+        {
+            dumpSend.lins[DUMP_L_LIN] = -MAX_SPEED;
+            dumpSend.lins[DUMP_R_LIN] = -MAX_SPEED;
+        }
+        else
+        {
+            dumpSend.lins[DUMP_L_LIN] = 0;
+            dumpSend.lins[DUMP_R_LIN] = 0;
+        }
 
         // Send messages to each subsystem
         digPub->publish(digSend);

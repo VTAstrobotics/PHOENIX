@@ -28,7 +28,8 @@ void loop() {
   }
   getPosition();
   Serial.println(pos);
-  goToPos(40);
+  goToPos(70);
+  goToPos(50);
   Serial.println("out of loop");
 }
 

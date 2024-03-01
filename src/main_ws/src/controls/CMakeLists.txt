@@ -33,6 +33,7 @@ ament_target_dependencies(dump rclcpp controls_msgs)
 
 install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY include/ DESTINATION include)
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 
 ament_export_include_directories(include)
 

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <memory>
 
 #include "../include/settings.h"
@@ -37,7 +38,8 @@ class Dig : public rclcpp::Node
         }
         return;
     unequal:
-
+        std::cout << "Dig act: [" << digRaw.lins[DIG_L_LIN] << ", "
+                  << digRaw.lins[DIG_R_LIN] << std::endl;
         oldDig = digRaw;
         // TODO: send message to dump motors here
     }

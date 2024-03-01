@@ -30,4 +30,7 @@ endif()
 add_executable(distrib src/distrib.cpp)
 ament_target_dependencies(distrib rclcpp controls_msgs sensor_msgs controls)
 
+install(TARGETS distrib DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+
 ament_package()

@@ -1,3 +1,4 @@
+#include <iostream>
 #include <memory>
 
 #include "../include/settings.h"
@@ -31,6 +32,8 @@ class Dump : public rclcpp::Node
         }
         return;
     unequal:
+        std::cout << "Dump act: [" << dumpRaw.lins[DUMP_L_LIN] << ", "
+                  << dumpRaw.lins[DUMP_R_LIN] << std::endl;
 
         oldDump = dumpRaw;
         // TODO: send message to dump motors here

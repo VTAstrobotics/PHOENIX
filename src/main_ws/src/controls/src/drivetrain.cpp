@@ -1,3 +1,4 @@
+#include <iostream>
 #include <memory>
 
 #include "../include/settings.h"
@@ -34,6 +35,8 @@ class Drivetrain : public rclcpp::Node
         }
         return;
     unequal:
+        std::cout << "Drive mot: [" << driveRaw.motors[DRIVE_L_MOTOR] << ", "
+                  << driveRaw.motors[DRIVE_R_MOTOR] << std::endl;
 
         oldDrive = driveRaw;
         // TODO: send message to drive motors here

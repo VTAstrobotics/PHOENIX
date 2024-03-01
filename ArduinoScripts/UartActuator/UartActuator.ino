@@ -88,7 +88,7 @@ void moveLinearActuator(int pin1, int pin2, int val) {
   }
 }
 
-  void stopLinearActuators() {
+void stopLinearActuators() {
   digitalWrite(LIN1, LOW);
   digitalWrite(LIN2, LOW);
 }

@@ -87,12 +87,12 @@ class Distributor : public rclcpp::Node
         }
 
         // Dig controls
-        if (distribRaw.buttons[CTRL_EXTEND_SCOOP])
+        if (distribRaw.axes[CTRL_SCOOP] > DPAD_ACTIVATION_DISTANCE)
         {
             digSend.lins[DIG_L_LIN] = MAX_SPEED;
             digSend.lins[DIG_R_LIN] = MAX_SPEED;
         }
-        else if (distribRaw.buttons[CTRL_RETRACT_SCOOP])
+        else if (distribRaw.axes[CTRL_SCOOP] < -DPAD_ACTIVATION_DISTANCE)
         {
             digSend.lins[DIG_L_LIN] = -MAX_SPEED;
             digSend.lins[DIG_R_LIN] = -MAX_SPEED;
@@ -106,12 +106,12 @@ class Distributor : public rclcpp::Node
         digSend.motors[DIG_R_MOTOR] = 0;
 
         // Dump controls
-        if (distribRaw.buttons[CTRL_EXTEND_BUCKET])
+        if (distribRaw.axes[CTRL_BUCKET] > DPAD_ACTIVATION_DISTANCE)
         {
             dumpSend.lins[DUMP_L_LIN] = MAX_SPEED;
             dumpSend.lins[DUMP_R_LIN] = MAX_SPEED;
         }
-        else if (distribRaw.buttons[CTRL_RETRACT_BUCKET])
+        else if (distribRaw.axes[CTRL_BUCKET] < -DPAD_ACTIVATION_DISTANCE)
         {
             dumpSend.lins[DUMP_L_LIN] = -MAX_SPEED;
             dumpSend.lins[DUMP_R_LIN] = -MAX_SPEED;

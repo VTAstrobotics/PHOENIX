@@ -136,13 +136,66 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /usr/include/c++/11/backward/auto_ptr.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
  /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/c++/11/chrono
+ /usr/include/c++/11/ratio
+ /usr/include/c++/11/cstdint
+ /usr/include/c++/11/limits
+ /usr/include/c++/11/ctime
+ /usr/include/c++/11/bits/parse_numbers.h
+ /usr/include/c++/11/thread
+ /usr/include/c++/11/bits/std_thread.h
+ /usr/include/c++/11/bits/this_thread_sleep.h
+ /usr/include/c++/11/cerrno
+ /usr/include/errno.h
+ /usr/include/x86_64-linux-gnu/bits/errno.h
+ /usr/include/linux/errno.h
+ /usr/include/x86_64-linux-gnu/asm/errno.h
+ /usr/include/asm-generic/errno.h
+ /usr/include/asm-generic/errno-base.h
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h
+ /usr/include/c++/11/cmath
+ /usr/include/math.h
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/c++/11/bits/std_abs.h
+ /usr/include/stdlib.h
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h
+ /usr/include/x86_64-linux-gnu/sys/types.h
+ /usr/include/endian.h
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
+ /usr/include/x86_64-linux-gnu/sys/select.h
+ /usr/include/x86_64-linux-gnu/bits/select.h
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+ /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+ /usr/include/c++/11/bits/specfun.h
+ /usr/include/c++/11/tr1/gamma.tcc
+ /usr/include/c++/11/tr1/special_function_util.h
+ /usr/include/c++/11/tr1/bessel_function.tcc
+ /usr/include/c++/11/tr1/beta_function.tcc
+ /usr/include/c++/11/tr1/ell_integral.tcc
+ /usr/include/c++/11/tr1/exp_integral.tcc
+ /usr/include/c++/11/tr1/hypergeometric.tcc
+ /usr/include/c++/11/tr1/legendre_function.tcc
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc
+ /usr/include/c++/11/tr1/poly_hermite.tcc
+ /usr/include/c++/11/tr1/poly_laguerre.tcc
+ /usr/include/c++/11/tr1/riemann_zeta.tcc
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp
  /usr/include/c++/11/csignal
  /usr/include/signal.h
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h
  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h
@@ -172,22 +225,8 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp
  /usr/include/c++/11/future
  /usr/include/c++/11/mutex
- /usr/include/c++/11/chrono
- /usr/include/c++/11/ratio
- /usr/include/c++/11/cstdint
- /usr/include/c++/11/limits
- /usr/include/c++/11/ctime
- /usr/include/c++/11/bits/parse_numbers.h
  /usr/include/c++/11/system_error
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h
- /usr/include/c++/11/cerrno
- /usr/include/errno.h
- /usr/include/x86_64-linux-gnu/bits/errno.h
- /usr/include/linux/errno.h
- /usr/include/x86_64-linux-gnu/asm/errno.h
- /usr/include/asm-generic/errno.h
- /usr/include/asm-generic/errno-base.h
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h
  /usr/include/c++/11/stdexcept
  /usr/include/c++/11/string
  /usr/include/c++/11/bits/char_traits.h
@@ -205,18 +244,6 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /usr/include/c++/11/bits/string_view.tcc
  /usr/include/c++/11/ext/string_conversions.h
  /usr/include/c++/11/cstdlib
- /usr/include/stdlib.h
- /usr/include/x86_64-linux-gnu/bits/waitflags.h
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h
- /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/include/endian.h
- /usr/include/x86_64-linux-gnu/bits/byteswap.h
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h
- /usr/include/x86_64-linux-gnu/sys/select.h
- /usr/include/x86_64-linux-gnu/bits/select.h
- /usr/include/alloca.h
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
- /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/cstdio
  /usr/include/stdio.h
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
@@ -232,7 +259,6 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /usr/include/c++/11/atomic
  /usr/include/c++/11/bits/atomic_futex.h
  /usr/include/c++/11/bits/std_function.h
- /usr/include/c++/11/bits/std_thread.h
  /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp
  /usr/include/c++/11/set
  /usr/include/c++/11/bits/stl_tree.h
@@ -240,8 +266,6 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /usr/include/c++/11/bits/stl_set.h
  /usr/include/c++/11/bits/stl_multiset.h
  /usr/include/c++/11/bits/erase_if.h
- /usr/include/c++/11/thread
- /usr/include/c++/11/bits/this_thread_sleep.h
  /usr/include/c++/11/unordered_map
  /usr/include/c++/11/bits/hashtable.h
  /usr/include/c++/11/bits/hashtable_policy.h
@@ -509,30 +533,6 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp
- /usr/include/c++/11/cmath
- /usr/include/math.h
- /usr/include/x86_64-linux-gnu/bits/math-vector.h
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h
- /usr/include/c++/11/bits/specfun.h
- /usr/include/c++/11/tr1/gamma.tcc
- /usr/include/c++/11/tr1/special_function_util.h
- /usr/include/c++/11/tr1/bessel_function.tcc
- /usr/include/c++/11/tr1/beta_function.tcc
- /usr/include/c++/11/tr1/ell_integral.tcc
- /usr/include/c++/11/tr1/exp_integral.tcc
- /usr/include/c++/11/tr1/hypergeometric.tcc
- /usr/include/c++/11/tr1/legendre_function.tcc
- /usr/include/c++/11/tr1/modified_bessel_func.tcc
- /usr/include/c++/11/tr1/poly_hermite.tcc
- /usr/include/c++/11/tr1/poly_laguerre.tcc
- /usr/include/c++/11/tr1/riemann_zeta.tcc
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp
@@ -670,4 +670,10 @@ CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__builder.hpp
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp
 

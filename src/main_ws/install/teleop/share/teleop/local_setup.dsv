@@ -1,2 +1,1 @@
-source;share/teleop/environment/ament_prefix_path.sh
-source;share/teleop/environment/path.sh
+/workspaces/PHOENIX/src/main_ws/build/teleop/ament_cmake_environment_hooks/local_setup.dsv

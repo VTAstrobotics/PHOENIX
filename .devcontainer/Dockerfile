@@ -39,22 +39,31 @@ RUN sudo apt-get install -y clang-format
 # perception
 RUN sudo apt-get install -y python3-pip
 RUN pip3 install pyrealsense2 opencv-python
-RUN sudo apt install -y udev
-RUN sudo apt install -y git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev
-RUN sudo git clone https://github.com/IntelRealSense/librealsense.git
-WORKDIR /librealsense
-RUN sudo mkdir build
-WORKDIR /librealsense/build
-RUN sudo cmake ..
-RUN sudo make -j$(nproc)
-RUN sudo make install
-RUN sudo cp ../config/99-realsense-libusb.rules /etc/udev/rules.d/
+
+# RUN sudo apt install -y udev
+# RUN sudo apt install -y git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev
+# RUN sudo git clone https://github.com/IntelRealSense/librealsense.git
+# WORKDIR /librealsense
+# RUN sudo mkdir build
+# WORKDIR /librealsense/build
+# RUN sudo cmake ..
+# RUN sudo make -j$(nproc)
+# RUN sudo make install
+# RUN sudo cp ../config/99-realsense-libusb.rules /etc/udev/rules.d/
+# RUN sudo service udev restart
+# RUN sudo udevadm control --reload-rules && sudo udevadm trigger
+# WORKDIR /
+
+RUN sudo apt-get install -y udev
+RUN sudo apt-get install -y libssl-dev libusb-1.0-0-dev libudev-dev pkg-config libgtk-3-dev
+RUN sudo apt-get install -y git wget cmake build-essential
+RUN sudo apt-get install -y libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at
+WORKDIR /workspaces/PHOENIX/
+RUN git clone https://github.com/IntelRealSense/librealsense.git
+WORKDIR /workspaces/PHOENIX/librealsense
 RUN sudo service udev restart
-RUN sudo udevadm control --reload
-RUN sudo udevadm trigger
-WORKDIR /
+RUN sudo ./scripts/setup_udev_rules.sh
+# RUN sudo ./scripts/patch-realsense-ubuntu-lts-hwe.sh
 
-
-
-# for debugging usb devices. not necessary per se
+# for debugging usb devices. not necessary, but useful
 RUN sudo apt-get install usbutils

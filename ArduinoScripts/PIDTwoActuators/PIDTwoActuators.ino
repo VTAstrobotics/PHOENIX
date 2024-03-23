@@ -1,18 +1,18 @@
 #include <PID_v1.h> 
 //TODO: assign hall pins their respective values
-const int HALLPIN11 = A3;
-const int HALLPIN12 = 10;
-const int HALLPIN21 = A3; 
-const int HALLPIN22 = 10; 
+const int HALLPIN11 = 3;
+const int HALLPIN12 = 4;
+const int HALLPIN21 = 5; 
+const int HALLPIN22 = 6; 
 int steps1 = 0;
 int steps2 = 0;
 int pos1 = 0;
 int pos2 = 0;
-const int actuator11 = A10;
-const int actuator12 = A11;
+const int actuator11 = 50;
+const int actuator12 = 51;
 //TODO: set these to actual values;
-const int actuator 21 = 0;
-const int actuator 22 = 0
+const int actuator21 = 52;
+const int actuator22 = 53;
 
 double Setpoint, Input, Output; //arguments of PID regulator 
 double consKp = 1.00, consKi = 0.00, consKd = 0.00; //parameters of PID
@@ -26,15 +26,17 @@ void countPulse2(){
 }
 void setup()
 {
-  attachInterrupt(digitalPinToInterrupt(HALLPIN1), countPulse1, RISING);
-  attachInterrupt(digitalPinToInterrupt(HALLPIN2), countPulse1, RISING);
-  pinMode (5, OUTPUT);  // PWM master
-  pinMode (3, OUTPUT);  // PWM child
+  attachInterrupt(digitalPinToInterrupt(HALLPIN11), countPulse1, RISING);
+  attachInterrupt(digitalPinToInterrupt(HALLPIN12), countPulse1, RISING);
+  attachInterrupt(digitalPinToInterrupt(HALLPIN21), countPulse1, RISING);
+  attachInterrupt(digitalPinToInterrupt(HALLPIN22), countPulse1, RISING);
+  pinMode (9, OUTPUT);  // PWM master
+  pinMode (10, OUTPUT);  // PWM child
   pinMode (actuator11, OUTPUT); //extension of master
   pinMode (actuator12, OUTPUT); //retract of master
   pinMode (actuator21, OUTPUT); //extension of master
   pinMode (actuator22, OUTPUT); //retract of master
-  analogWrite(2, 150);  //speed of master
+  analogWrite(9, 150);  //speed of master
 
   Output = 0;
 
@@ -73,7 +75,7 @@ void loop()
   if (childSpeed == 0) {
     moveActuator2(0);
   }
-  analogWrite(3, childSpeed); //speed of child
+  analogWrite(10, childSpeed); //speed of child
   moveActuator1(1);
   }
 

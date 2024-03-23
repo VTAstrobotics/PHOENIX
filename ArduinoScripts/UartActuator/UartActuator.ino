@@ -102,7 +102,6 @@ void goToPos(double targetPos){
     digitalWrite(LIN2, LOW);
     getPosition();
     Serial.println(pos);
-    Serial.println("loop 1");
   }
   }
   else if (targetPos < pos){
@@ -113,7 +112,6 @@ void goToPos(double targetPos){
     digitalWrite(LIN2, HIGH);
     getPosition();
     Serial.println(pos);
-    Serial.println("loop 2");
   }
   }
 }

@@ -1,0 +1,14 @@
+launch:
+
+ - node:
+    pkg: "controls"
+    exec: "dig"
+    name: "dig"
+ - node:
+    pkg: "controls"
+    exec: "dump"
+    name: "dump"
+ - node:
+    pkg: "controls"
+    exec: "drivetrain"
+    name: "drivetrain"

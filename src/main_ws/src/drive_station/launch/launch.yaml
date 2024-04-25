@@ -1,0 +1,11 @@
+
+launch:
+
+ - node:
+    pkg: "drive_station"
+    exec: "converter"
+    name: "converter"
+ - node:
+    pkg: "drive_station"
+    exec: "gui"
+    name: "gui"

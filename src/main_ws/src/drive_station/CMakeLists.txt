@@ -5,9 +5,18 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -26,10 +35,12 @@ endif()
 
 add_executable(converter src/converter.cpp)
 ament_target_dependencies(converter rclcpp)
-add_executable(gui src/gui.cpp)
+add_executable(gui src/gui.cpp src/MainWindow.hpp)
 ament_target_dependencies(gui rclcpp)
 
-install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
+target_link_libraries(gui Qt5::Widgets)
+
+install(TARGETS converter gui DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 
 ament_package()

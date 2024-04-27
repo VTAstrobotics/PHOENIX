@@ -35,7 +35,7 @@ endif()
 
 add_executable(converter src/converter.cpp)
 ament_target_dependencies(converter rclcpp)
-add_executable(gui src/gui.cpp src/MainWindow.hpp)
+add_executable(gui src/gui.cpp src/MainWindow.hpp src/ConsoleWidget.hpp src/CameraWidget.hpp src/DataWidget.hpp)
 ament_target_dependencies(gui rclcpp)
 
 target_link_libraries(gui Qt5::Widgets)

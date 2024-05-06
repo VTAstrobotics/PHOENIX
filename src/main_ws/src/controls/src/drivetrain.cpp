@@ -6,7 +6,7 @@
 #include "controls_msgs/msg/drivetrain.hpp"
 #include "rclcpp/rclcpp.hpp"
 // #include "teleop/Controller.hpp"
-// #include "teleop/UART.hpp"
+#include "uart.hpp"
 using std::placeholders::_1;
 
 class Drivetrain : public rclcpp::Node
@@ -18,10 +18,17 @@ class Drivetrain : public rclcpp::Node
             this->create_subscription<controls_msgs::msg::Drivetrain>(
                 DRIVE_TOPIC, QOS,
                 std::bind(&Drivetrain::topic_callback, this, _1));
+        uart = UART("/dev/ttyTHS1");
+        std::string error = uart.get_error();
+        if ("" != error)
+        {
+            RCLCPP_ERROR_STREAM(this->get_logger(), error << std::endl);
+        }
     }
 
    private:
     controls_msgs::msg::Drivetrain oldDrive;
+    UART uart;
 
     void topic_callback(const controls_msgs::msg::Drivetrain& driveRaw)
     {
@@ -41,7 +48,16 @@ class Drivetrain : public rclcpp::Node
                                << driveRaw.motors[DRIVE_R_MOTOR] << std::endl);
 
         oldDrive = driveRaw;
-        // TODO: send message to drive motors here
+
+        std::string resp = "";
+
+        uart.send("1:" + std::to_string(driveRaw.motors[DRIVE_L_MOTOR]) + ";");
+        resp = uart.get_all_feedback();
+        RCLCPP_INFO_STREAM(this->get_logger(), resp);
+
+        uart.send("2:" + std::to_string(driveRaw.motors[DRIVE_R_MOTOR]) + ";");
+        resp = uart.get_all_feedback();
+        RCLCPP_INFO_STREAM(this->get_logger(), resp);
     }
     rclcpp::Subscription<controls_msgs::msg::Drivetrain>::SharedPtr
         subscription_;

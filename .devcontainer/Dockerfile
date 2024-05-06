@@ -37,4 +37,6 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 RUN sudo apt-get install -y clang-format
 
 RUN sudo chmod +rx /dev/input/event*
+# this one may be unneeded
 RUN sudo chmod +rx /dev/input/js*
+

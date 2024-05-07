@@ -15,6 +15,8 @@ set(CMAKE_AUTOUIC ON)
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(controls REQUIRED)
+find_package(controls_msgs REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 # uncomment the following section in order to fill in
@@ -34,9 +36,9 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(converter src/converter.cpp)
-ament_target_dependencies(converter rclcpp)
+ament_target_dependencies(converter rclcpp controls_msgs controls)
 add_executable(gui src/gui.cpp src/MainWindow.hpp src/ConsoleWidget.hpp src/CameraWidget.hpp src/DataWidget.hpp)
-ament_target_dependencies(gui rclcpp)
+ament_target_dependencies(gui rclcpp controls_msgs controls)
 
 target_link_libraries(gui Qt5::Widgets)
 

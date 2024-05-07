@@ -17,6 +17,10 @@
  * @defgroup teleop Teleop Macros
  * Macros and settings related to the teleop nodes
  */
+/**
+ * @defgroup drive_station Drive Station Macros
+ * Macros and settings related to the drive station nodes
+ */
 
 /**
  * @ingroup teleop
@@ -113,6 +117,12 @@
  * @brief Topic name given to the distributor communications
  */
 #define DISTRIB_TOPIC "joy"
+
+/**
+ * @ingroup drive_station
+ * @brief Topic name given to the converter communications
+ */
+#define CONVERTER_TOPIC "converter"
 
 #define MAX_SPEED 5
 

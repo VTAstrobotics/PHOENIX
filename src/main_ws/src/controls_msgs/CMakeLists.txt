@@ -13,6 +13,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Dump.msg"
   "msg/Drivetrain.msg"
   "msg/Dig.msg"
+  "msg/Conversion.msg"
 )
 
 if(BUILD_TESTING)

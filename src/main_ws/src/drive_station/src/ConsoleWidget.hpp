@@ -14,7 +14,7 @@ class ConsoleWidget : public QPlainTextEdit
     }
 
    public slots:
-    void new_data(QString& str) {}
+    void new_data(const QString& str) { this->insertPlainText(str); }
 
    private:
 };

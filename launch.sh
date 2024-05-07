@@ -19,4 +19,5 @@ pkill dig
 pkill dump
 pkill distrib
 pkill drivetrain
+pkill uart
 echo "Killed background processes"

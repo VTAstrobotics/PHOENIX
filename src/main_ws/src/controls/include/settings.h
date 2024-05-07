@@ -14,6 +14,10 @@
  * Macros and settings related to the dig subsystem
  */
 /**
+ * @defgroup uart UART Macros
+ * Macros and settings related to the UART node
+ */
+/**
  * @defgroup teleop Teleop Macros
  * Macros and settings related to the teleop nodes
  */
@@ -25,7 +29,7 @@
 #define DEADZONE_SIZE 0.1f
 
 /**
- * @ingroup dmpMac drvMac digMac teleop
+ * @ingroup dmpMac drvMac digMac teleop uart
  * @brief Standard quality of service used by nodes
  */
 #define QOS 10
@@ -35,21 +39,6 @@
  * @brief Topic name given to dump communications
  */
 #define DUMP_TOPIC "dump"
-/**
- * @ingroup dmpMac
- * @brief Amount of actuators used for the dump subsystem
- */
-#define DUMP_A_COUNT 2
-/**
- * @ingroup drvMac
- * @brief Use when referring to the left dump actuator
- */
-#define DUMP_L_LIN 0
-/**
- * @ingroup drvMac
- * @brief Use when referring to the right dump actuator
- */
-#define DUMP_R_LIN 1
 
 /**
  * @ingroup drvMac
@@ -77,36 +66,36 @@
  * @brief Topic name given to drive communications
  */
 #define DIG_TOPIC "dig"
+
 /**
- * @ingroup digMac
- * @brief Amount of motors used by the dig subsystem
+ * @ingroup uart
+ * @brief Topic name given to the UART node
  */
-#define DIG_M_COUNT 2
+#define UART_TOPIC "uart"
 /**
- * @ingroup digMac
- * @brief Use when referring to the left dig motor
+ * @ingroup uart
+ * @brief Path to UART 'file' on jetson nano
  */
-#define DIG_L_MOTOR 0
+#define UART_PATH "/dev/ttyTHS1"
 /**
- * @ingroup digMac
- * @brief Use when referring to the right dig motor
+ * @ingroup uart
+ * @brief Baud rate for UART communications
  */
-#define DIG_R_MOTOR 1
+#define BAUD_RATE B1152000
+/** @ingroup uart
+ *  @brief Settings for the UART serial file descriptor
+ */
+#define UART_FD_SETTINGS O_RDWR | O_NOCTTY | O_NONBLOCK
 /**
- * @ingroup digMac
- * @brief Amount of actuators used by the dig subsystem
+ * @ingroup uart
+ * @brief Length of the UART receive buffer
  */
-#define DIG_A_COUNT 2
+#define RX_BUFFER_LEN 512
 /**
- * @ingroup digMac
- * @brief Use when referring to the left dig actuator
+ * @ingroup uart
+ * @brief Length of the UART transmit buffer
  */
-#define DIG_L_LIN 0
-/**
- * @ingroup digMac
- * @brief Use when referring to the right dig actuator
- */
-#define DIG_R_LIN 1
+#define TX_BUFFER_LEN 512
 
 /**
  * @ingroup teleop

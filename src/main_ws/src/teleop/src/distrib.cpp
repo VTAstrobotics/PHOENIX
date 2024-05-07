@@ -89,37 +89,30 @@ class Distributor : public rclcpp::Node
         // Dig controls
         if (distribRaw.axes[CTRL_SCOOP] > DPAD_ACTIVATION_DISTANCE)
         {
-            digSend.lins[DIG_L_LIN] = MAX_SPEED;
-            digSend.lins[DIG_R_LIN] = MAX_SPEED;
+            digSend.lins = MAX_SPEED;
         }
         else if (distribRaw.axes[CTRL_SCOOP] < -DPAD_ACTIVATION_DISTANCE)
         {
-            digSend.lins[DIG_L_LIN] = -MAX_SPEED;
-            digSend.lins[DIG_R_LIN] = -MAX_SPEED;
+            digSend.lins = -MAX_SPEED;
         }
         else
         {
-            digSend.lins[DIG_L_LIN] = 0;
-            digSend.lins[DIG_R_LIN] = 0;
+            digSend.lins = 0;
         }
-        digSend.motors[DIG_L_MOTOR] = 0;
-        digSend.motors[DIG_R_MOTOR] = 0;
+        digSend.motors = 0;
 
         // Dump controls
         if (distribRaw.axes[CTRL_BUCKET] > DPAD_ACTIVATION_DISTANCE)
         {
-            dumpSend.lins[DUMP_L_LIN] = MAX_SPEED;
-            dumpSend.lins[DUMP_R_LIN] = MAX_SPEED;
+            dumpSend.lins = MAX_SPEED;
         }
         else if (distribRaw.axes[CTRL_BUCKET] < -DPAD_ACTIVATION_DISTANCE)
         {
-            dumpSend.lins[DUMP_L_LIN] = -MAX_SPEED;
-            dumpSend.lins[DUMP_R_LIN] = -MAX_SPEED;
+            dumpSend.lins = -MAX_SPEED;
         }
         else
         {
-            dumpSend.lins[DUMP_L_LIN] = 0;
-            dumpSend.lins[DUMP_R_LIN] = 0;
+            dumpSend.lins = 0;
         }
 
         // Send messages to each subsystem

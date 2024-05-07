@@ -29,9 +29,11 @@ add_executable(dig src/dig.cpp)
 ament_target_dependencies(dig rclcpp controls_msgs)
 add_executable(dump src/dump.cpp)
 ament_target_dependencies(dump rclcpp controls_msgs)
+add_executable(uart src/uart.cpp)
+ament_target_dependencies(uart rclcpp controls_msgs)
 
 
-install(TARGETS drivetrain dig dump DESTINATION lib/${PROJECT_NAME})
+install(TARGETS drivetrain dig dump uart DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY include/ DESTINATION include)
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 

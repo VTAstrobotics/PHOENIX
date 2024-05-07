@@ -1,2 +1,2 @@
-float64[2] motors
-float64[2] lins
+float64 motors
+float64 lins

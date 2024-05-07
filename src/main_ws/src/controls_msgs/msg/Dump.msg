@@ -1,1 +1,1 @@
-float64[2] lins
+float64 lins

@@ -12,3 +12,7 @@ launch:
     pkg: "controls"
     exec: "drivetrain"
     name: "drivetrain"
+ - node:
+    pkg: "controls"
+    exec: "uart"
+    name: "uart"

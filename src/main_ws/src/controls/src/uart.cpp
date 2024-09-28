@@ -1,8 +1,8 @@
 #include <fcntl.h>
 #include <string.h>
+#include <string>
 #include <termios.h>
 #include <unistd.h>
-#include <string>
 
 #include "../include/settings.h"
 #include "controls_msgs/msg/uart.hpp"
@@ -12,17 +12,16 @@ using std::placeholders::_1;
 
 class UART : public rclcpp::Node
 {
-   public:
+  public:
     UART() : Node("uart")
     {
-        subscription = this->create_subscription<controls_msgs::msg::Uart>(
-            UART_TOPIC, QOS, std::bind(&UART::topic_callback, this, _1));
+        subscription = this->create_subscription<controls_msgs::msg::Uart>(UART_TOPIC, QOS,
+                                                                           std::bind(&UART::topic_callback, this, _1));
 
         uart_fd = open(UART_PATH, UART_FD_SETTINGS);
         if (-1 == uart_fd)
         {
-            RCLCPP_ERROR_STREAM(this->get_logger(),
-                                "UART could not be opened" << std::endl);
+            RCLCPP_ERROR_STREAM(this->get_logger(), "UART could not be opened" << std::endl);
             return;
         }
 
@@ -38,9 +37,8 @@ class UART : public rclcpp::Node
 
     std::string get()
     {
-        int rx_length = read(uart_fd, (void*)rx_buf, RX_BUFFER_LEN);
-        if (-1 == rx_length &&
-            errno == EAGAIN)  // return a null string if no data to read
+        int rx_length = read(uart_fd, (void *)rx_buf, RX_BUFFER_LEN);
+        if (-1 == rx_length && errno == EAGAIN) // return a null string if no data to read
         {
             return "";
         }
@@ -50,11 +48,10 @@ class UART : public rclcpp::Node
     void send(std::string msg)
     {
         strncpy(tx_buf, msg.c_str(), TX_BUFFER_LEN);
-        int tx_length = write(uart_fd, (void*)tx_buf, strlen(tx_buf) + 1);
+        int tx_length = write(uart_fd, (void *)tx_buf, strlen(tx_buf) + 1);
         if (-1 == tx_length)
         {
-            RCLCPP_ERROR_STREAM(this->get_logger(),
-                                "Could not write to UART" << std::endl);
+            RCLCPP_ERROR_STREAM(this->get_logger(), "Could not write to UART" << std::endl);
         }
     }
 
@@ -62,8 +59,7 @@ class UART : public rclcpp::Node
     {
         if (-1 == close(uart_fd))
         {
-            RCLCPP_ERROR_STREAM(this->get_logger(),
-                                "Could not close to UART" << std::endl);
+            RCLCPP_ERROR_STREAM(this->get_logger(), "Could not close to UART" << std::endl);
         }
     }
 
@@ -87,7 +83,7 @@ class UART : public rclcpp::Node
         return res;
     }
 
-   private:
+  private:
     void topic_callback(const controls_msgs::msg::Uart msgRaw)
     {
         this->send(msgRaw.msg);
@@ -102,7 +98,7 @@ class UART : public rclcpp::Node
     rclcpp::Subscription<controls_msgs::msg::Uart>::SharedPtr subscription;
 };
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<UART>());

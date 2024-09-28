@@ -11,21 +11,18 @@ using std::placeholders::_1;
 
 class Drivetrain : public rclcpp::Node
 {
-   public:
+  public:
     Drivetrain() : Node("drivetrain")
     {
-        subscription =
-            this->create_subscription<controls_msgs::msg::Drivetrain>(
-                DRIVE_TOPIC, QOS,
-                std::bind(&Drivetrain::topic_callback, this, _1));
-        uart_link =
-            this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
+        subscription = this->create_subscription<controls_msgs::msg::Drivetrain>(
+            DRIVE_TOPIC, QOS, std::bind(&Drivetrain::topic_callback, this, _1));
+        uart_link = this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
     }
 
-   private:
+  private:
     controls_msgs::msg::Drivetrain oldDrive;
 
-    void topic_callback(const controls_msgs::msg::Drivetrain& driveRaw)
+    void topic_callback(const controls_msgs::msg::Drivetrain &driveRaw)
     {
         /* reduce load by ignoring duplicate message */
         for (int i = 0; i < DRIVE_M_COUNT; i++)
@@ -38,10 +35,8 @@ class Drivetrain : public rclcpp::Node
         return;
     unequal:
         // TODO: remove this print?
-        RCLCPP_INFO_STREAM(this->get_logger(),
-                           "Drive mot: ["
-                               << driveRaw.motors[DRIVE_L_MOTOR] << ", "
-                               << driveRaw.motors[DRIVE_R_MOTOR] << std::endl);
+        RCLCPP_INFO_STREAM(this->get_logger(), "Drive mot: [" << driveRaw.motors[DRIVE_L_MOTOR] << ", "
+                                                              << driveRaw.motors[DRIVE_R_MOTOR] << std::endl);
 
         oldDrive = driveRaw;
 
@@ -52,12 +47,11 @@ class Drivetrain : public rclcpp::Node
         send.msg = "2:" + std::to_string(driveRaw.motors[DRIVE_R_MOTOR]) + ";";
         uart_link->publish(send);
     }
-    rclcpp::Subscription<controls_msgs::msg::Drivetrain>::SharedPtr
-        subscription;
+    rclcpp::Subscription<controls_msgs::msg::Drivetrain>::SharedPtr subscription;
     rclcpp::Publisher<controls_msgs::msg::Uart>::SharedPtr uart_link;
 };
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<Drivetrain>());

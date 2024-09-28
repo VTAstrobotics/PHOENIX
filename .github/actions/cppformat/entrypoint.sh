@@ -16,7 +16,7 @@ BRANCH=${GITHUB_REF#*refs/heads/}
 echo "### git fetch $BRANCH ..."
 git fetch origin $BRANCH
 echo "### Branch: $BRANCH (ref: $GITHUB_REF )"
-git checkout $BRANCH
+git checkout -b $BRANCH
 
 echo "## Configuring git author..."
 git config --global user.email "clang-format@1337z.ninja"

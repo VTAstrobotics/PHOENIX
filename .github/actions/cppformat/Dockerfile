@@ -13,7 +13,7 @@ RUN wget "http://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubunt
     cd clang* && \
     cp -R * /usr/local
 
-COPY cppformat/.clang-format /.clang-format
+COPY .clang-format /.clang-format
 
 COPY entrypoint.sh /entrypoint.sh
 

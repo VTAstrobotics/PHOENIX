@@ -44,5 +44,5 @@ jobs:
 
       - name: Clang Code Formatter
         run: |
-          docker build -t clangformat -f CPPFormatDockerfile .
+          docker build -t clangformat -f /.github/workflows/CPPFormatDockerfile .
           docker run clangformat

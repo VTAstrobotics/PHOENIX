@@ -1,11 +1,7 @@
-#! /bin/bash
+#!/bin/bash
 
 echo "Changing directory"
 cd src/main_ws
-
-echo "Building project"
-colcon build
-source install/setup.sh
 
 echo "Launching background processes"
 ros2 launch controls launch.yaml &

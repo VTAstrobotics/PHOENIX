@@ -12,11 +12,12 @@ echo "### Adding git remote..."
 # git remote add origin https://x-access-token:$GITHUB_TOKEN@github.com/$REPO_FULLNAME.git
 git remote set-url origin https://x-access-token:$GITHUB_TOKEN@github.com/$REPO_FULLNAME.git
 echo "### Getting branch"
-BRANCH=${GITHUB_REF#*refs/heads/}
+# BRANCH=${GITHUB_REF#*refs/heads/}
+BRANCH=${GITHUB_HEAD_REF}
 echo "### git fetch $BRANCH ..."
 git fetch origin $BRANCH
 echo "### Branch: $BRANCH (ref: $GITHUB_REF )"
-git checkout -b $BRANCH
+git checkout $BRANCH
 
 echo "## Configuring git author..."
 git config --global user.email "clang-format@1337z.ninja"

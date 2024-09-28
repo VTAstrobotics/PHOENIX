@@ -17,6 +17,8 @@ jobs:
         run: cp ./.clang-format ./.github/actions/cppformat
 
       - name: Clang Code Formatter
+        # with:
+        #   ref: ${{ github.head_ref }}
         uses: ./.github/actions/cppformat
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

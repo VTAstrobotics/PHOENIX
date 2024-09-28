@@ -6,7 +6,31 @@ on:
       - main
 
 jobs:
-  check_format:
+  # check_format:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v2
+
+  #     - name: Install clang-format
+  #       run: sudo apt-get install clang-format
+
+  #     - name: Check C++ formatting
+  #       run: |
+  #         # Get list of C++ files
+  #         cpp_files=$(find src/main_ws/src -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h")
+
+  #         # Check formatting for each file
+  #         for file in $cpp_files; do
+  #           if ! clang-format -style=file -output-replacements-xml "$file" | grep -q "<replacement "; then
+  #             echo "File $file is correctly formatted."
+  #           else
+  #             echo "File $file is incorrectly formatted."
+  #             exit 1
+  #           fi
+  #         done
+  lint:
+    name: clang-format Code Formatter
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -15,17 +39,10 @@ jobs:
       - name: Install clang-format
         run: sudo apt-get install clang-format
 
-      - name: Check C++ formatting
-        run: |
-          # Get list of C++ files
-          cpp_files=$(find src/main_ws/src -type f -name "*.cpp" -o -name "*.hpp" -o -name "*.h")
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
-          # Check formatting for each file
-          for file in $cpp_files; do
-            if ! clang-format -style=file -output-replacements-xml "$file" | grep -q "<replacement "; then
-              echo "File $file is correctly formatted."
-            else
-              echo "File $file is incorrectly formatted."
-              exit 1
-            fi
-          done
+      - name: Clang Code Formatter
+        run: |
+          docker build -t clangformat -f CPPFormatDockerfile .
+          docker run clangformat

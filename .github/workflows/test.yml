@@ -10,6 +10,9 @@ jobs:
     name: clang-format Code Formatter
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
       - name: Clang Code Formatter
         uses: ./.github/actions/cppformat
         env:

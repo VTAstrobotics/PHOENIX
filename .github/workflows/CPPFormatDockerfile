@@ -17,4 +17,4 @@ COPY .clang-format /.clang-format
 
 COPY .github/workflows/cpp_format_entrypoint.sh /cpp_format_entrypoint.sh
 
-ENTRYPOINT ["cpp_format_entrypoint.sh"]
+ENTRYPOINT ["/cpp_format_entrypoint.sh"]

@@ -10,6 +10,7 @@
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
   ],
+  "postCreateCommand": "/bin/sh -c \"chmod 777 /workspaces/PHOENIX/.devcontainer/entrypoint.sh\" && /workspaces/PHOENIX/.devcontainer/entrypoint.sh",
   "customizations": {
     "vscode": {
       "extensions": [

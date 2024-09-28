@@ -16,7 +16,10 @@ jobs:
       - name: Copy formatting
         run: cp ./.clang-format ./.github/actions/cppformat
 
+      - name: Configure Git safe directory
+        run: git config --global --add safe.directory /github/workspace
+
       - name: Clang Code Formatter
-        uses: ./.github/actions/cppformat 
+        uses: ./.github/actions/cppformat
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

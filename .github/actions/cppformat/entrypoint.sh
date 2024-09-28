@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sh -c "git config --global --add safe.directory $PWD"
+
 set -eu
 
 REPO_FULLNAME=$(jq -r ".repository.full_name" "$GITHUB_EVENT_PATH")

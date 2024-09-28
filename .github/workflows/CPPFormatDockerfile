@@ -15,6 +15,6 @@ RUN wget "http://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubunt
 
 COPY .clang-format /.clang-format
 
-COPY .github/workflows/cpp_format_entrypoint.sh /entrypoint.sh
+COPY .github/workflows/cpp_format_entrypoint.sh /cpp_format_entrypoint.sh
 
 ENTRYPOINT ["cpp_format_entrypoint.sh"]

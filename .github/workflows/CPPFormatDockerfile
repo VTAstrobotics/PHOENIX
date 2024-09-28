@@ -17,6 +17,6 @@ COPY LICENSE README.md /
 
 COPY .clang-format /.clang-format
 
-COPY cpp_format_entrypoint.sh /entrypoint.sh
+COPY .github/workflows/cpp_format_entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["entrypoint.sh"]

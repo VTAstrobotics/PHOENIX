@@ -29,8 +29,7 @@ git update-index --assume-unchanged .github/workflows/*
 echo "## Running clang-format on C/C++ source"
 SRC=$(git ls-tree --full-tree -r HEAD | grep -e "\.\(c\|h\|hpp\|cpp\)\$" | cut -f 2)
 
-ls
-clang-format -style=.clang-format -i $SRC
+clang-format -style=file -i $SRC
 
 echo "## Commiting files..."
 git commit -am "apply clang-format" || true

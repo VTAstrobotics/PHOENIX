@@ -103,8 +103,6 @@
  */
 #define DISTRIB_TOPIC "joy"
 
-#define MAX_SPEED 5
-
 #define DPAD_ACTIVATION_DISTANCE 0.5
 
 /* Key bindings for current robot (2023-2024) */

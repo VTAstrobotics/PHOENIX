@@ -69,7 +69,7 @@ class Distributor : public rclcpp::Node
         if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0))
         {
             driveSend.motors[DRIVE_L_MOTOR] =
-                distribRaw.axes[CTRL_TANK_L_TREAD] * MAX_SPEED;
+                distribRaw.axes[CTRL_TANK_L_TREAD];
         }
         else
         {
@@ -79,7 +79,7 @@ class Distributor : public rclcpp::Node
         if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0))
         {
             driveSend.motors[DRIVE_R_MOTOR] =
-                distribRaw.axes[CTRL_TANK_R_TREAD] * MAX_SPEED;
+                distribRaw.axes[CTRL_TANK_R_TREAD];
         }
         else
         {
@@ -89,11 +89,11 @@ class Distributor : public rclcpp::Node
         // Dig controls
         if (distribRaw.axes[CTRL_SCOOP] > DPAD_ACTIVATION_DISTANCE)
         {
-            digSend.lins = MAX_SPEED;
+            digSend.lins = 1;
         }
         else if (distribRaw.axes[CTRL_SCOOP] < -DPAD_ACTIVATION_DISTANCE)
         {
-            digSend.lins = -MAX_SPEED;
+            digSend.lins = -1;
         }
         else
         {
@@ -104,11 +104,11 @@ class Distributor : public rclcpp::Node
         // Dump controls
         if (distribRaw.axes[CTRL_BUCKET] > DPAD_ACTIVATION_DISTANCE)
         {
-            dumpSend.lins = MAX_SPEED;
+            dumpSend.lins = 1;
         }
         else if (distribRaw.axes[CTRL_BUCKET] < -DPAD_ACTIVATION_DISTANCE)
         {
-            dumpSend.lins = -MAX_SPEED;
+            dumpSend.lins = -1;
         }
         else
         {

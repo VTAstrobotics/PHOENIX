@@ -838,7 +838,8 @@ const char *info_language_extensions_default =
 void main() {}
 #else
 #if defined(__CLASSIC_C__)
-int main(argc, argv) int argc;
+int main(argc, argv)
+int argc;
 char *argv[];
 #else
 int main(int argc, char *argv[])

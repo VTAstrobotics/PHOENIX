@@ -3,6 +3,9 @@
 echo "Changing directory"
 cd src/main_ws
 
+echo "Sourcing"
+source install/setup.bash
+
 echo "Launching background processes"
 ros2 launch controls launch.yaml &
 ros2 launch teleop launch.yaml &

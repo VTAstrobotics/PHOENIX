@@ -40,7 +40,7 @@ class UART : public rclcpp::Node
     {
         int rx_length = read(uart_fd, (void *)rx_buf, RX_BUFFER_LEN);
         if (-1 == rx_length &&
-            errno == EAGAIN)  // return a null string if no data to read
+            errno == EAGAIN) // return a null string if no data to read
         {
             return "";
         }

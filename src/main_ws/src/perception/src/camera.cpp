@@ -24,7 +24,7 @@ class Camera : public rclcpp::Node
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Camera>());  // test
+    rclcpp::spin(std::make_shared<Camera>()); // test
     rclcpp::shutdown();
     return 0;
 }

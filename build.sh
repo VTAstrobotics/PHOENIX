@@ -8,4 +8,4 @@ echo "Building project"
 colcon build --symlink-install
 source install/setup.bash
 
-printf "build.sh done.\n"
+printf "build.sh done.\n\n"

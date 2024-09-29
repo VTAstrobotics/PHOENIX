@@ -4,6 +4,7 @@
 rm /workspaces/PHOENIX/.devcontainer/build.log
 sudo touch /workspaces/PHOENIX/.devcontainer/build.log
 sudo chmod 777 /workspaces/PHOENIX/.devcontainer/build.log
+
 { printf "entrypoint.sh:\n"
 
 ###############################################################################
@@ -27,3 +28,5 @@ sudo chmod +rx /dev/input/js*
 #                                                                             #
 ###############################################################################
 } &> /workspaces/PHOENIX/.devcontainer/build.log
+
+exit 0

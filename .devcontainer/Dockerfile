@@ -41,12 +41,13 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # Add dependencies below using RUN <command you used to install>              #
 #                                                                             #
 ###############################################################################
-RUN sudo apt-get install -y clang-format
-
-###############################################################################
-#                                                                             #
-# This is the commands to be run in the final layer                           #
-# (do not put anything below this)                                            #
-#                                                                             #
-###############################################################################
-# CMD /workspaces/PHOENIX/.devcontainer/entrypoint.sh
+# install clang-format version 16
+RUN sudo apt-get install -y lsb-release \
+    wget \
+    software-properties-common \
+    gnupg \
+    && sudo wget https://apt.llvm.org/llvm.sh \
+    && sudo chmod +x llvm.sh \
+    && sudo ./llvm.sh 16 \
+    && sudo apt-get install -y clang-format-16 \
+    && sudo ln -s $(which clang-format-16) /usr/local/bin/clang-format

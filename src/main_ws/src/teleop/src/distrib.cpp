@@ -11,21 +11,25 @@ using std::placeholders::_1;
 
 class Distributor : public rclcpp::Node
 {
-  public:
+   public:
     Distributor() : Node("distrib")
     {
         subscription = this->create_subscription<sensor_msgs::msg::Joy>(
-            DISTRIB_TOPIC, QOS, std::bind(&Distributor::topic_callback, this, _1));
-        digPub = this->create_publisher<controls_msgs::msg::Dig>(DIG_TOPIC, QOS);
-        dumpPub = this->create_publisher<controls_msgs::msg::Dump>(DUMP_TOPIC, QOS);
-        drivePub = this->create_publisher<controls_msgs::msg::Drivetrain>(DRIVE_TOPIC, QOS);
+            DISTRIB_TOPIC, QOS,
+            std::bind(&Distributor::topic_callback, this, _1));
+        digPub =
+            this->create_publisher<controls_msgs::msg::Dig>(DIG_TOPIC, QOS);
+        dumpPub =
+            this->create_publisher<controls_msgs::msg::Dump>(DUMP_TOPIC, QOS);
+        drivePub = this->create_publisher<controls_msgs::msg::Drivetrain>(
+            DRIVE_TOPIC, QOS);
 
         digMode = false;
         cooldown = false;
         last_time = 0;
     }
 
-  private:
+   private:
     void topic_callback(const sensor_msgs::msg::Joy &distribRaw)
     {
         int32_t cur_time = distribRaw.header.stamp.sec;
@@ -40,7 +44,8 @@ class Distributor : public rclcpp::Node
         }
 
         // Stop sequence activated
-        if (distribRaw.buttons[CTRL_STOP_SEQ_1] && distribRaw.buttons[CTRL_STOP_SEQ_2] &&
+        if (distribRaw.buttons[CTRL_STOP_SEQ_1] &&
+            distribRaw.buttons[CTRL_STOP_SEQ_2] &&
             distribRaw.buttons[CTRL_STOP_SEQ_3])
         {
             exit(0);
@@ -63,7 +68,8 @@ class Distributor : public rclcpp::Node
         // Drive controls
         if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0))
         {
-            driveSend.motors[DRIVE_L_MOTOR] = distribRaw.axes[CTRL_TANK_L_TREAD] * MAX_SPEED;
+            driveSend.motors[DRIVE_L_MOTOR] =
+                distribRaw.axes[CTRL_TANK_L_TREAD] * MAX_SPEED;
         }
         else
         {
@@ -72,7 +78,8 @@ class Distributor : public rclcpp::Node
 
         if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0))
         {
-            driveSend.motors[DRIVE_R_MOTOR] = distribRaw.axes[CTRL_TANK_R_TREAD] * MAX_SPEED;
+            driveSend.motors[DRIVE_R_MOTOR] =
+                distribRaw.axes[CTRL_TANK_R_TREAD] * MAX_SPEED;
         }
         else
         {

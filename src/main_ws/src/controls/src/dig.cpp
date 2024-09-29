@@ -10,27 +10,31 @@ using std::placeholders::_1;
 
 class Dig : public rclcpp::Node
 {
-  public:
+   public:
     Dig() : Node("dig")
     {
-        subscription_ = this->create_subscription<controls_msgs::msg::Dig>(DIG_TOPIC, QOS,
-                                                                           std::bind(&Dig::topic_callback, this, _1));
-        uart_link = this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
+        subscription_ = this->create_subscription<controls_msgs::msg::Dig>(
+            DIG_TOPIC, QOS, std::bind(&Dig::topic_callback, this, _1));
+        uart_link =
+            this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
     }
 
-  private:
+   private:
     controls_msgs::msg::Dig oldDig;
 
     void topic_callback(const controls_msgs::msg::Dig &digRaw)
     {
         /* reduce load by ignoring duplicate message */
-        if (APPROX(digRaw.lins, oldDig.lins) && APPROX(digRaw.motors, oldDig.motors))
+        if (APPROX(digRaw.lins, oldDig.lins) &&
+            APPROX(digRaw.motors, oldDig.motors))
         {
             return;
         }
 
-        RCLCPP_INFO_STREAM(this->get_logger(), "Dig act: [" << digRaw.lins << std::endl);
-        RCLCPP_INFO_STREAM(this->get_logger(), "Dig mot: [" << digRaw.motors << std::endl);
+        RCLCPP_INFO_STREAM(this->get_logger(),
+                           "Dig act: [" << digRaw.lins << std::endl);
+        RCLCPP_INFO_STREAM(this->get_logger(),
+                           "Dig mot: [" << digRaw.motors << std::endl);
         oldDig = digRaw;
 
         controls_msgs::msg::Uart send;

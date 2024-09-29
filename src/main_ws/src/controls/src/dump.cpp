@@ -11,15 +11,16 @@ using std::placeholders::_1;
 
 class Dump : public rclcpp::Node
 {
-  public:
+   public:
     Dump() : Node("dump")
     {
-        subscription_ = this->create_subscription<controls_msgs::msg::Dump>(DUMP_TOPIC, QOS,
-                                                                            std::bind(&Dump::topic_callback, this, _1));
-        uart_link = this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
+        subscription_ = this->create_subscription<controls_msgs::msg::Dump>(
+            DUMP_TOPIC, QOS, std::bind(&Dump::topic_callback, this, _1));
+        uart_link =
+            this->create_publisher<controls_msgs::msg::Uart>(UART_TOPIC, QOS);
     }
 
-  private:
+   private:
     controls_msgs::msg::Dump oldDump;
 
     void topic_callback(const controls_msgs::msg::Dump &dumpRaw)
@@ -30,7 +31,8 @@ class Dump : public rclcpp::Node
             return;
         }
 
-        RCLCPP_INFO_STREAM(this->get_logger(), "Dump act: [" << dumpRaw.lins << std::endl);
+        RCLCPP_INFO_STREAM(this->get_logger(),
+                           "Dump act: [" << dumpRaw.lins << std::endl);
 
         oldDump = dumpRaw;
 

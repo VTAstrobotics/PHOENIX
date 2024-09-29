@@ -19,11 +19,6 @@ RUN apt-get install -y lsb-release \
     && apt-get install -y clang-format-16 \
     && ln -s $(which clang-format-16) /usr/local/bin/clang-format
 
-# RUN wget "http://releases.llvm.org/9.0.0/clang+llvm-9.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz" -O clang.tar.xz && \
-#     tar xf clang.tar.xz && \
-#     cd clang* && \
-#     cp -R * /usr/local
-
 COPY .clang-format /.clang-format
 
 COPY entrypoint.sh /entrypoint.sh

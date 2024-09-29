@@ -32,7 +32,7 @@ SRC=$(git ls-tree --full-tree -r HEAD | grep -e "\.\(c\|h\|hpp\|cpp\)\$" | cut -
 clang-format -style=microsoft -i $SRC
 
 echo "## Commiting files..."
-git commit -a -m "apply clang-format" || true
+git commit -am "apply clang-format" || true
 
 echo "## Pushing to $BRANCH"
 git push -u origin $BRANCH

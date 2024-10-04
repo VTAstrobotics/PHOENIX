@@ -24,7 +24,7 @@ USER $USERNAME
 # Add user to video group to allow access to webcam
 RUN sudo usermod --append --groups video $USERNAME
 
-# Update all packages
+# Update all packages (bloat, but dev container so we feel worth it. do not recommend for final container)
 RUN sudo apt update && sudo apt upgrade -y
 
 # Install Git

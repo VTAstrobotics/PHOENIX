@@ -51,20 +51,6 @@ class Distributor : public rclcpp::Node
             exit(0);
         }
 
-        // dump any errors to console (Is this needed anymore?)
-        if (distribRaw.buttons[CTRL_DUMP_ERRORS] && !cooldown)
-        {
-            cooldown = true;
-            last_time = cur_time;
-        }
-
-        // clear any errors on board (Is this needed anymore?)
-        if (distribRaw.buttons[CTRL_CLEAR_ERRORS] && !cooldown)
-        {
-            cooldown = true;
-            last_time = cur_time;
-        }
-
         // Drive controls
         if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0))
         {

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Changing directory"
-cd src/main_ws
+cd /workspaces/PHOENIX/src/main_ws
 
 echo "Sourcing"
 source install/setup.bash

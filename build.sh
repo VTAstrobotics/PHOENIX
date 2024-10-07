@@ -2,7 +2,7 @@
 
 printf "\nbuild.sh:\n"
 echo "Changing directory"
-cd src/main_ws
+cd /workspaces/PHOENIX/src/main_ws
 
 echo "Building project"
 colcon build --symlink-install

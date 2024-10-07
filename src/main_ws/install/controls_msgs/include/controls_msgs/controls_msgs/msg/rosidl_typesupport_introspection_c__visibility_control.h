@@ -1,0 +1,1 @@
+/workspaces/PHOENIX/src/main_ws/build/controls_msgs/rosidl_typesupport_introspection_c/controls_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

@@ -1,0 +1,9 @@
+{
+  "package_name": "controls_msgs",
+  "non_idl_tuples": [
+    "/workspaces/PHOENIX/src/main_ws/src/controls_msgs:msg/Dump.msg",
+    "/workspaces/PHOENIX/src/main_ws/src/controls_msgs:msg/Drivetrain.msg",
+    "/workspaces/PHOENIX/src/main_ws/src/controls_msgs:msg/Dig.msg",
+    "/workspaces/PHOENIX/src/main_ws/src/controls_msgs:msg/Uart.msg"
+  ]
+}

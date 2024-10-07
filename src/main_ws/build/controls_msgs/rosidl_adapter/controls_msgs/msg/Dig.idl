@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from controls_msgs/msg/Dig.msg
+// generated code does not contain a copyright notice
+
+
+module controls_msgs {
+  module msg {
+    struct Dig {
+      double motors;
+
+      double lins;
+    };
+  };
+};

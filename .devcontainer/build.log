@@ -1,0 +1,22 @@
+entrypoint.sh:
+
+build.sh:
+Changing directory
+Building project
+Starting >>> controls_msgs
+Starting >>> drive_station
+Starting >>> perception
+Finished <<< drive_station [1.63s]
+Finished <<< controls_msgs [6.38s]
+Starting >>> controls
+Finished <<< perception [12.7s]
+Finished <<< controls [12.2s]
+Starting >>> teleop
+Finished <<< teleop [9.04s]
+
+Summary: 5 packages finished [27.9s]
+Sourcing
+build.sh done.
+
+chmod: cannot access '/dev/input/event*': No such file or directory
+chmod: cannot access '/dev/input/js*': No such file or directory

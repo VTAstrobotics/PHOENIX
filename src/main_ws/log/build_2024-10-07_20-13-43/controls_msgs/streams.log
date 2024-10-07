@@ -1,0 +1,274 @@
+[0.031s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/controls_msgs
+[0.279s] -- The C compiler identification is GNU 11.4.0
+[0.416s] -- The CXX compiler identification is GNU 11.4.0
+[0.423s] -- Detecting C compiler ABI info
+[0.514s] -- Detecting C compiler ABI info - done
+[0.521s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.522s] -- Detecting C compile features
+[0.522s] -- Detecting C compile features - done
+[0.525s] -- Detecting CXX compiler ABI info
+[0.619s] -- Detecting CXX compiler ABI info - done
+[0.624s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.624s] -- Detecting CXX compile features
+[0.624s] -- Detecting CXX compile features - done
+[0.634s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.794s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.877s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.935s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.944s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.956s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.032s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.646s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.962s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.326s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.354s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.361s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.410s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.410s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.410s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.410s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.447s] -- Found PythonExtra: .so  
+[2.493s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.518s] -- Added test 'lint_cmake' to check CMake code style
+[2.519s] -- Added test 'xmllint' to check XML markup files
+[2.522s] -- Configuring done
+[2.561s] -- Generating done
+[2.563s] -- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/controls_msgs
+[2.571s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/controls_msgs
+[2.571s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls_msgs -- -j20 -l20
+[2.601s] [  1%] Generating C code for ROS interfaces
+[2.608s] [  3%] Generating C++ code for ROS interfaces
+[2.615s] [  3%] Built target ament_cmake_python_symlink_controls_msgs
+[2.846s] running egg_info
+[2.847s] creating controls_msgs.egg-info
+[2.848s] writing controls_msgs.egg-info/PKG-INFO
+[2.848s] writing dependency_links to controls_msgs.egg-info/dependency_links.txt
+[2.848s] writing top-level names to controls_msgs.egg-info/top_level.txt
+[2.848s] writing manifest file 'controls_msgs.egg-info/SOURCES.txt'
+[2.851s] reading manifest file 'controls_msgs.egg-info/SOURCES.txt'
+[2.852s] writing manifest file 'controls_msgs.egg-info/SOURCES.txt'
+[2.877s] [  3%] Built target ament_cmake_python_build_controls_msgs_egg
+[2.981s] [  3%] Built target controls_msgs__cpp
+[2.990s] [  5%] Generating C++ introspection for ROS interfaces
+[2.992s] [  9%] Generating C++ type support for eProsima Fast-RTPS
+[2.992s] [  9%] Generating C++ type support dispatch for ROS interfaces
+[3.020s] [ 12%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/drivetrain__functions.c.o
+[3.021s] [ 12%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/dig__functions.c.o
+[3.021s] [ 14%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/dump__functions.c.o
+[3.027s] [ 16%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/uart__functions.c.o
+[3.078s] [ 18%] Linking C shared library libcontrols_msgs__rosidl_generator_c.so
+[3.114s] [ 18%] Built target controls_msgs__rosidl_generator_c
+[3.124s] [ 21%] Generating C type support dispatch for ROS interfaces
+[3.124s] [ 21%] Generating C introspection for ROS interfaces
+[3.124s] [ 23%] Generating C type support for eProsima Fast-RTPS
+[3.344s] [ 27%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/drivetrain__type_support.cpp.o
+[3.344s] [ 27%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/dump__type_support.cpp.o
+[3.345s] [ 29%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/dig__type_support.cpp.o
+[3.347s] [ 30%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/uart__type_support.cpp.o
+[3.429s] [ 32%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/drivetrain__type_support.cpp.o
+[3.429s] [ 34%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/dump__type_support.cpp.o
+[3.445s] [ 36%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/uart__type_support.cpp.o
+[3.446s] [ 38%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/dig__type_support.cpp.o
+[3.476s] [ 40%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/dump__type_support.cpp.o
+[3.476s] [ 41%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/drivetrain__type_support.cpp.o
+[3.476s] [ 43%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/dig__type_support.cpp.o
+[3.488s] [ 45%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/uart__type_support.cpp.o
+[3.536s] [ 47%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/dig__type_support.cpp.o
+[3.545s] [ 49%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/dump__type_support.cpp.o
+[3.554s] [ 50%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/uart__type_support.cpp.o
+[3.567s] [ 52%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/drivetrain__type_support.cpp.o
+[3.879s] [ 54%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_c.so
+[3.890s] [ 58%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/uart__type_support.c.o
+[3.897s] [ 58%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/drivetrain__type_support.c.o
+[3.910s] [ 60%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/dump__type_support.c.o
+[4.012s] [ 61%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/dump__type_support_c.cpp.o
+[4.012s] [ 63%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/dig__type_support.c.o
+[4.058s] [ 65%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/drivetrain__type_support_c.cpp.o
+[4.067s] [ 67%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/uart__type_support_c.cpp.o
+[4.089s] [ 69%] Linking C shared library libcontrols_msgs__rosidl_typesupport_introspection_c.so
+[4.101s] [ 70%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/dig__type_support_c.cpp.o
+[4.140s] [ 70%] Built target controls_msgs__rosidl_typesupport_c
+[4.146s] [ 72%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_cpp.so
+[4.153s] [ 72%] Built target controls_msgs__rosidl_typesupport_introspection_c
+[4.223s] [ 72%] Built target controls_msgs__rosidl_typesupport_cpp
+[4.546s] [ 74%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_introspection_cpp.so
+[4.573s] [ 76%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.610s] [ 78%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_fastrtps_c.so
+[4.629s] [ 78%] Built target controls_msgs__rosidl_typesupport_introspection_cpp
+[4.647s] [ 78%] Built target controls_msgs__rosidl_typesupport_fastrtps_cpp
+[4.674s] [ 78%] Built target controls_msgs__rosidl_typesupport_fastrtps_c
+[4.687s] [ 78%] Built target controls_msgs
+[4.701s] [ 80%] Generating Python code for ROS interfaces
+[5.194s] [ 80%] Built target controls_msgs__py
+[5.208s] [ 81%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_dump_s.c.o
+[5.208s] [ 83%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_drivetrain_s.c.o
+[5.210s] [ 85%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_dig_s.c.o
+[5.210s] [ 87%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_uart_s.c.o
+[5.329s] [ 89%] Linking C shared library rosidl_generator_py/controls_msgs/libcontrols_msgs__rosidl_generator_py.so
+[5.361s] [ 89%] Built target controls_msgs__rosidl_generator_py
+[5.376s] [ 90%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[5.377s] [ 92%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_c.c.o
+[5.378s] [ 94%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[5.463s] [ 96%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.466s] [ 98%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.467s] [100%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.488s] [100%] Built target controls_msgs__rosidl_typesupport_introspection_c__pyext
+[5.488s] [100%] Built target controls_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.488s] [100%] Built target controls_msgs__rosidl_typesupport_c__pyext
+[5.496s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls_msgs -- -j20 -l20
+[5.580s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls_msgs
+[5.586s] -- Install configuration: ""
+[5.587s] -- Execute custom install script
+[5.588s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/rosidl_interfaces/controls_msgs
+[5.596s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__functions.h
+[5.601s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__struct.h
+[5.607s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__type_support.h
+[5.613s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__functions.h
+[5.618s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__struct.h
+[5.624s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__type_support.h
+[5.630s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__functions.h
+[5.636s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__struct.h
+[5.642s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__type_support.h
+[5.648s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__functions.h
+[5.653s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__struct.h
+[5.659s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__type_support.h
+[5.665s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dig.h
+[5.671s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/drivetrain.h
+[5.678s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dump.h
+[5.684s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.690s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/uart.h
+[5.698s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/library_path.sh
+[5.704s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/library_path.dsv
+[5.709s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_fastrtps_c.h
+[5.715s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_fastrtps_c.h
+[5.721s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_fastrtps_c.h
+[5.726s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_fastrtps_c.h
+[5.731s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.737s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_introspection_c.h
+[5.742s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_introspection_c.h
+[5.749s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_introspection_c.h
+[5.755s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_introspection_c.h
+[5.760s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.768s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__builder.hpp
+[5.774s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__struct.hpp
+[5.779s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__traits.hpp
+[5.785s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__builder.hpp
+[5.790s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__struct.hpp
+[5.795s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__traits.hpp
+[5.802s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__builder.hpp
+[5.807s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__struct.hpp
+[5.813s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__traits.hpp
+[5.818s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__builder.hpp
+[5.824s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__struct.hpp
+[5.829s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__traits.hpp
+[5.835s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dig.hpp
+[5.840s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/drivetrain.hpp
+[5.846s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dump.hpp
+[5.853s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/uart.hpp
+[5.859s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_fastrtps_cpp.hpp
+[5.864s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_fastrtps_cpp.hpp
+[5.869s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_fastrtps_cpp.hpp
+[5.874s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_fastrtps_cpp.hpp
+[5.880s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.887s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_introspection_cpp.hpp
+[5.893s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_introspection_cpp.hpp
+[5.898s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_introspection_cpp.hpp
+[5.903s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_introspection_cpp.hpp
+[5.909s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/pythonpath.sh
+[5.914s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/pythonpath.dsv
+[5.920s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[5.926s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.932s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.938s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[5.944s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/__init__.py
+[5.949s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_c.c
+[5.955s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.960s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.966s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.971s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.976s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.982s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/libcontrols_msgs__rosidl_generator_py.so
+[5.988s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/__init__.py
+[5.994s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig.py
+[5.999s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig_s.c
+[6.005s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain.py
+[6.011s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain_s.c
+[6.017s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump.py
+[6.022s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump_s.c
+[6.028s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart.py
+[6.033s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart_s.c
+[6.039s] -- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.040s] -- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.040s] -- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.040s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dump.idl
+[6.045s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Drivetrain.idl
+[6.052s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dig.idl
+[6.058s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Uart.idl
+[6.064s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dump.msg
+[6.070s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Drivetrain.msg
+[6.076s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dig.msg
+[6.081s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Uart.msg
+[6.087s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/package_run_dependencies/controls_msgs
+[6.093s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/parent_prefix_path/controls_msgs
+[6.099s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/ament_prefix_path.sh
+[6.105s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/ament_prefix_path.dsv
+[6.111s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/path.sh
+[6.117s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/path.dsv
+[6.123s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.bash
+[6.129s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.sh
+[6.135s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.zsh
+[6.143s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.dsv
+[6.149s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/package.dsv
+[6.156s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/packages/controls_msgs
+[6.162s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake-extras.cmake
+[6.168s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.173s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.180s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.185s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.191s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.197s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.203s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgsConfig.cmake
+[6.209s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgsConfig-version.cmake
+[6.215s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/package.xml
+[6.222s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_c.so
+[6.223s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_c.so" to ""
+[6.224s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_c.so
+[6.224s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[6.224s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_c.so
+[6.225s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.225s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_c.so
+[6.225s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_c.so" to ""
+[6.225s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.225s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.225s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_cpp.so
+[6.225s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.225s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_cpp.so
+[6.225s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_cpp.so" to ""
+[6.263s] Listing '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs'...
+[6.263s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/__init__.py'...
+[6.264s] Listing '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg'...
+[6.264s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/__init__.py'...
+[6.264s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig.py'...
+[6.264s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain.py'...
+[6.264s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump.py'...
+[6.264s] Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart.py'...
+[6.268s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_py.so
+[6.269s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_py.so" to ""
+[6.269s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cExport.cmake
+[6.269s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.269s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cppExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cppExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_pyExport.cmake
+[6.270s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_pyExport-noconfig.cmake
+[6.272s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls_msgs

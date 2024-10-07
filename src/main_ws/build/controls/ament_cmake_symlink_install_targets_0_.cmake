@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspaces/PHOENIX/src/main_ws/build/controls/drivetrain" "/workspaces/PHOENIX/src/main_ws/build/controls/dig" "/workspaces/PHOENIX/src/main_ws/build/controls/dump" "/workspaces/PHOENIX/src/main_ws/build/controls/uart" "TARGETS" "drivetrain" "dig" "dump" "uart" "DESTINATION" "lib/controls")

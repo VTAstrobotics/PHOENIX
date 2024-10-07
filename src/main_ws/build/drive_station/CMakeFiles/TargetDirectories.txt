@@ -1,0 +1,9 @@
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/uninstall.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/drive_station_uninstall.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/test.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/edit_cache.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/rebuild_cache.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/list_install_components.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/install.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/install/local.dir
+/workspaces/PHOENIX/src/main_ws/build/drive_station/CMakeFiles/install/strip.dir

@@ -1,0 +1,73 @@
+[0.010s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/teleop
+[0.048s] -- The C compiler identification is GNU 11.4.0
+[0.087s] -- The CXX compiler identification is GNU 11.4.0
+[0.092s] -- Detecting C compiler ABI info
+[0.139s] -- Detecting C compiler ABI info - done
+[0.143s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.144s] -- Detecting C compile features
+[0.144s] -- Detecting C compile features - done
+[0.146s] -- Detecting CXX compiler ABI info
+[0.202s] -- Detecting CXX compiler ABI info - done
+[0.208s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.208s] -- Detecting CXX compile features
+[0.208s] -- Detecting CXX compile features - done
+[0.210s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.340s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.395s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.419s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.453s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.456s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.465s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.475s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.488s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.522s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.524s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.595s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.617s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.651s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.658s] -- Looking for pthread.h
+[0.709s] -- Looking for pthread.h - found
+[0.709s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.759s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.759s] -- Found Threads: TRUE  
+[0.800s] -- Found controls_msgs: 0.0.0 (/workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake)
+[0.806s] -- Found controls: 0.0.1 (/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake)
+[0.809s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.860s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.927s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.927s] -- Configured cppcheck include dirs: 
+[0.927s] -- Configured cppcheck exclude dirs and/or files: 
+[0.928s] -- Added test 'lint_cmake' to check CMake code style
+[0.929s] -- Added test 'uncrustify' to check C / C++ code style
+[0.929s] -- Configured uncrustify additional arguments: 
+[0.930s] -- Added test 'xmllint' to check XML markup files
+[0.931s] -- Configuring done
+[0.942s] -- Generating done
+[0.943s] -- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/teleop
+[0.951s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/teleop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/teleop
+[0.952s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j20 -l20
+[0.984s] [ 50%] Building CXX object CMakeFiles/distrib.dir/src/distrib.cpp.o
+[8.567s] [100%] Linking CXX executable distrib
+[8.884s] [100%] Built target distrib
+[8.894s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j20 -l20
+[8.910s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop
+[8.916s] -- Install configuration: ""
+[8.917s] -- Execute custom install script
+[8.918s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/lib/teleop/distrib
+[8.924s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/launch/launch.yaml
+[8.931s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop
+[8.936s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop
+[8.942s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.sh
+[8.948s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.dsv
+[8.953s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.sh
+[8.958s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.dsv
+[8.964s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.bash
+[8.970s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.sh
+[8.975s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.zsh
+[8.980s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.dsv
+[8.985s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv
+[8.992s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/packages/teleop
+[8.997s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig.cmake
+[9.003s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig-version.cmake
+[9.008s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.xml
+[9.015s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': AMENT_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop

@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from controls_msgs/msg/Dump.msg
+// generated code does not contain a copyright notice
+
+
+module controls_msgs {
+  module msg {
+    struct Dump {
+      double lins;
+    };
+  };
+};

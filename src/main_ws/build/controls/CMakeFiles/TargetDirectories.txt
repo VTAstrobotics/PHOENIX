@@ -1,0 +1,13 @@
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/uninstall.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/controls_uninstall.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/drivetrain.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/dig.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/dump.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/uart.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/test.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/edit_cache.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/rebuild_cache.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/list_install_components.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/install.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/install/local.dir
+/workspaces/PHOENIX/src/main_ws/build/controls/CMakeFiles/install/strip.dir

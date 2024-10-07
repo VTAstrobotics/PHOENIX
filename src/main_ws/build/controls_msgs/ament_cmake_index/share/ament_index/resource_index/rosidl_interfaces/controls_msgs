@@ -1,0 +1,8 @@
+msg/Dig.idl
+msg/Dig.msg
+msg/Drivetrain.idl
+msg/Drivetrain.msg
+msg/Dump.idl
+msg/Dump.msg
+msg/Uart.idl
+msg/Uart.msg

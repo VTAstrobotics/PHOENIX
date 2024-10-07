@@ -1,0 +1,69 @@
+[0.019s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/perception -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/perception
+[0.260s] -- The C compiler identification is GNU 11.4.0
+[0.396s] -- The CXX compiler identification is GNU 11.4.0
+[0.404s] -- Detecting C compiler ABI info
+[0.490s] -- Detecting C compiler ABI info - done
+[0.499s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.500s] -- Detecting C compile features
+[0.502s] -- Detecting C compile features - done
+[0.505s] -- Detecting CXX compiler ABI info
+[0.600s] -- Detecting CXX compiler ABI info - done
+[0.605s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.606s] -- Detecting CXX compile features
+[0.606s] -- Detecting CXX compile features - done
+[0.615s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.778s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.855s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.916s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.994s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.000s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.013s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.037s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.058s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.168s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.180s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.507s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.585s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.653s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.674s] -- Looking for pthread.h
+[1.837s] -- Looking for pthread.h - found
+[1.838s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.952s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.954s] -- Found Threads: TRUE  
+[2.080s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.200s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.200s] -- Configured cppcheck include dirs: 
+[2.200s] -- Configured cppcheck exclude dirs and/or files: 
+[2.201s] -- Added test 'lint_cmake' to check CMake code style
+[2.201s] -- Added test 'uncrustify' to check C / C++ code style
+[2.202s] -- Configured uncrustify additional arguments: 
+[2.202s] -- Added test 'xmllint' to check XML markup files
+[2.203s] -- Configuring done
+[2.221s] -- Generating done
+[2.223s] -- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/perception
+[2.237s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/perception -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/perception
+[2.238s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j20 -l20
+[2.298s] [ 50%] Building CXX object CMakeFiles/camera.dir/src/camera.cpp.o
+[12.121s] [100%] Linking CXX executable camera
+[12.523s] [100%] Built target camera
+[12.532s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j20 -l20
+[12.551s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception
+[12.556s] -- Install configuration: ""
+[12.556s] -- Execute custom install script
+[12.558s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/lib/perception/camera
+[12.566s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/package_run_dependencies/perception
+[12.573s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/parent_prefix_path/perception
+[12.582s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.sh
+[12.588s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.dsv
+[12.597s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.sh
+[12.604s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.dsv
+[12.610s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.bash
+[12.617s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.sh
+[12.624s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.zsh
+[12.630s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.dsv
+[12.637s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.dsv
+[12.646s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/packages/perception
+[12.652s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig.cmake
+[12.659s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig-version.cmake
+[12.668s] -- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.xml
+[12.675s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception

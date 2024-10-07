@@ -1,0 +1,4 @@
+/workspaces/PHOENIX/src/main_ws/build/controls_msgs/rosidl_adapter/controls_msgs:msg/Dump.idl
+/workspaces/PHOENIX/src/main_ws/build/controls_msgs/rosidl_adapter/controls_msgs:msg/Drivetrain.idl
+/workspaces/PHOENIX/src/main_ws/build/controls_msgs/rosidl_adapter/controls_msgs:msg/Dig.idl
+/workspaces/PHOENIX/src/main_ws/build/controls_msgs/rosidl_adapter/controls_msgs:msg/Uart.idl

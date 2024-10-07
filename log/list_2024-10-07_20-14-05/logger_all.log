@@ -1,0 +1,183 @@
+[0.084s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/workspaces/PHOENIX']
+[0.084s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/workspaces/PHOENIX'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f4988c808e0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f4988c4bac0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f4988c4bac0>>, mixin_verb=('list',))
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.229s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/PHOENIX'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/log) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/log) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/log) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/build) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/build) ignored
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/install) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/install) ignored
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/log) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/log) ignored
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'python'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extensions ['python_setup_py']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/main_ws/src/controls' with type 'ros.ament_cmake' and name 'controls'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/controls_msgs) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/main_ws/src/controls_msgs' with type 'ros.ament_cmake' and name 'controls_msgs'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/drive_station) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/main_ws/src/drive_station' with type 'ros.ament_cmake' and name 'drive_station'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/perception) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/main_ws/src/perception' with type 'ros.ament_cmake' and name 'perception'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/main_ws/src/teleop) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/main_ws/src/teleop' with type 'ros.ament_cmake' and name 'teleop'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'ros'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['cmake', 'python']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/build) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/build) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/install) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/install) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/log) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/log) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/build) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/build) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/install) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/install) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/log) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/log) ignored
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/PHOENIX/src/micro_ws/src/micro_controls) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/PHOENIX/src/micro_ws/src/micro_controls' with type 'ros.ament_cmake' and name 'micro_controls'
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

@@ -1,0 +1,851 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (controls_msgs) JobQueued: {'identifier': 'controls_msgs', 'dependencies': OrderedDict()}
+[0.000569] (drive_station) JobQueued: {'identifier': 'drive_station', 'dependencies': OrderedDict()}
+[0.000648] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict()}
+[0.000716] (controls) JobQueued: {'identifier': 'controls', 'dependencies': OrderedDict([('controls_msgs', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs')])}
+[0.000785] (teleop) JobQueued: {'identifier': 'teleop', 'dependencies': OrderedDict([('controls_msgs', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs'), ('controls', '/workspaces/PHOENIX/src/main_ws/install/controls')])}
+[0.001899] (controls_msgs) JobStarted: {'identifier': 'controls_msgs'}
+[0.017758] (drive_station) JobStarted: {'identifier': 'drive_station'}
+[0.021501] (perception) JobStarted: {'identifier': 'perception'}
+[0.028389] (controls_msgs) JobProgress: {'identifier': 'controls_msgs', 'progress': 'cmake'}
+[0.028839] (controls_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/PHOENIX/src/main_ws/src/controls_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/controls_msgs'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.033278] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'cmake'}
+[0.033706] (drive_station) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/PHOENIX/src/main_ws/src/drive_station', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/drive_station'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/drive_station'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.037940] (perception) JobProgress: {'identifier': 'perception', 'progress': 'cmake'}
+[0.038786] (perception) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/PHOENIX/src/main_ws/src/perception', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/perception'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/perception', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/perception'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099623] (-) TimerEvent: {}
+[0.199896] (-) TimerEvent: {}
+[0.280852] (controls_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.281144] (perception) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.281202] (drive_station) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300003] (-) TimerEvent: {}
+[0.400231] (-) TimerEvent: {}
+[0.413869] (drive_station) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.417324] (perception) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.417510] (controls_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.424959] (controls_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.425201] (perception) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.425334] (drive_station) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500371] (-) TimerEvent: {}
+[0.511771] (perception) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.515721] (drive_station) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.515949] (controls_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.520710] (perception) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.521714] (perception) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.522072] (drive_station) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.522636] (drive_station) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.522840] (drive_station) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.523092] (controls_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.523438] (perception) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.523532] (controls_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.523596] (controls_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.526191] (controls_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.526498] (drive_station) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.526589] (perception) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600489] (-) TimerEvent: {}
+[0.617114] (drive_station) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.620563] (controls_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.621800] (perception) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.622282] (drive_station) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.622594] (drive_station) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.622767] (drive_station) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.625530] (controls_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.625828] (controls_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.626080] (controls_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.626802] (perception) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.627076] (perception) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.627463] (perception) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.636054] (perception) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.636219] (drive_station) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.636271] (controls_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.700617] (-) TimerEvent: {}
+[0.786824] (drive_station) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.795488] (controls_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.799323] (perception) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.800730] (-) TimerEvent: {}
+[0.876791] (perception) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.878318] (drive_station) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.878466] (controls_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.900920] (-) TimerEvent: {}
+[0.936988] (controls_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.937143] (perception) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.937215] (drive_station) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.945836] (controls_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.957679] (controls_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.001023] (-) TimerEvent: {}
+[1.015016] (perception) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.021286] (perception) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.034175] (controls_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.034426] (perception) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.058169] (perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.079385] (perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.091090] (drive_station) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.093641] (drive_station) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.097892] (drive_station) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.101148] (-) TimerEvent: {}
+[1.113119] (drive_station) StdoutLine: {'line': b'-- Generating done\n'}
+[1.116538] (drive_station) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/drive_station\n'}
+[1.124207] (drive_station) CommandEnded: {'returncode': 0}
+[1.125158] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'build'}
+[1.126413] (drive_station) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/drive_station', '--', '-j20', '-l20'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/drive_station'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.189505] (perception) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.200722] (perception) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201142] (-) TimerEvent: {}
+[1.222068] (drive_station) CommandEnded: {'returncode': 0}
+[1.283015] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'install'}
+[1.301568] (-) TimerEvent: {}
+[1.303025] (drive_station) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/drive_station'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/drive_station'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.322757] (drive_station) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.324034] (drive_station) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.326540] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/package_run_dependencies/drive_station\n'}
+[1.345863] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/parent_prefix_path/drive_station\n'}
+[1.361333] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.sh\n'}
+[1.375266] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.dsv\n'}
+[1.392173] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.sh\n'}
+[1.402087] (-) TimerEvent: {}
+[1.402906] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.dsv\n'}
+[1.414045] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.bash\n'}
+[1.427280] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.sh\n'}
+[1.446364] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.zsh\n'}
+[1.459293] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.dsv\n'}
+[1.478139] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv\n'}
+[1.493649] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/packages/drive_station\n'}
+[1.502212] (-) TimerEvent: {}
+[1.504457] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig.cmake\n'}
+[1.517874] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig-version.cmake\n'}
+[1.528342] (drive_station) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.xml\n'}
+[1.528571] (perception) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.542364] (drive_station) CommandEnded: {'returncode': 0}
+[1.602331] (-) TimerEvent: {}
+[1.606380] (perception) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.646514] (drive_station) JobEnded: {'identifier': 'drive_station', 'rc': 0}
+[1.647909] (controls_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.674585] (perception) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.695205] (perception) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.702434] (-) TimerEvent: {}
+[1.802628] (-) TimerEvent: {}
+[1.857598] (perception) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.859236] (perception) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.902753] (-) TimerEvent: {}
+[1.963491] (controls_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.973558] (perception) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.975022] (perception) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.002908] (-) TimerEvent: {}
+[2.101108] (perception) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.103035] (-) TimerEvent: {}
+[2.203263] (-) TimerEvent: {}
+[2.221290] (perception) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.221556] (perception) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.221837] (perception) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.222272] (perception) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.222746] (perception) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.222917] (perception) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.223401] (perception) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.224385] (perception) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.242805] (perception) StdoutLine: {'line': b'-- Generating done\n'}
+[2.244805] (perception) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/perception\n'}
+[2.257441] (perception) CommandEnded: {'returncode': 0}
+[2.259624] (perception) JobProgress: {'identifier': 'perception', 'progress': 'build'}
+[2.259780] (perception) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/perception', '--', '-j20', '-l20'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/perception', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/perception'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.303448] (-) TimerEvent: {}
+[2.318978] (perception) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/camera.dir/src/camera.cpp.o\n'}
+[2.327773] (controls_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.355937] (controls_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.362335] (controls_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.403601] (-) TimerEvent: {}
+[2.411611] (controls_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.411860] (controls_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.411923] (controls_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.411981] (controls_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.448708] (controls_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.494556] (controls_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.503823] (-) TimerEvent: {}
+[2.519854] (controls_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.520576] (controls_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.523957] (controls_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.563057] (controls_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.565008] (controls_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/controls_msgs\n'}
+[2.570638] (controls_msgs) CommandEnded: {'returncode': 0}
+[2.573196] (controls_msgs) JobProgress: {'identifier': 'controls_msgs', 'progress': 'build'}
+[2.573233] (controls_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/controls_msgs', '--', '-j20', '-l20'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.602401] (controls_msgs) StdoutLine: {'line': b'[  1%] Generating C code for ROS interfaces\n'}
+[2.603952] (-) TimerEvent: {}
+[2.609494] (controls_msgs) StdoutLine: {'line': b'[  3%] Generating C++ code for ROS interfaces\n'}
+[2.616443] (controls_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_controls_msgs\n'}
+[2.704099] (-) TimerEvent: {}
+[2.804365] (-) TimerEvent: {}
+[2.848067] (controls_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.848616] (controls_msgs) StdoutLine: {'line': b'creating controls_msgs.egg-info\n'}
+[2.849143] (controls_msgs) StdoutLine: {'line': b'writing controls_msgs.egg-info/PKG-INFO\n'}
+[2.849585] (controls_msgs) StdoutLine: {'line': b'writing dependency_links to controls_msgs.egg-info/dependency_links.txt\n'}
+[2.849683] (controls_msgs) StdoutLine: {'line': b'writing top-level names to controls_msgs.egg-info/top_level.txt\n'}
+[2.849762] (controls_msgs) StdoutLine: {'line': b"writing manifest file 'controls_msgs.egg-info/SOURCES.txt'\n"}
+[2.852853] (controls_msgs) StdoutLine: {'line': b"reading manifest file 'controls_msgs.egg-info/SOURCES.txt'\n"}
+[2.853493] (controls_msgs) StdoutLine: {'line': b"writing manifest file 'controls_msgs.egg-info/SOURCES.txt'\n"}
+[2.878534] (controls_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_controls_msgs_egg\n'}
+[2.904539] (-) TimerEvent: {}
+[2.983264] (controls_msgs) StdoutLine: {'line': b'[  3%] Built target controls_msgs__cpp\n'}
+[2.992227] (controls_msgs) StdoutLine: {'line': b'[  5%] Generating C++ introspection for ROS interfaces\n'}
+[2.993436] (controls_msgs) StdoutLine: {'line': b'[  9%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[2.993633] (controls_msgs) StdoutLine: {'line': b'[  9%] Generating C++ type support dispatch for ROS interfaces\n'}
+[3.004678] (-) TimerEvent: {}
+[3.022238] (controls_msgs) StdoutLine: {'line': b'[ 12%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/drivetrain__functions.c.o\n'}
+[3.022455] (controls_msgs) StdoutLine: {'line': b'[ 12%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/dig__functions.c.o\n'}
+[3.022535] (controls_msgs) StdoutLine: {'line': b'[ 14%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/dump__functions.c.o\n'}
+[3.028376] (controls_msgs) StdoutLine: {'line': b'[ 16%] Building C object CMakeFiles/controls_msgs__rosidl_generator_c.dir/rosidl_generator_c/controls_msgs/msg/detail/uart__functions.c.o\n'}
+[3.080258] (controls_msgs) StdoutLine: {'line': b'[ 18%] Linking C shared library libcontrols_msgs__rosidl_generator_c.so\n'}
+[3.104823] (-) TimerEvent: {}
+[3.116142] (controls_msgs) StdoutLine: {'line': b'[ 18%] Built target controls_msgs__rosidl_generator_c\n'}
+[3.125649] (controls_msgs) StdoutLine: {'line': b'[ 21%] Generating C type support dispatch for ROS interfaces\n'}
+[3.125977] (controls_msgs) StdoutLine: {'line': b'[ 21%] Generating C introspection for ROS interfaces\n'}
+[3.126035] (controls_msgs) StdoutLine: {'line': b'[ 23%] Generating C type support for eProsima Fast-RTPS\n'}
+[3.204960] (-) TimerEvent: {}
+[3.305257] (-) TimerEvent: {}
+[3.345845] (controls_msgs) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/drivetrain__type_support.cpp.o\n'}
+[3.346157] (controls_msgs) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/dump__type_support.cpp.o\n'}
+[3.346945] (controls_msgs) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/dig__type_support.cpp.o\n'}
+[3.348400] (controls_msgs) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/controls_msgs/msg/uart__type_support.cpp.o\n'}
+[3.405391] (-) TimerEvent: {}
+[3.430404] (controls_msgs) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/drivetrain__type_support.cpp.o\n'}
+[3.430926] (controls_msgs) StdoutLine: {'line': b'[ 34%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/dump__type_support.cpp.o\n'}
+[3.445663] (controls_msgs) StdoutLine: {'line': b'[ 36%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/uart__type_support.cpp.o\n'}
+[3.447307] (controls_msgs) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/controls_msgs/msg/detail/dig__type_support.cpp.o\n'}
+[3.477467] (controls_msgs) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/dump__type_support.cpp.o\n'}
+[3.477766] (controls_msgs) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/drivetrain__type_support.cpp.o\n'}
+[3.478225] (controls_msgs) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/dig__type_support.cpp.o\n'}
+[3.489628] (controls_msgs) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/controls_msgs/msg/detail/dds_fastrtps/uart__type_support.cpp.o\n'}
+[3.505516] (-) TimerEvent: {}
+[3.538265] (controls_msgs) StdoutLine: {'line': b'[ 47%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/dig__type_support.cpp.o\n'}
+[3.546367] (controls_msgs) StdoutLine: {'line': b'[ 49%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/dump__type_support.cpp.o\n'}
+[3.555708] (controls_msgs) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/uart__type_support.cpp.o\n'}
+[3.568853] (controls_msgs) StdoutLine: {'line': b'[ 52%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/controls_msgs/msg/drivetrain__type_support.cpp.o\n'}
+[3.641429] (-) TimerEvent: {}
+[3.763651] (-) TimerEvent: {}
+[3.863906] (-) TimerEvent: {}
+[3.881124] (controls_msgs) StdoutLine: {'line': b'[ 54%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_c.so\n'}
+[3.891929] (controls_msgs) StdoutLine: {'line': b'[ 58%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/uart__type_support.c.o\n'}
+[3.898412] (controls_msgs) StdoutLine: {'line': b'[ 58%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/drivetrain__type_support.c.o\n'}
+[3.911710] (controls_msgs) StdoutLine: {'line': b'[ 60%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/dump__type_support.c.o\n'}
+[4.014059] (controls_msgs) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/dump__type_support_c.cpp.o\n'}
+[4.014251] (-) TimerEvent: {}
+[4.014273] (controls_msgs) StdoutLine: {'line': b'[ 63%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/controls_msgs/msg/detail/dig__type_support.c.o\n'}
+[4.060073] (controls_msgs) StdoutLine: {'line': b'[ 65%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/drivetrain__type_support_c.cpp.o\n'}
+[4.068379] (controls_msgs) StdoutLine: {'line': b'[ 67%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/uart__type_support_c.cpp.o\n'}
+[4.090744] (controls_msgs) StdoutLine: {'line': b'[ 69%] Linking C shared library libcontrols_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.103193] (controls_msgs) StdoutLine: {'line': b'[ 70%] Building CXX object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/controls_msgs/msg/detail/dig__type_support_c.cpp.o\n'}
+[4.114448] (-) TimerEvent: {}
+[4.141920] (controls_msgs) StdoutLine: {'line': b'[ 70%] Built target controls_msgs__rosidl_typesupport_c\n'}
+[4.147884] (controls_msgs) StdoutLine: {'line': b'[ 72%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_cpp.so\n'}
+[4.155111] (controls_msgs) StdoutLine: {'line': b'[ 72%] Built target controls_msgs__rosidl_typesupport_introspection_c\n'}
+[4.214579] (-) TimerEvent: {}
+[4.225149] (controls_msgs) StdoutLine: {'line': b'[ 72%] Built target controls_msgs__rosidl_typesupport_cpp\n'}
+[4.325706] (-) TimerEvent: {}
+[4.425982] (-) TimerEvent: {}
+[4.526304] (-) TimerEvent: {}
+[4.547737] (controls_msgs) StdoutLine: {'line': b'[ 74%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.574461] (controls_msgs) StdoutLine: {'line': b'[ 76%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.611325] (controls_msgs) StdoutLine: {'line': b'[ 78%] Linking CXX shared library libcontrols_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.626471] (-) TimerEvent: {}
+[4.631167] (controls_msgs) StdoutLine: {'line': b'[ 78%] Built target controls_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.649273] (controls_msgs) StdoutLine: {'line': b'[ 78%] Built target controls_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.675386] (controls_msgs) StdoutLine: {'line': b'[ 78%] Built target controls_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.689028] (controls_msgs) StdoutLine: {'line': b'[ 78%] Built target controls_msgs\n'}
+[4.702514] (controls_msgs) StdoutLine: {'line': b'[ 80%] Generating Python code for ROS interfaces\n'}
+[4.726647] (-) TimerEvent: {}
+[4.826890] (-) TimerEvent: {}
+[4.927143] (-) TimerEvent: {}
+[5.027347] (-) TimerEvent: {}
+[5.127577] (-) TimerEvent: {}
+[5.195640] (controls_msgs) StdoutLine: {'line': b'[ 80%] Built target controls_msgs__py\n'}
+[5.209790] (controls_msgs) StdoutLine: {'line': b'[ 81%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_dump_s.c.o\n'}
+[5.209936] (controls_msgs) StdoutLine: {'line': b'[ 83%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_drivetrain_s.c.o\n'}
+[5.211575] (controls_msgs) StdoutLine: {'line': b'[ 85%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_dig_s.c.o\n'}
+[5.211750] (controls_msgs) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/controls_msgs__rosidl_generator_py.dir/rosidl_generator_py/controls_msgs/msg/_uart_s.c.o\n'}
+[5.227792] (-) TimerEvent: {}
+[5.328011] (-) TimerEvent: {}
+[5.331101] (controls_msgs) StdoutLine: {'line': b'[ 89%] Linking C shared library rosidl_generator_py/controls_msgs/libcontrols_msgs__rosidl_generator_py.so\n'}
+[5.363223] (controls_msgs) StdoutLine: {'line': b'[ 89%] Built target controls_msgs__rosidl_generator_py\n'}
+[5.378042] (controls_msgs) StdoutLine: {'line': b'[ 90%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[5.378993] (controls_msgs) StdoutLine: {'line': b'[ 92%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_c.c.o\n'}
+[5.379458] (controls_msgs) StdoutLine: {'line': b'[ 94%] Building C object CMakeFiles/controls_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[5.428196] (-) TimerEvent: {}
+[5.464807] (controls_msgs) StdoutLine: {'line': b'[ 96%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.468117] (controls_msgs) StdoutLine: {'line': b'[ 98%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.468441] (controls_msgs) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.489566] (controls_msgs) StdoutLine: {'line': b'[100%] Built target controls_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.489858] (controls_msgs) StdoutLine: {'line': b'[100%] Built target controls_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.490285] (controls_msgs) StdoutLine: {'line': b'[100%] Built target controls_msgs__rosidl_typesupport_c__pyext\n'}
+[5.498208] (controls_msgs) CommandEnded: {'returncode': 0}
+[5.528356] (-) TimerEvent: {}
+[5.580707] (controls_msgs) JobProgress: {'identifier': 'controls_msgs', 'progress': 'install'}
+[5.581078] (controls_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/controls_msgs'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.587949] (controls_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.588846] (controls_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.589800] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/rosidl_interfaces/controls_msgs\n'}
+[5.597355] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__functions.h\n'}
+[5.602880] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__struct.h\n'}
+[5.608404] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__type_support.h\n'}
+[5.614680] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__functions.h\n'}
+[5.620067] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__struct.h\n'}
+[5.625679] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__type_support.h\n'}
+[5.628490] (-) TimerEvent: {}
+[5.632146] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__functions.h\n'}
+[5.637932] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__struct.h\n'}
+[5.643849] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__type_support.h\n'}
+[5.649576] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__functions.h\n'}
+[5.655328] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__struct.h\n'}
+[5.661152] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__type_support.h\n'}
+[5.667222] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dig.h\n'}
+[5.672890] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/drivetrain.h\n'}
+[5.679304] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dump.h\n'}
+[5.685340] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.692116] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/uart.h\n'}
+[5.699400] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/library_path.sh\n'}
+[5.705609] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/library_path.dsv\n'}
+[5.711297] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_fastrtps_c.h\n'}
+[5.717076] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_fastrtps_c.h\n'}
+[5.722991] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_fastrtps_c.h\n'}
+[5.728318] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_fastrtps_c.h\n'}
+[5.728569] (-) TimerEvent: {}
+[5.733249] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.738992] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_introspection_c.h\n'}
+[5.744066] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_introspection_c.h\n'}
+[5.751160] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_introspection_c.h\n'}
+[5.756466] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_introspection_c.h\n'}
+[5.762083] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.769983] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__builder.hpp\n'}
+[5.775343] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__struct.hpp\n'}
+[5.780993] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__traits.hpp\n'}
+[5.786717] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__builder.hpp\n'}
+[5.791905] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__struct.hpp\n'}
+[5.797170] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__traits.hpp\n'}
+[5.803377] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__builder.hpp\n'}
+[5.809172] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__struct.hpp\n'}
+[5.814485] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__traits.hpp\n'}
+[5.820325] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__builder.hpp\n'}
+[5.825560] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__struct.hpp\n'}
+[5.828691] (-) TimerEvent: {}
+[5.831035] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__traits.hpp\n'}
+[5.836964] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dig.hpp\n'}
+[5.842280] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/drivetrain.hpp\n'}
+[5.848299] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/dump.hpp\n'}
+[5.854319] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/uart.hpp\n'}
+[5.860378] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.865692] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.870915] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.876278] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.881635] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.888517] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dig__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.894525] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/drivetrain__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.899831] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/dump__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.904923] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/include/controls_msgs/controls_msgs/msg/detail/uart__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.910577] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/pythonpath.sh\n'}
+[5.915771] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/pythonpath.dsv\n'}
+[5.922064] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.927476] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.928853] (-) TimerEvent: {}
+[5.933632] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.939635] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.945511] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/__init__.py\n'}
+[5.950820] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.956367] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.961822] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/_controls_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.967707] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.973037] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.978281] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.983726] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/libcontrols_msgs__rosidl_generator_py.so\n'}
+[5.989528] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/__init__.py\n'}
+[5.995830] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig.py\n'}
+[6.001174] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig_s.c\n'}
+[6.006526] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain.py\n'}
+[6.012669] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain_s.c\n'}
+[6.018783] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump.py\n'}
+[6.024200] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump_s.c\n'}
+[6.028977] (-) TimerEvent: {}
+[6.029623] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart.py\n'}
+[6.035161] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart_s.c\n'}
+[6.041033] (controls_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.041499] (controls_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.041751] (controls_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/controls_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.042180] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dump.idl\n'}
+[6.047067] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Drivetrain.idl\n'}
+[6.053474] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dig.idl\n'}
+[6.059518] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Uart.idl\n'}
+[6.065639] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dump.msg\n'}
+[6.072192] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Drivetrain.msg\n'}
+[6.078013] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Dig.msg\n'}
+[6.083260] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/msg/Uart.msg\n'}
+[6.088902] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/package_run_dependencies/controls_msgs\n'}
+[6.095108] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/parent_prefix_path/controls_msgs\n'}
+[6.100707] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/ament_prefix_path.sh\n'}
+[6.106972] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/ament_prefix_path.dsv\n'}
+[6.112360] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/path.sh\n'}
+[6.119212] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/environment/path.dsv\n'}
+[6.124755] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.bash\n'}
+[6.129092] (-) TimerEvent: {}
+[6.130713] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.sh\n'}
+[6.137028] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.zsh\n'}
+[6.144527] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/local_setup.dsv\n'}
+[6.150934] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/package.dsv\n'}
+[6.158003] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/ament_index/resource_index/packages/controls_msgs\n'}
+[6.163975] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.169581] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.175234] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.182044] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.187123] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.192914] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.199116] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.205005] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgsConfig.cmake\n'}
+[6.211217] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgsConfig-version.cmake\n'}
+[6.217172] (controls_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/package.xml\n'}
+[6.224229] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_c.so\n'}
+[6.224874] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_c.so" to ""\n'}
+[6.225351] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.225468] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.225549] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.226436] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.226633] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_c.so\n'}
+[6.226746] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.226846] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.227003] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.227065] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.227116] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.227165] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_cpp.so\n'}
+[6.227269] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.229253] (-) TimerEvent: {}
+[6.265098] (controls_msgs) StdoutLine: {'line': b"Listing '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs'...\n"}
+[6.265329] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/__init__.py'...\n"}
+[6.265426] (controls_msgs) StdoutLine: {'line': b"Listing '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg'...\n"}
+[6.265509] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/__init__.py'...\n"}
+[6.265589] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dig.py'...\n"}
+[6.265680] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_drivetrain.py'...\n"}
+[6.265753] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_dump.py'...\n"}
+[6.265825] (controls_msgs) StdoutLine: {'line': b"Compiling '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages/controls_msgs/msg/_uart.py'...\n"}
+[6.269550] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_py.so\n'}
+[6.270369] (controls_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib/libcontrols_msgs__rosidl_generator_py.so" to ""\n'}
+[6.270973] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cExport.cmake\n'}
+[6.271103] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.271345] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.271439] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.271513] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.271584] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.271744] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.271799] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.271837] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.271873] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.271914] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.271948] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.271980] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.272013] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.272045] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/controls_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.272113] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.272158] (controls_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake/export_controls_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.273745] (controls_msgs) CommandEnded: {'returncode': 0}
+[6.329395] (-) TimerEvent: {}
+[6.382327] (controls_msgs) JobEnded: {'identifier': 'controls_msgs', 'rc': 0}
+[6.382916] (controls) JobStarted: {'identifier': 'controls'}
+[6.388890] (controls) JobProgress: {'identifier': 'controls', 'progress': 'cmake'}
+[6.389555] (controls) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/PHOENIX/src/main_ws/src/controls', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/controls'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[6.429520] (-) TimerEvent: {}
+[6.433729] (controls) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.478007] (controls) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[6.483910] (controls) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.529638] (-) TimerEvent: {}
+[6.558573] (controls) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.563181] (controls) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.563715] (controls) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.564006] (controls) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.566365] (controls) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.628929] (controls) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.629726] (-) TimerEvent: {}
+[6.635669] (controls) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.635991] (controls) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.636580] (controls) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.638977] (controls) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.729918] (-) TimerEvent: {}
+[6.762635] (controls) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.818562] (controls) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.830050] (-) TimerEvent: {}
+[6.850134] (controls) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.892944] (controls) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.896559] (controls) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.903241] (controls) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.919534] (controls) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.930243] (-) TimerEvent: {}
+[6.935913] (controls) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.997885] (controls) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.002686] (controls) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.030454] (-) TimerEvent: {}
+[7.077086] (controls) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.096382] (controls) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[7.129056] (controls) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.130540] (-) TimerEvent: {}
+[7.143097] (controls) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.226297] (controls) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.226661] (controls) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.230685] (-) TimerEvent: {}
+[7.285153] (controls) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.285913] (controls) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.327517] (controls) StdoutLine: {'line': b'-- Found controls_msgs: 0.0.0 (/workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake)\n'}
+[7.330812] (-) TimerEvent: {}
+[7.336560] (controls) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.405239] (controls) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.405408] (controls) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[7.405480] (controls) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.405801] (controls) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.406651] (controls) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.406738] (controls) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.407395] (controls) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.408883] (controls) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.430969] (-) TimerEvent: {}
+[7.431508] (controls) StdoutLine: {'line': b'-- Generating done\n'}
+[7.432786] (controls) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/controls\n'}
+[7.441287] (controls) CommandEnded: {'returncode': 0}
+[7.441960] (controls) JobProgress: {'identifier': 'controls', 'progress': 'build'}
+[7.442317] (controls) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/controls', '--', '-j20', '-l20'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[7.481728] (controls) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o\n'}
+[7.483595] (controls) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/dig.dir/src/dig.cpp.o\n'}
+[7.484282] (controls) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/uart.dir/src/uart.cpp.o\n'}
+[7.485320] (controls) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/dump.dir/src/dump.cpp.o\n'}
+[7.533195] (-) TimerEvent: {}
+[7.633472] (-) TimerEvent: {}
+[7.733704] (-) TimerEvent: {}
+[7.833956] (-) TimerEvent: {}
+[7.934221] (-) TimerEvent: {}
+[8.034472] (-) TimerEvent: {}
+[8.134701] (-) TimerEvent: {}
+[8.234949] (-) TimerEvent: {}
+[8.335167] (-) TimerEvent: {}
+[8.435382] (-) TimerEvent: {}
+[8.535616] (-) TimerEvent: {}
+[8.635845] (-) TimerEvent: {}
+[8.736124] (-) TimerEvent: {}
+[8.836469] (-) TimerEvent: {}
+[8.936805] (-) TimerEvent: {}
+[9.037075] (-) TimerEvent: {}
+[9.137296] (-) TimerEvent: {}
+[9.237539] (-) TimerEvent: {}
+[9.337820] (-) TimerEvent: {}
+[9.438066] (-) TimerEvent: {}
+[9.538360] (-) TimerEvent: {}
+[9.638607] (-) TimerEvent: {}
+[9.738837] (-) TimerEvent: {}
+[9.839128] (-) TimerEvent: {}
+[9.939362] (-) TimerEvent: {}
+[10.039604] (-) TimerEvent: {}
+[10.155224] (-) TimerEvent: {}
+[10.255482] (-) TimerEvent: {}
+[10.355979] (-) TimerEvent: {}
+[10.456194] (-) TimerEvent: {}
+[10.578161] (-) TimerEvent: {}
+[10.678404] (-) TimerEvent: {}
+[10.778644] (-) TimerEvent: {}
+[10.878903] (-) TimerEvent: {}
+[10.979146] (-) TimerEvent: {}
+[11.079380] (-) TimerEvent: {}
+[11.179583] (-) TimerEvent: {}
+[11.279826] (-) TimerEvent: {}
+[11.380131] (-) TimerEvent: {}
+[11.480384] (-) TimerEvent: {}
+[11.580627] (-) TimerEvent: {}
+[11.680873] (-) TimerEvent: {}
+[11.781103] (-) TimerEvent: {}
+[11.881325] (-) TimerEvent: {}
+[11.981549] (-) TimerEvent: {}
+[12.081828] (-) TimerEvent: {}
+[12.142067] (perception) StdoutLine: {'line': b'[100%] Linking CXX executable camera\n'}
+[12.181974] (-) TimerEvent: {}
+[12.286415] (-) TimerEvent: {}
+[12.386750] (-) TimerEvent: {}
+[12.486983] (-) TimerEvent: {}
+[12.544482] (perception) StdoutLine: {'line': b'[100%] Built target camera\n'}
+[12.551980] (perception) CommandEnded: {'returncode': 0}
+[12.571315] (perception) JobProgress: {'identifier': 'perception', 'progress': 'install'}
+[12.572264] (perception) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/perception'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/perception', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/perception'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.576957] (perception) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.577794] (perception) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.579404] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/lib/perception/camera\n'}
+[12.587133] (-) TimerEvent: {}
+[12.587611] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/package_run_dependencies/perception\n'}
+[12.594654] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/parent_prefix_path/perception\n'}
+[12.602909] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.sh\n'}
+[12.609673] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.dsv\n'}
+[12.617973] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.sh\n'}
+[12.625528] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.dsv\n'}
+[12.631780] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.bash\n'}
+[12.638653] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.sh\n'}
+[12.645380] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.zsh\n'}
+[12.651652] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.dsv\n'}
+[12.658537] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.dsv\n'}
+[12.667463] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/packages/perception\n'}
+[12.673813] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig.cmake\n'}
+[12.680105] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig-version.cmake\n'}
+[12.687292] (-) TimerEvent: {}
+[12.689012] (perception) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.xml\n'}
+[12.696768] (perception) CommandEnded: {'returncode': 0}
+[12.734604] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[12.787431] (-) TimerEvent: {}
+[12.887703] (-) TimerEvent: {}
+[12.987929] (-) TimerEvent: {}
+[13.088190] (-) TimerEvent: {}
+[13.188432] (-) TimerEvent: {}
+[13.288662] (-) TimerEvent: {}
+[13.388885] (-) TimerEvent: {}
+[13.489121] (-) TimerEvent: {}
+[13.589399] (-) TimerEvent: {}
+[13.689597] (-) TimerEvent: {}
+[13.789814] (-) TimerEvent: {}
+[13.890014] (-) TimerEvent: {}
+[13.990244] (-) TimerEvent: {}
+[14.090582] (-) TimerEvent: {}
+[14.190836] (-) TimerEvent: {}
+[14.291063] (-) TimerEvent: {}
+[14.391315] (-) TimerEvent: {}
+[14.491698] (-) TimerEvent: {}
+[14.591913] (-) TimerEvent: {}
+[14.692172] (-) TimerEvent: {}
+[14.792396] (-) TimerEvent: {}
+[14.892772] (-) TimerEvent: {}
+[14.992991] (-) TimerEvent: {}
+[15.093231] (-) TimerEvent: {}
+[15.193437] (-) TimerEvent: {}
+[15.293638] (-) TimerEvent: {}
+[15.393870] (-) TimerEvent: {}
+[15.494177] (-) TimerEvent: {}
+[15.594529] (-) TimerEvent: {}
+[15.694951] (-) TimerEvent: {}
+[15.795297] (-) TimerEvent: {}
+[15.895603] (-) TimerEvent: {}
+[15.996045] (-) TimerEvent: {}
+[16.096293] (-) TimerEvent: {}
+[16.196598] (-) TimerEvent: {}
+[16.296827] (-) TimerEvent: {}
+[16.397329] (-) TimerEvent: {}
+[16.497553] (-) TimerEvent: {}
+[16.597902] (-) TimerEvent: {}
+[16.698180] (-) TimerEvent: {}
+[16.798418] (-) TimerEvent: {}
+[16.898675] (-) TimerEvent: {}
+[16.998964] (-) TimerEvent: {}
+[17.099221] (-) TimerEvent: {}
+[17.199537] (-) TimerEvent: {}
+[17.299849] (-) TimerEvent: {}
+[17.400189] (-) TimerEvent: {}
+[17.501186] (-) TimerEvent: {}
+[17.601497] (-) TimerEvent: {}
+[17.651431] (controls) StdoutLine: {'line': b'[ 62%] Linking CXX executable uart\n'}
+[17.701694] (-) TimerEvent: {}
+[17.802002] (-) TimerEvent: {}
+[17.851427] (controls) StdoutLine: {'line': b'[ 75%] Linking CXX executable drivetrain\n'}
+[17.902173] (-) TimerEvent: {}
+[17.910482] (controls) StdoutLine: {'line': b'[ 87%] Linking CXX executable dump\n'}
+[17.978789] (controls) StdoutLine: {'line': b'[100%] Linking CXX executable dig\n'}
+[18.002437] (-) TimerEvent: {}
+[18.017922] (controls) StdoutLine: {'line': b'[100%] Built target uart\n'}
+[18.102570] (-) TimerEvent: {}
+[18.202874] (-) TimerEvent: {}
+[18.261852] (controls) StdoutLine: {'line': b'[100%] Built target drivetrain\n'}
+[18.293017] (controls) StdoutLine: {'line': b'[100%] Built target dump\n'}
+[18.303053] (-) TimerEvent: {}
+[18.362894] (controls) StdoutLine: {'line': b'[100%] Built target dig\n'}
+[18.370274] (controls) CommandEnded: {'returncode': 0}
+[18.391812] (controls) JobProgress: {'identifier': 'controls', 'progress': 'install'}
+[18.392148] (controls) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/controls'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[18.397425] (controls) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.397773] (controls) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.398236] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/drivetrain\n'}
+[18.403202] (-) TimerEvent: {}
+[18.404365] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dig\n'}
+[18.409919] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dump\n'}
+[18.415093] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/uart\n'}
+[18.420681] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/include/settings.h\n'}
+[18.425676] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/include/utils.h\n'}
+[18.431774] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/launch/launch.yaml\n'}
+[18.439039] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/package_run_dependencies/controls\n'}
+[18.446907] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/parent_prefix_path/controls\n'}
+[18.453168] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/ament_prefix_path.sh\n'}
+[18.458872] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/ament_prefix_path.dsv\n'}
+[18.465146] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/path.sh\n'}
+[18.470622] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/path.dsv\n'}
+[18.476503] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.bash\n'}
+[18.482677] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.sh\n'}
+[18.488413] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.zsh\n'}
+[18.494304] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.dsv\n'}
+[18.501184] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.dsv\n'}
+[18.503386] (-) TimerEvent: {}
+[18.508752] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/packages/controls\n'}
+[18.515391] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.522479] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake/controlsConfig.cmake\n'}
+[18.530076] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake/controlsConfig-version.cmake\n'}
+[18.537493] (controls) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.xml\n'}
+[18.545088] (controls) CommandEnded: {'returncode': 0}
+[18.580309] (controls) JobEnded: {'identifier': 'controls', 'rc': 0}
+[18.581336] (teleop) JobStarted: {'identifier': 'teleop'}
+[18.589075] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'cmake'}
+[18.589445] (teleop) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/PHOENIX/src/main_ws/src/teleop', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/install/teleop'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/teleop'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[18.603545] (-) TimerEvent: {}
+[18.629562] (teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[18.667991] (teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[18.673116] (teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[18.703690] (-) TimerEvent: {}
+[18.719958] (teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[18.724533] (teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[18.724892] (teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[18.725172] (teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[18.727101] (teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[18.783556] (teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[18.788914] (teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[18.789205] (teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[18.789462] (teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[18.791379] (teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[18.803850] (-) TimerEvent: {}
+[18.904090] (-) TimerEvent: {}
+[18.921315] (teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[18.976742] (teleop) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[19.000468] (teleop) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[19.004362] (-) TimerEvent: {}
+[19.033814] (teleop) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[19.037726] (teleop) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[19.045793] (teleop) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[19.056157] (teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[19.069729] (teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[19.103067] (teleop) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[19.104515] (-) TimerEvent: {}
+[19.104871] (teleop) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[19.176295] (teleop) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[19.198515] (teleop) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[19.204691] (-) TimerEvent: {}
+[19.232196] (teleop) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[19.239338] (teleop) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[19.289933] (teleop) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[19.290166] (teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[19.305014] (-) TimerEvent: {}
+[19.339914] (teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[19.340780] (teleop) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[19.381226] (teleop) StdoutLine: {'line': b'-- Found controls_msgs: 0.0.0 (/workspaces/PHOENIX/src/main_ws/install/controls_msgs/share/controls_msgs/cmake)\n'}
+[19.387109] (teleop) StdoutLine: {'line': b'-- Found controls: 0.0.1 (/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake)\n'}
+[19.390636] (teleop) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[19.405171] (-) TimerEvent: {}
+[19.441187] (teleop) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[19.505287] (-) TimerEvent: {}
+[19.508508] (teleop) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[19.508704] (teleop) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[19.508790] (teleop) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[19.509566] (teleop) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[19.510604] (teleop) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[19.510726] (teleop) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[19.511345] (teleop) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[19.512615] (teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[19.523297] (teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[19.524369] (teleop) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/teleop\n'}
+[19.532227] (teleop) CommandEnded: {'returncode': 0}
+[19.532775] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'build'}
+[19.533083] (teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/teleop', '--', '-j20', '-l20'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/teleop'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[19.565568] (teleop) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/distrib.dir/src/distrib.cpp.o\n'}
+[19.605411] (-) TimerEvent: {}
+[19.705678] (-) TimerEvent: {}
+[19.806006] (-) TimerEvent: {}
+[19.906264] (-) TimerEvent: {}
+[20.006521] (-) TimerEvent: {}
+[20.106788] (-) TimerEvent: {}
+[20.207005] (-) TimerEvent: {}
+[20.307251] (-) TimerEvent: {}
+[20.407436] (-) TimerEvent: {}
+[20.507628] (-) TimerEvent: {}
+[20.607920] (-) TimerEvent: {}
+[20.708157] (-) TimerEvent: {}
+[20.808394] (-) TimerEvent: {}
+[20.908603] (-) TimerEvent: {}
+[21.008963] (-) TimerEvent: {}
+[21.109262] (-) TimerEvent: {}
+[21.209586] (-) TimerEvent: {}
+[21.309794] (-) TimerEvent: {}
+[21.409980] (-) TimerEvent: {}
+[21.510260] (-) TimerEvent: {}
+[21.610549] (-) TimerEvent: {}
+[21.710792] (-) TimerEvent: {}
+[21.811063] (-) TimerEvent: {}
+[21.911357] (-) TimerEvent: {}
+[22.011585] (-) TimerEvent: {}
+[22.111889] (-) TimerEvent: {}
+[22.212229] (-) TimerEvent: {}
+[22.312475] (-) TimerEvent: {}
+[22.412833] (-) TimerEvent: {}
+[22.513225] (-) TimerEvent: {}
+[22.613644] (-) TimerEvent: {}
+[22.713898] (-) TimerEvent: {}
+[22.814108] (-) TimerEvent: {}
+[22.914431] (-) TimerEvent: {}
+[23.014793] (-) TimerEvent: {}
+[23.115119] (-) TimerEvent: {}
+[23.215353] (-) TimerEvent: {}
+[23.315685] (-) TimerEvent: {}
+[23.415872] (-) TimerEvent: {}
+[23.516111] (-) TimerEvent: {}
+[23.616300] (-) TimerEvent: {}
+[23.716547] (-) TimerEvent: {}
+[23.816753] (-) TimerEvent: {}
+[23.917029] (-) TimerEvent: {}
+[24.017273] (-) TimerEvent: {}
+[24.117552] (-) TimerEvent: {}
+[24.217789] (-) TimerEvent: {}
+[24.318111] (-) TimerEvent: {}
+[24.418338] (-) TimerEvent: {}
+[24.518693] (-) TimerEvent: {}
+[24.618949] (-) TimerEvent: {}
+[24.719247] (-) TimerEvent: {}
+[24.819481] (-) TimerEvent: {}
+[24.919820] (-) TimerEvent: {}
+[25.020024] (-) TimerEvent: {}
+[25.120271] (-) TimerEvent: {}
+[25.220469] (-) TimerEvent: {}
+[25.320882] (-) TimerEvent: {}
+[25.421187] (-) TimerEvent: {}
+[25.521400] (-) TimerEvent: {}
+[25.621708] (-) TimerEvent: {}
+[25.722143] (-) TimerEvent: {}
+[25.822391] (-) TimerEvent: {}
+[25.922674] (-) TimerEvent: {}
+[26.022925] (-) TimerEvent: {}
+[26.123206] (-) TimerEvent: {}
+[26.223491] (-) TimerEvent: {}
+[26.323763] (-) TimerEvent: {}
+[26.424102] (-) TimerEvent: {}
+[26.524394] (-) TimerEvent: {}
+[26.624616] (-) TimerEvent: {}
+[26.724858] (-) TimerEvent: {}
+[26.825171] (-) TimerEvent: {}
+[26.925465] (-) TimerEvent: {}
+[27.025738] (-) TimerEvent: {}
+[27.125970] (-) TimerEvent: {}
+[27.148153] (teleop) StdoutLine: {'line': b'[100%] Linking CXX executable distrib\n'}
+[27.226151] (-) TimerEvent: {}
+[27.326399] (-) TimerEvent: {}
+[27.426834] (-) TimerEvent: {}
+[27.465092] (teleop) StdoutLine: {'line': b'[100%] Built target distrib\n'}
+[27.474952] (teleop) CommandEnded: {'returncode': 0}
+[27.490989] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'install'}
+[27.491309] (teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/teleop'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('ROS_PYTHON_VERSION', '3'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-920cc36c-ffc2-429f-94ef-81766d8a41e7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/teleop'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/workspaces/PHOENIX/src/main_ws/install/controls_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/PHOENIX/src/main_ws/install/controls:/workspaces/PHOENIX/src/main_ws/install/controls_msgs:/opt/ros/humble')]), 'shell': False}
+[27.497347] (teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.497866] (teleop) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[27.498967] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/lib/teleop/distrib\n'}
+[27.505638] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/launch/launch.yaml\n'}
+[27.511816] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop\n'}
+[27.517530] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop\n'}
+[27.523254] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.sh\n'}
+[27.526954] (-) TimerEvent: {}
+[27.529053] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.dsv\n'}
+[27.534458] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.sh\n'}
+[27.539764] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.dsv\n'}
+[27.545510] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.bash\n'}
+[27.550831] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.sh\n'}
+[27.555998] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.zsh\n'}
+[27.561048] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.dsv\n'}
+[27.566698] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv\n'}
+[27.572955] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/packages/teleop\n'}
+[27.578712] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig.cmake\n'}
+[27.583938] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig-version.cmake\n'}
+[27.589456] (teleop) StdoutLine: {'line': b'-- Symlinking: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.xml\n'}
+[27.596708] (teleop) CommandEnded: {'returncode': 0}
+[27.621866] (teleop) JobEnded: {'identifier': 'teleop', 'rc': 0}
+[27.622577] (-) EventReactorShutdown: {}

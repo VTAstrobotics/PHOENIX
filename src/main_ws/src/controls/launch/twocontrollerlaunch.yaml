@@ -1,30 +1,30 @@
+launch:
 
+  - node:
+      pkg: "joy"
+      exec: "joy_node"
+      name: "controller1"
+      param:
+      -
+        name : "device_id"
+        value : "0e6f:0501"
 
-- node:
-    pkg: "joy"
-    exec: "joy_node"
-    name: "controller1"
-    param:
-    -
-      name : "device_id"
-      value : "0e6f:0501"
+      remap:
+      -
+          from: "/joy"
+          to: "/driver/joy"
 
-    remap:
-    -
-        from: "/joy"
-        to: "/driver/joy"
+  - node:
+      pkg: "joy"
+      exec: "joy_node"
+      name: "controller2"
+      param:
+      -
+        name : "device_id"
+        value : "045e:0b00"
 
-- node:
-    pkg: "joy"
-    exec: "joy_node"
-    name: "controller2"
-    param:
-    -
-      name : "device_id"
-      value : "045e:0b00"
-
-    remap:
-    -
-        from: "/joy"
-        to: "/controller/joy"
+      remap:
+      -
+          from: "/joy"
+          to: "/controller/joy"
   

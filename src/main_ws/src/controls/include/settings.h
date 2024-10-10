@@ -110,7 +110,6 @@
 #define CTRL_STOP_SEQ_2 BUTTON_START
 #define CTRL_STOP_SEQ_3 BUTTON_MANUFACTURER
 
-
 /**********************************************************************
  *                                                                    *
  * Drive controls                                                     *

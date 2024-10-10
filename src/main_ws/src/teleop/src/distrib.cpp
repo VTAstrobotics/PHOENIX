@@ -44,8 +44,7 @@ class Distributor : public rclcpp::Node
         }
 
         // Stop sequence activated
-        if (raw.buttons[CTRL_STOP_SEQ_1] &&
-            raw.buttons[CTRL_STOP_SEQ_2] &&
+        if (raw.buttons[CTRL_STOP_SEQ_1] && raw.buttons[CTRL_STOP_SEQ_2] &&
             raw.buttons[CTRL_STOP_SEQ_3])
         {
             exit(0);
@@ -104,7 +103,8 @@ class Distributor : public rclcpp::Node
          *                                                                    *
          **********************************************************************/
         digSend.lins = raw.axes[CTRL_DIG_DOWN] - raw.axes[CTRL_DIG_UP];
-        digSend.motors = std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
+        digSend.motors =
+            std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
 
         /**********************************************************************
          *                                                                    *

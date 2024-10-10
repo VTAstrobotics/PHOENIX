@@ -30,9 +30,9 @@ class Distributor : public rclcpp::Node
     }
 
    private:
-    void topic_callback(const sensor_msgs::msg::Joy &distribRaw)
+    void topic_callback(const sensor_msgs::msg::Joy &raw)
     {
-        int32_t cur_time = distribRaw.header.stamp.sec;
+        int32_t cur_time = raw.header.stamp.sec;
         auto digSend = controls_msgs::msg::Dig();
         auto dumpSend = controls_msgs::msg::Dump();
         auto driveSend = controls_msgs::msg::Drivetrain();
@@ -44,62 +44,76 @@ class Distributor : public rclcpp::Node
         }
 
         // Stop sequence activated
-        if (distribRaw.buttons[CTRL_STOP_SEQ_1] &&
-            distribRaw.buttons[CTRL_STOP_SEQ_2] &&
-            distribRaw.buttons[CTRL_STOP_SEQ_3])
+        if (raw.buttons[CTRL_STOP_SEQ_1] &&
+            raw.buttons[CTRL_STOP_SEQ_2] &&
+            raw.buttons[CTRL_STOP_SEQ_3])
         {
             exit(0);
         }
 
-        // Drive controls
-        if (!APPROX(distribRaw.axes[CTRL_TANK_L_TREAD] - DEADZONE_SIZE, 0))
-        {
-            driveSend.motors[DRIVE_L_MOTOR] =
-                distribRaw.axes[CTRL_TANK_L_TREAD];
-        }
-        else
-        {
-            driveSend.motors[DRIVE_L_MOTOR] = 0;
-        }
+        /**********************************************************************
+         *                                                                    *
+         * Drive controls                                                     *
+         *                                                                    *
+         * RT drives forwards; LT drives backwards                            *
+         * Left stick x-axis controls turning                                 *
+         *                                                                    *
+         **********************************************************************/
 
-        if (!APPROX(distribRaw.axes[CTRL_TANK_R_TREAD] - DEADZONE_SIZE, 0))
-        {
-            driveSend.motors[DRIVE_R_MOTOR] =
-                distribRaw.axes[CTRL_TANK_R_TREAD];
-        }
-        else
-        {
-            driveSend.motors[DRIVE_R_MOTOR] = 0;
-        }
+        /*
+         * Triggers are [-1, 1] where
+         * 1 = not pressed, -1 = fully pressed, 0 = halfway, etc.
+         * convert to [0, 1] for ease of use
+         */
+        float_t driveFwd = raw.axes[CTRL_DRIVE_FWD];
+        float_t driveBack = raw.axes[CTRL_DRIVE_BCK];
+        driveBack = ((-1 * driveBack) + 1) * 0.5;
+        driveFwd = ((-1 * driveFwd) + 1) * 0.5;
 
-        // Dig controls
-        if (distribRaw.axes[CTRL_SCOOP] > DPAD_ACTIVATION_DISTANCE)
-        {
-            digSend.lins = 1;
-        }
-        else if (distribRaw.axes[CTRL_SCOOP] < -DPAD_ACTIVATION_DISTANCE)
-        {
-            digSend.lins = -1;
-        }
-        else
-        {
-            digSend.lins = 0;
-        }
-        digSend.motors = 0;
+        float_t lsX = raw.axes[CTRL_DRIVE_TRN];
 
-        // Dump controls
-        if (distribRaw.axes[CTRL_BUCKET] > DPAD_ACTIVATION_DISTANCE)
-        {
-            dumpSend.lins = 1;
-        }
-        else if (distribRaw.axes[CTRL_BUCKET] < -DPAD_ACTIVATION_DISTANCE)
-        {
-            dumpSend.lins = -1;
-        }
-        else
-        {
-            dumpSend.lins = 0;
-        }
+        float_t leftTread = driveFwd - driveBack + lsX;
+        float_t rightTread = driveFwd - driveBack - lsX;
+
+        // currently [-2, 2], so cap at [-1, 1]
+        leftTread = std::clamp(leftTread, -1.0f, 1.0f);
+        rightTread = std::clamp(rightTread, -1.0f, 1.0f);
+
+        // invert left since it is mounted mirrored
+        leftTread *= -1;
+
+        // convert from [-1, 1] to [0, 180] since we currently use Servo library
+        leftTread = std::min((leftTread * 90) + 90, 180.0f);
+        rightTread = std::min((rightTread * 90) + 90, 180.0f);
+
+        driveSend.motors[DRIVE_L_MOTOR] = leftTread;
+        driveSend.motors[DRIVE_R_MOTOR] = rightTread;
+
+        /**********************************************************************
+         *                                                                    *
+         * Dig controls                                                       *
+         * LB extends (lower dig bucket); RB retracts.                        *
+         * LB | RB | Output                                                   *
+         * ----------------                                                   *
+         *  0 |  0 | 0                                                        *
+         *  0 |  1 | -1                                                       *
+         *  1 |  0 | 1                                                        *
+         *  1 |  1 | 0                                                        *
+         *                                                                    *
+         * Right stick y-axis dictates the rotation of the dig bucket         *
+         *                                                                    *
+         **********************************************************************/
+        digSend.lins = raw.axes[CTRL_DIG_DOWN] - raw.axes[CTRL_DIG_UP];
+        digSend.motors = std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
+
+        /**********************************************************************
+         *                                                                    *
+         * Dump controls                                                      *
+         * Manual controls using the x axis of the dpad                       *
+         * Automatic sequences using buttons                                  *
+         *                                                                    *
+         **********************************************************************/
+        dumpSend.lins = raw.axes[CTRL_DUMP_LINS];
 
         // Send messages to each subsystem
         digPub->publish(digSend);

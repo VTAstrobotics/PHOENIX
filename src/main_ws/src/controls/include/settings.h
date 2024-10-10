@@ -106,18 +106,49 @@
 #define DPAD_ACTIVATION_DISTANCE 0.5
 
 /* Key bindings for current robot (2023-2024) */
-#define CTRL_DUMP_ERRORS BUTTON_B
-#define CTRL_CLEAR_ERRORS BUTTON_LBUMPER
-
 #define CTRL_STOP_SEQ_1 BUTTON_BACK
 #define CTRL_STOP_SEQ_2 BUTTON_START
 #define CTRL_STOP_SEQ_3 BUTTON_MANUFACTURER
 
-#define CTRL_TANK_L_TREAD AXIS_LEFTY
-#define CTRL_TANK_R_TREAD AXIS_RIGHTY
 
-#define CTRL_BUCKET AXIS_DPAD_Y
-#define CTRL_SCOOP AXIS_DPAD_X
+/**********************************************************************
+ *                                                                    *
+ * Drive controls                                                     *
+ *                                                                    *
+ * RT drives forwards; LT drives backwards                            *
+ * Left stick x-axis controls turning                                 *
+ *                                                                    *
+ **********************************************************************/
+#define CTRL_DRIVE_FWD AXIS_RTRIGGER
+#define CTRL_DRIVE_BCK AXIS_LTRIGGER
+#define CTRL_DRIVE_TRN AXIS_LEFTX
+
+/**********************************************************************
+ *                                                                    *
+ * Dig controls                                                       *
+ * LB extends (lower dig bucket); RB retracts.                        *
+ * LB | RB | Output                                                   *
+ * ----------------                                                   *
+ *  0 |  0 | 0                                                        *
+ *  0 |  1 | -1                                                       *
+ *  1 |  0 | 1                                                        *
+ *  1 |  1 | 0                                                        *
+ *                                                                    *
+ * Right stick y-axis dictates the rotation of the dig bucket         *
+ *                                                                    *
+ **********************************************************************/
+#define CTRL_DIG_BUCKET AXIS_RIGHTY
+#define CTRL_DIG_UP BUTTON_RBUMPER
+#define CTRL_DIG_DOWN BUTTON_LBUMPER
+
+/**********************************************************************
+ *                                                                    *
+ * Dump controls                                                      *
+ * Manual controls using the x axis of the dpad                       *
+ * Automatic sequences using buttons                                  *
+ *                                                                    *
+ **********************************************************************/
+#define CTRL_DUMP_LINS AXIS_DPAD_X
 
 /* Indexes for each button on xbox controller, NEVER USE DIRECTLY */
 #define BUTTON_A 0

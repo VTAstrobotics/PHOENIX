@@ -6,7 +6,6 @@ sudo touch /workspaces/PHOENIX/.devcontainer/build.log
 sudo chmod 777 /workspaces/PHOENIX/.devcontainer/build.log
 
 { printf "entrypoint.sh:\n"
-
 ###############################################################################
 #                                                                             #
 # Startup commands (do not put anything above this)                           #
@@ -14,6 +13,7 @@ sudo chmod 777 /workspaces/PHOENIX/.devcontainer/build.log
 ###############################################################################
 
 # ROS basic build and source
+cd /workspaces/PHOENIX/
 ./build.sh
 
 # Give permissions to input devices, like Xbox controller

@@ -1,11 +1,5 @@
 name: 'clang-format Code Formatter'
 description: 'Runs clang-format on source code'
-inputs:
-  myInput:
-    description: 'Input to use'
-    default: 'world'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.myInput }}

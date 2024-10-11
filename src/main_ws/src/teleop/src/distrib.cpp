@@ -122,13 +122,14 @@ class Distributor : public rclcpp::Node
          * Axis dictates the rotation of the dig bucket                       *
          *                                                                    *
          **********************************************************************/
-        digSend.lins = raw.axes[CTRL_DIG_UP] - raw.axes[CTRL_DIG_DOWN];
+        digSend.lins = static_cast<float_t> (raw.buttons[CTRL_DIG_UP] - raw.buttons[CTRL_DIG_DOWN]);
 
-        float_t digLins = std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
-        digLins = std::pow(digLins, 3);
-        digLins *= 0.125;
+        float_t digBucket = raw.axes[CTRL_DIG_BUCKET];
+        digBucket = std::pow(digBucket, 3);
+        digBucket *= 0.125;
+        digBucket = std::min((digBucket * 90) + 90, 180.0f);
 
-        digSend.motors = digLins;
+        digSend.motors = digBucket;
 
         /**********************************************************************
          *                                                                    *
@@ -150,6 +151,8 @@ class Distributor : public rclcpp::Node
 
         // assign value to dump lins
         if (dumpAscending && dumpDescending) {
+            dumpAscending = false;
+            dumpDescending = false;
             dumpSend.lins = 0;
         } else if (dumpAscending) {
             dumpSend.lins = 1;

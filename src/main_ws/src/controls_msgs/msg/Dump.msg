@@ -1,1 +1,1 @@
-float64 lins
+float32 lins

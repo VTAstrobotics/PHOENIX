@@ -15,7 +15,9 @@ With an onboard computer (i.e. Jetson Nano) set up via the [Software Setup steps
 
 While in the developer container, open a terminal and run `./launch.sh` in the home directory. If you make changes, you may need to run `./build.sh` first (`./build.sh; ./launch.sh`). This will spin up all nodes.
 
-The wiring that the system requires is expected to change more frequently than this README. Therefore, it is encouraged to double-check with a knowledgeable team member. Right now, the repository expects a Jetson Nano connected via USB to a controller and connected over USB to a Pico.
+The wiring that the system requires is expected to change more frequently than this README. Therefore, it is encouraged to double-check with a knowledgeable team member. Right now, the repository expects a Jetson Nano connected over USB to a Pico.
+
+Simultaneously, on a Linux (virtual) machine on the same network as the Jetson, run the ROS2 Joy node with a controller connected via USB.
 
 ### Troubleshooting
 When in doubt, rebuild the container (`Ctrl + Shift + P` then type `Rebuild Container` and select `Dev Containers: Rebuild Container`). This automatically runs the `build.sh` script, which is why you don't need to manually run it the first time.

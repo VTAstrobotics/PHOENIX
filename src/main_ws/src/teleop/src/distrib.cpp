@@ -1,4 +1,5 @@
 #include <memory>
+#include <cmath> // for pow
 
 #include "controls_msgs/msg/dig.hpp"
 #include "controls_msgs/msg/drivetrain.hpp"
@@ -24,7 +25,9 @@ class Distributor : public rclcpp::Node
         drivePub = this->create_publisher<controls_msgs::msg::Drivetrain>(
             DRIVE_TOPIC, QOS);
 
-        digMode = false;
+        dumpAscending = false;
+        dumpDescending = false;
+        slowTurnMode = false;
         cooldown = false;
         last_time = 0;
     }
@@ -38,7 +41,7 @@ class Distributor : public rclcpp::Node
         auto driveSend = controls_msgs::msg::Drivetrain();
 
         // handles debouncing buttons
-        if (cur_time - last_time > 1)
+        if (cur_time - last_time > 0.01)
         {
             cooldown = false;
         }
@@ -54,22 +57,39 @@ class Distributor : public rclcpp::Node
          *                                                                    *
          * Drive controls                                                     *
          *                                                                    *
-         * RT drives forwards; LT drives backwards                            *
-         * Left stick x-axis controls turning                                 *
+         * Trigger drives forwards; Trigger drives backwards                  *
+         * Axis controls turning                                              *
          *                                                                    *
          **********************************************************************/
 
         /*
-         * Triggers are [-1, 1] where
+         * Since triggers are [-1, 1] where
          * 1 = not pressed, -1 = fully pressed, 0 = halfway, etc.
          * convert to [0, 1] for ease of use
          */
         float_t driveFwd = raw.axes[CTRL_DRIVE_FWD];
         float_t driveBack = raw.axes[CTRL_DRIVE_BCK];
-        driveBack = ((-1 * driveBack) + 1) * 0.5;
         driveFwd = ((-1 * driveFwd) + 1) * 0.5;
+        driveBack = ((-1 * driveBack) + 1) * 0.5;
 
         float_t lsX = raw.axes[CTRL_DRIVE_TRN];
+
+        // cubic control for easier control
+        driveFwd = std::pow(driveFwd, 3);
+        driveBack = std::pow(driveBack, 3);
+        lsX = std::pow(lsX, 3);
+
+        if (!cooldown && raw.buttons[CTRL_DRIVE_SLOW_TURN]) {
+            cooldown = true;
+            last_time = raw.header.stamp.sec;
+            slowTurnMode = !slowTurnMode;
+        }
+
+        if (slowTurnMode) {
+            lsX *= 0.25;
+        } else {
+            lsX *= 0.5;
+        }
 
         float_t leftTread = driveFwd - driveBack + lsX;
         float_t rightTread = driveFwd - driveBack - lsX;
@@ -91,29 +111,53 @@ class Distributor : public rclcpp::Node
         /**********************************************************************
          *                                                                    *
          * Dig controls                                                       *
-         * LB extends (lower dig bucket); RB retracts.                        *
-         * LB | RB | Output                                                   *
+         * Button1 extends (lower dig bucket); button2 retracts.              *
+         * B1 | B2 | Output                                                   *
          * ----------------                                                   *
          *  0 |  0 | 0                                                        *
          *  0 |  1 | -1                                                       *
          *  1 |  0 | 1                                                        *
          *  1 |  1 | 0                                                        *
          *                                                                    *
-         * Right stick y-axis dictates the rotation of the dig bucket         *
+         * Axis dictates the rotation of the dig bucket                       *
          *                                                                    *
          **********************************************************************/
-        digSend.lins = raw.axes[CTRL_DIG_DOWN] - raw.axes[CTRL_DIG_UP];
-        digSend.motors =
-            std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
+        digSend.lins = raw.axes[CTRL_DIG_UP] - raw.axes[CTRL_DIG_DOWN];
+
+        float_t digLins = std::min((raw.axes[CTRL_DIG_BUCKET] * 90) + 90, 180.0f);
+        digLins = std::pow(digLins, 3);
+        digLins *= 0.125;
+
+        digSend.motors = digLins;
 
         /**********************************************************************
          *                                                                    *
          * Dump controls                                                      *
-         * Manual controls using the x axis of the dpad                       *
+         * Manual controls using axis of the dpad                             *
          * Automatic sequences using buttons                                  *
          *                                                                    *
          **********************************************************************/
-        dumpSend.lins = raw.axes[CTRL_DUMP_LINS];
+        // Automatic button sequencing setup
+        if (!cooldown && raw.buttons[CTRL_DUMP_ASCEND]) {
+            cooldown = true;
+            last_time = raw.header.stamp.sec;
+            dumpAscending = !dumpAscending;
+        } else if (!cooldown && raw.buttons[CTRL_DUMP_DESCEND]) {
+            cooldown = true;
+            last_time = raw.header.stamp.sec;
+            dumpDescending = !dumpDescending;
+        } 
+
+        // assign value to dump lins
+        if (dumpAscending && dumpDescending) {
+            dumpSend.lins = 0;
+        } else if (dumpAscending) {
+            dumpSend.lins = 1;
+        } else if (dumpDescending) {
+            dumpSend.lins = -1;
+        } else {
+            dumpSend.lins = raw.axes[CTRL_DUMP_LINS];
+        }
 
         // Send messages to each subsystem
         digPub->publish(digSend);
@@ -122,7 +166,9 @@ class Distributor : public rclcpp::Node
     }
 
     bool cooldown;
-    bool digMode;
+    bool dumpAscending;
+    bool dumpDescending;
+    bool slowTurnMode;
     int32_t last_time;
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr subscription;
     rclcpp::Publisher<controls_msgs::msg::Dig>::SharedPtr digPub;

@@ -116,23 +116,18 @@
  *                                                                    *
  * RT drives forwards; LT drives backwards                            *
  * Left stick x-axis controls turning                                 *
+ * Y button enables slow turning                                      *
  *                                                                    *
  **********************************************************************/
 #define CTRL_DRIVE_FWD AXIS_RTRIGGER
 #define CTRL_DRIVE_BCK AXIS_LTRIGGER
 #define CTRL_DRIVE_TRN AXIS_LEFTX
+#define CTRL_DRIVE_SLOW_TURN BUTTON_Y
 
 /**********************************************************************
  *                                                                    *
  * Dig controls                                                       *
  * LB extends (lower dig bucket); RB retracts.                        *
- * LB | RB | Output                                                   *
- * ----------------                                                   *
- *  0 |  0 | 0                                                        *
- *  0 |  1 | -1                                                       *
- *  1 |  0 | 1                                                        *
- *  1 |  1 | 0                                                        *
- *                                                                    *
  * Right stick y-axis dictates the rotation of the dig bucket         *
  *                                                                    *
  **********************************************************************/
@@ -144,10 +139,12 @@
  *                                                                    *
  * Dump controls                                                      *
  * Manual controls using the x axis of the dpad                       *
- * Automatic sequences using buttons                                  *
+ * Automatic sequence to raise using X to lower with A                *
  *                                                                    *
  **********************************************************************/
 #define CTRL_DUMP_LINS AXIS_DPAD_X
+#define CTRL_DUMP_ASCEND BUTTON_X
+#define CTRL_DUMP_DESCEND BUTTON_A
 
 /* Indexes for each button on xbox controller, NEVER USE DIRECTLY */
 #define BUTTON_A 0

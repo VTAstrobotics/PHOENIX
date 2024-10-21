@@ -19,6 +19,8 @@ The wiring that the system requires is expected to change more frequently than t
 
 Simultaneously, on a Linux (virtual) machine on the same network as the Jetson, run the ROS2 Joy node with a controller connected via USB.
 
+To see the output of the MicroROS Agent, on the host machine, run `docker ps | grep microros`. You should see a container ID in the first column (i.e. `053632fd7b31`). Now enter `docker logs -f <container id>` (i.e. `docker logs -f 053632fd7b31`).
+
 ### Troubleshooting
 When in doubt, rebuild the container (`Ctrl + Shift + P` then type `Rebuild Container` and select `Dev Containers: Rebuild Container`). This automatically runs the `build.sh` script, which is why you don't need to manually run it the first time.
 

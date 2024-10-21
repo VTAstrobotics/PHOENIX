@@ -8,7 +8,8 @@
   "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
   "workspaceFolder": "/${localWorkspaceFolderBasename}",
   "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind",
+    "source=/dev/,target=/dev/,type=bind",
   ],
   "postStartCommand": "/bin/sh -c \"chmod 777 /workspaces/PHOENIX/.devcontainer/entrypoint.sh\" && /workspaces/PHOENIX/.devcontainer/entrypoint.sh",
   "customizations": {

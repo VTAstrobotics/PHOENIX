@@ -1,0 +1,18 @@
+name: astrodev
+
+services:
+  dev-container:
+    build:
+      dockerfile: "Dockerfile"
+    privileged: true
+    network_mode: "host"
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+  microros-agent:
+    image: microros/micro-ros-agent:humble 
+    privileged: true
+    network_mode: "host"
+    volumes:
+      - /dev:/dev
+    command: serial --dev /dev/ttyACM0 -b 115200

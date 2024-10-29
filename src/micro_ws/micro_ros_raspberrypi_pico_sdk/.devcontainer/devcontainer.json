@@ -20,7 +20,8 @@
             "redhat.vscode-xml",
             "ms-vscode.cpptools",
             "twxs.cmake",
-            "ms-vscode.cmake-tools"
+            "ms-vscode.cmake-tools",
+            "raspberry-pi.raspberry-pi-pico"
           ],
           "settings": {
               "files.associations": {

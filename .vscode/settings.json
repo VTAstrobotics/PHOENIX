@@ -13,4 +13,5 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "ros.distro": "humble",
+    "cmake.sourceDirectory": "C:/Users/abhih/PHOENIX/src/main_ws/src/controls",
 }

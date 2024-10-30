@@ -9,7 +9,7 @@ launch:
 
       remap:
         - from: "/joy"
-          to: "/driver/joy"
+          to: "/controller1/joy"
 
   - node:
       pkg: "joy"
@@ -21,4 +21,4 @@ launch:
 
       remap:
         - from: "/joy"
-          to: "/controller/joy"
+          to: "/controller2/joy"

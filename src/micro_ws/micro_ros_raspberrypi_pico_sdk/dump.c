@@ -15,8 +15,10 @@
 
 const uint LED_PIN = 25;
 const uint LEFT_ACTUATOR = 6;
-const uint RIGHT_ACTUATOR = 7;
+const uint RIGHT_ACTUATOR = 8;
 
+const uint LEFT_REVERSE = 7;
+const uint RIGHT_REVERSE = 9;
 rcl_publisher_t publisher;
 std_msgs__msg__Float32 msg, left, right;
 
@@ -27,8 +29,8 @@ void configurePWM() {
   gpio_set_function(RIGHT_ACTUATOR, GPIO_FUNC_PWM);
 
   // Find out which PWM slice is connected to GPIO 0 (it's slice 0)
-  uint slice_num = pwm_gpio_to_slice_num(10);
-  uint slice_num2 = pwm_gpio_to_slice_num(14);
+  uint slice_num = pwm_gpio_to_slice_num(LEFT_ACTUATOR);
+  uint slice_num2 = pwm_gpio_to_slice_num(RIGHT_ACTUATOR);
 
   // Set period of 4 cycles (0 to 3 inclusive)
   pwm_set_wrap(
@@ -98,13 +100,22 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time) {
   rcl_ret_t ret = rcl_publish(&publisher, &msg, NULL);
 }
 
-void right_callback(const void *msgin) {
+void control_callback(const void *msgin) {
   gpio_put(LED_PIN, 0);
 
   const std_msgs__msg__Float32 *msgS = (const std_msgs__msg__Float32 *)msgin;
 
   // Message type shall be casted to expected type from void pointer.
-  int power = (msgS[0].data * 50) + 50;
+
+  int power = (abs(msgS[0].data) * 255); // range from 0 to 255;
+  if(msgS[0].data < 0){
+    gpio_put(LEFT_REVERSE, 1);
+    gpio_put(RIGHT_REVERSE, 1);
+  }
+  else{
+    gpio_put(LEFT_REVERSE, 0);
+    gpio_put(RIGHT_REVERSE, 0);
+  }
   msg.data = power;
   pwm_set_freq_duty(pwm_gpio_to_slice_num(RIGHT_ACTUATOR),0, 200, power);
   pwm_set_freq_duty(pwm_gpio_to_slice_num(LEFT_ACTUATOR),0, 200, power);
@@ -124,6 +135,12 @@ int main() {
 
   gpio_init(LED_PIN);
   gpio_set_dir(LED_PIN, GPIO_OUT);
+
+  gpio_init(LEFT_REVERSE);
+  gpio_init(RIGHT_REVERSE);
+
+  gpio_set_dir(LEFT_REVERSE, GPIO_OUT);
+  gpio_set_dir(RIGHT_REVERSE, GPIO_OUT);
     configurePWM();
   rcl_timer_t timer;
   rcl_node_t node;
@@ -138,7 +155,6 @@ int main() {
   const uint8_t attempts = 120;
 
   rcl_ret_t ret = rmw_uros_ping_agent(timeout_ms, attempts);
-
   if (ret != RCL_RET_OK) {
     // Unreachable agent, exiting program.
 
@@ -173,7 +189,7 @@ int main() {
   // rclc_executor_add_timer(&executor, &timer);
 
   rclc_executor_add_subscription(&executor, &right_Subscriber, &right,
-                                 &right_callback, ON_NEW_DATA);
+                                 &control_callback, ON_NEW_DATA);
 
   rclc_executor_spin(&executor);
   while (true) {

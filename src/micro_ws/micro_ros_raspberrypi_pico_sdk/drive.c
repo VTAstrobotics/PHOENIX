@@ -5,7 +5,7 @@
 #include <rclc/executor.h>
 #include <rclc/rclc.h>
 #include <sensor_msgs/msg/joy.h>
-#include <std_msgs/msg/float32_multi_array.h>
+#include <std_msgs/msg/float64_multi_array.h>
 #include <std_msgs/msg/int32.h>
 
 #include <rmw_microros/rmw_microros.h>
@@ -22,7 +22,7 @@ const uint RIGHT_MOTOR = 14;
 rcl_publisher_t publisher;
 std_msgs__msg__Int32 msg;
 
-std_msgs__msg__Float32MultiArray drive;
+std_msgs__msg__Float64MultiArray drive;
 
 void configurePWM()
 {
@@ -63,11 +63,11 @@ void timer_callback(rcl_timer_t *timer, int64_t last_call_time)
 
 void drive_callback(const void *msgin)
 {
-    const std_msgs__msg__Float32MultiArray *msg =
-        (const std_msgs__msg__Float32MultiArray *)msgin;
+    const std_msgs__msg__Float64MultiArray *msg =
+        (const std_msgs__msg__Float64MultiArray *)msgin;
 
-    float left_speed = msg->data.data[0];
-    float right_speed = msg->data.data[1];
+    double left_speed = msg->data.data[0];
+    double right_speed = msg->data.data[1];
 
     int left_power =
         (int)((left_speed * 90) +
@@ -126,7 +126,7 @@ int main()
 
     rclc_subscription_init_default(
         &drive_sub, &node,
-        ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32MultiArray),
+        ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float64MultiArray),
         "drive"); // TODO: can I just get the type or do I need the sequence
                   // type
     gpio_put(LED_PIN, 1);
@@ -134,7 +134,7 @@ int main()
     msg.data = 0;
     drive.data.capacity = 2;
     drive.data.size = 2;
-    drive.data.data = malloc(2 * sizeof(float));
+    drive.data.data = malloc(2 * sizeof(double));
 
     rclc_executor_add_subscription(&executor, &drive_sub, &drive,
                                    &drive_callback, ON_NEW_DATA);

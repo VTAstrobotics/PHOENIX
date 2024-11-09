@@ -1,0 +1,78 @@
+[0.135s] Invoking command in '/workspaces/PHOENIX/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/install/controls
+[1.191s] -- The C compiler identification is GNU 11.4.0
+[1.589s] -- The CXX compiler identification is GNU 11.4.0
+[1.622s] -- Detecting C compiler ABI info
+[1.848s] -- Detecting C compiler ABI info - done
+[1.858s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.859s] -- Detecting C compile features
+[1.860s] -- Detecting C compile features - done
+[1.872s] -- Detecting CXX compiler ABI info
+[2.268s] -- Detecting CXX compiler ABI info - done
+[2.291s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.291s] -- Detecting CXX compile features
+[2.291s] -- Detecting CXX compile features - done
+[2.431s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.974s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.377s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[3.703s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.738s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.793s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.883s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.958s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.160s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.167s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.403s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.448s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.500s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.519s] -- Looking for pthread.h
+[4.643s] -- Looking for pthread.h - found
+[4.643s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.748s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.749s] -- Found Threads: TRUE  
+[4.918s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.141s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.141s] -- Configured cppcheck include dirs: 
+[5.141s] -- Configured cppcheck exclude dirs and/or files: 
+[5.142s] -- Added test 'lint_cmake' to check CMake code style
+[5.144s] -- Added test 'uncrustify' to check C / C++ code style
+[5.144s] -- Configured uncrustify additional arguments: 
+[5.147s] -- Added test 'xmllint' to check XML markup files
+[5.149s] -- Configuring done
+[5.206s] -- Generating done
+[5.212s] -- Build files have been written to: /workspaces/PHOENIX/build/controls
+[5.243s] Invoked command in '/workspaces/PHOENIX/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/install/controls
+[5.248s] Invoking command in '/workspaces/PHOENIX/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/build/controls -- -j12 -l12
+[5.325s] [ 16%] [32mBuilding CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o[0m
+[5.325s] [ 33%] [32mBuilding CXX object CMakeFiles/dig.dir/src/dig.cpp.o[0m
+[5.331s] [ 50%] [32mBuilding CXX object CMakeFiles/dump.dir/src/dump.cpp.o[0m
+[62.487s] [100%] [32m[1mLinking CXX executable dig[0m
+[62.494s] [100%] [32m[1mLinking CXX executable drivetrain[0m
+[62.494s] [100%] [32m[1mLinking CXX executable dump[0m
+[64.184s] [100%] Built target dig
+[64.203s] [100%] Built target drivetrain
+[64.257s] [100%] Built target dump
+[64.308s] Invoked command in '/workspaces/PHOENIX/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/build/controls -- -j12 -l12
+[64.387s] Invoking command in '/workspaces/PHOENIX/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/build/controls
+[64.405s] -- Install configuration: ""
+[64.406s] -- Installing: /workspaces/PHOENIX/install/controls/lib/controls/drivetrain
+[64.411s] -- Set runtime path of "/workspaces/PHOENIX/install/controls/lib/controls/drivetrain" to ""
+[64.411s] -- Installing: /workspaces/PHOENIX/install/controls/lib/controls/dig
+[64.417s] -- Set runtime path of "/workspaces/PHOENIX/install/controls/lib/controls/dig" to ""
+[64.417s] -- Installing: /workspaces/PHOENIX/install/controls/lib/controls/dump
+[64.423s] -- Set runtime path of "/workspaces/PHOENIX/install/controls/lib/controls/dump" to ""
+[64.426s] -- Installing: /workspaces/PHOENIX/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+[64.432s] -- Installing: /workspaces/PHOENIX/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+[64.440s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/environment/ament_prefix_path.sh
+[64.440s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/environment/ament_prefix_path.dsv
+[64.440s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/environment/path.sh
+[64.441s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/environment/path.dsv
+[64.441s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/local_setup.bash
+[64.441s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/local_setup.sh
+[64.441s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/local_setup.zsh
+[64.441s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/local_setup.dsv
+[64.442s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/package.dsv
+[64.447s] -- Installing: /workspaces/PHOENIX/install/controls/share/ament_index/resource_index/packages/controls
+[64.448s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/cmake/controlsConfig.cmake
+[64.449s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/cmake/controlsConfig-version.cmake
+[64.449s] -- Installing: /workspaces/PHOENIX/install/controls/share/controls/package.xml
+[64.499s] Invoked command in '/workspaces/PHOENIX/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/build/controls

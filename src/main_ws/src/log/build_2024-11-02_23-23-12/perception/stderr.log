@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/camera.dir/build.make:76: CMakeFiles/camera.dir/src/camera.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

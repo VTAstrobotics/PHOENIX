@@ -1,0 +1,3 @@
+[0mCMake Error: The source directory "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish_test_msgs" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:1395: cmake_check_build_system] Error 1

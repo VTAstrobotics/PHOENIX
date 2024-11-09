@@ -1,0 +1,54 @@
+[0.061s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/controls
+[0.845s] -- The C compiler identification is GNU 11.4.0
+[1.356s] -- The CXX compiler identification is GNU 11.4.0
+[1.378s] -- Detecting C compiler ABI info
+[1.562s] -- Detecting C compiler ABI info - done
+[1.570s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.571s] -- Detecting C compile features
+[1.574s] -- Detecting C compile features - done
+[1.581s] -- Detecting CXX compiler ABI info
+[1.731s] -- Detecting CXX compiler ABI info - done
+[1.742s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.742s] -- Detecting CXX compile features
+[1.743s] -- Detecting CXX compile features - done
+[1.781s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.022s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.226s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.349s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.363s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.392s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.473s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.582s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.588s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.759s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.821s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.865s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.885s] -- Looking for pthread.h
+[2.986s] -- Looking for pthread.h - found
+[2.986s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.071s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.072s] -- Found Threads: TRUE  
+[3.164s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.258s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.259s] -- Configured cppcheck include dirs: 
+[3.259s] -- Configured cppcheck exclude dirs and/or files: 
+[3.261s] -- Added test 'lint_cmake' to check CMake code style
+[3.263s] -- Added test 'uncrustify' to check C / C++ code style
+[3.263s] -- Configured uncrustify additional arguments: 
+[3.264s] -- Added test 'xmllint' to check XML markup files
+[3.267s] -- Configuring done
+[3.316s] -- Generating done
+[3.319s] -- Build files have been written to: /workspaces/PHOENIX/src/main_ws/src/build/controls
+[3.349s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/controls -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/controls
+[3.351s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/controls -- -j12 -l12
+[3.404s] [ 50%] [32mBuilding CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o[0m
+[3.405s] [ 50%] [32mBuilding CXX object CMakeFiles/dump.dir/src/dump.cpp.o[0m
+[3.405s] [ 50%] [32mBuilding CXX object CMakeFiles/dig.dir/src/dig.cpp.o[0m
+[71.172s] gmake[2]: *** [CMakeFiles/dump.dir/build.make:76: CMakeFiles/dump.dir/src/dump.cpp.o] Interrupt
+[71.172s] gmake[2]: *** [CMakeFiles/drivetrain.dir/build.make:76: CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o] Interrupt
+[71.172s] gmake[2]: *** [CMakeFiles/dig.dir/build.make:76: CMakeFiles/dig.dir/src/dig.cpp.o] Interrupt
+[71.172s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/drivetrain.dir/all] Interrupt
+[71.172s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/dig.dir/all] Interrupt
+[71.172s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/dump.dir/all] Interrupt
+[71.173s] gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:16 (find_package):
+  By not providing "Findros_babel_fish.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ros_babel_fish", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ros_babel_fish"
+  with any of the following names:
+
+    ros_babel_fishConfig.cmake
+    ros_babel_fish-config.cmake
+
+  Add the installation prefix of "ros_babel_fish" to CMAKE_PREFIX_PATH or set
+  "ros_babel_fish_DIR" to a directory containing one of the above files.  If
+  "ros_babel_fish" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m

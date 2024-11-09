@@ -1,0 +1,15 @@
+/workspaces/PHOENIX/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop
+/workspaces/PHOENIX/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop
+/workspaces/PHOENIX/install/teleop/share/teleop/environment/ament_prefix_path.sh
+/workspaces/PHOENIX/install/teleop/share/teleop/environment/ament_prefix_path.dsv
+/workspaces/PHOENIX/install/teleop/share/teleop/environment/path.sh
+/workspaces/PHOENIX/install/teleop/share/teleop/environment/path.dsv
+/workspaces/PHOENIX/install/teleop/share/teleop/local_setup.bash
+/workspaces/PHOENIX/install/teleop/share/teleop/local_setup.sh
+/workspaces/PHOENIX/install/teleop/share/teleop/local_setup.zsh
+/workspaces/PHOENIX/install/teleop/share/teleop/local_setup.dsv
+/workspaces/PHOENIX/install/teleop/share/teleop/package.dsv
+/workspaces/PHOENIX/install/teleop/share/ament_index/resource_index/packages/teleop
+/workspaces/PHOENIX/install/teleop/share/teleop/cmake/teleopConfig.cmake
+/workspaces/PHOENIX/install/teleop/share/teleop/cmake/teleopConfig-version.cmake
+/workspaces/PHOENIX/install/teleop/share/teleop/package.xml

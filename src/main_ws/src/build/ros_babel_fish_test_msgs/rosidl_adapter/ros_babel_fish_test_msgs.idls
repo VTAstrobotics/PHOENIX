@@ -1,0 +1,4 @@
+/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs/rosidl_adapter/ros_babel_fish_test_msgs:action/SimpleTest.idl
+/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs/rosidl_adapter/ros_babel_fish_test_msgs:msg/TestArray.idl
+/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs/rosidl_adapter/ros_babel_fish_test_msgs:msg/TestMessage.idl
+/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs/rosidl_adapter/ros_babel_fish_test_msgs:msg/TestSubArray.idl

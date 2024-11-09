@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/joy_tester/joy_tester.egg-info/PKG-INFO
+writing dependency_links to ../../build/joy_tester/joy_tester.egg-info/dependency_links.txt
+writing entry points to ../../build/joy_tester/joy_tester.egg-info/entry_points.txt
+writing requirements to ../../build/joy_tester/joy_tester.egg-info/requires.txt
+writing top-level names to ../../build/joy_tester/joy_tester.egg-info/top_level.txt
+reading manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester-0.0.2-py3.10.egg-info' (and everything under it)
+Copying ../../build/joy_tester/joy_tester.egg-info to /workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester-0.0.2-py3.10.egg-info
+running install_scripts
+Installing test_joy script to /workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/joy_tester
+writing list of installed files to '/workspaces/PHOENIX/src/main_ws/build/joy_tester/install.log'

@@ -1,0 +1,385 @@
+[0.111s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.111s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ff7df410430>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ff7df51cb20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ff7df51cb20>>, mixin_verb=('build',))
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.256s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.256s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/PHOENIX/src/main_ws'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/controls) by extension 'ros'
+[0.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controls' with type 'ros.ament_cmake' and name 'controls'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/drive_station) by extension 'ros'
+[0.275s] DEBUG:colcon.colcon_core.package_identification:Package 'src/drive_station' with type 'ros.ament_cmake' and name 'drive_station'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ignore', 'ignore_ament_install']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joy_tester' with type 'ros.ament_python' and name 'joy_tester'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception' with type 'ros.ament_cmake' and name 'perception'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extension 'ignore'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extension 'ignore_ament_install'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extensions ['colcon_pkg']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extension 'colcon_pkg'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extensions ['colcon_meta']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extension 'colcon_meta'
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extensions ['ros']
+[0.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop) by extension 'ros'
+[0.279s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop' with type 'ros.ament_cmake' and name 'teleop'
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'controls' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'controls' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/PHOENIX/src/main_ws/build/controls', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/PHOENIX/src/main_ws/install/controls', 'merge_install': False, 'path': '/workspaces/PHOENIX/src/main_ws/src/controls', 'symlink_install': False, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'drive_station' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'drive_station' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/PHOENIX/src/main_ws/install/drive_station', 'merge_install': False, 'path': '/workspaces/PHOENIX/src/main_ws/src/drive_station', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'joy_tester' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/PHOENIX/src/main_ws/build/joy_tester', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/PHOENIX/src/main_ws/install/joy_tester', 'merge_install': False, 'path': '/workspaces/PHOENIX/src/main_ws/src/joy_tester', 'symlink_install': False, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/PHOENIX/src/main_ws/build/perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/PHOENIX/src/main_ws/install/perception', 'merge_install': False, 'path': '/workspaces/PHOENIX/src/main_ws/src/perception', 'symlink_install': False, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/PHOENIX/src/main_ws/install/teleop', 'merge_install': False, 'path': '/workspaces/PHOENIX/src/main_ws/src/teleop', 'symlink_install': False, 'test_result_base': None}
+[0.303s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.304s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.305s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/PHOENIX/src/main_ws/src/controls' with build type 'ament_cmake'
+[0.305s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/PHOENIX/src/main_ws/src/controls'
+[0.307s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.312s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/PHOENIX/src/main_ws/src/drive_station' with build type 'ament_cmake'
+[0.313s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/PHOENIX/src/main_ws/src/drive_station'
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.320s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/PHOENIX/src/main_ws/src/joy_tester' with build type 'ament_python'
+[0.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'ament_prefix_path')
+[0.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.ps1'
+[0.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.dsv'
+[0.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.sh'
+[0.325s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.325s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/PHOENIX/src/main_ws/src/perception' with build type 'ament_cmake'
+[0.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/PHOENIX/src/main_ws/src/perception'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/PHOENIX/src/main_ws/src/teleop' with build type 'ament_cmake'
+[0.335s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/PHOENIX/src/main_ws/src/teleop'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls -- -j12 -l12
+[0.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j12 -l12
+[0.645s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/PHOENIX/src/main_ws/src/joy_tester'
+[0.645s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.645s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j12 -l12
+[0.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j12 -l12
+[0.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/controls -- -j12 -l12
+[0.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j12 -l12
+[0.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station
+[0.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls
+[0.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/teleop -- -j12 -l12
+[0.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controls)
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/perception -- -j12 -l12
+[0.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/controls
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls' for CMake module files
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls' for CMake config files
+[0.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('controls', 'cmake_prefix_path')
+[0.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.dsv'
+[0.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.sh'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/bin'
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib/pkgconfig/controls.pc'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib/python3.10/site-packages'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/bin'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.dsv'
+[0.880s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.sh'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.bash'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.zsh'
+[0.887s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/controls/share/colcon-core/packages/controls)
+[0.900s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drive_station)
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station' for CMake module files
+[0.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/teleop': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop
+[0.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station' for CMake config files
+[0.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_station', 'cmake_prefix_path')
+[0.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.ps1'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.dsv'
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.sh'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/bin'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/lib/pkgconfig/drive_station.pc'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/lib/python3.10/site-packages'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/bin'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.ps1'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.sh'
+[0.935s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.bash'
+[0.936s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.zsh'
+[0.936s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/drive_station/share/colcon-core/packages/drive_station)
+[0.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception
+[0.965s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop)
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop' for CMake module files
+[0.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/teleop
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop' for CMake config files
+[0.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop', 'cmake_prefix_path')
+[0.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.ps1'
+[0.979s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.dsv'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.sh'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/bin'
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/lib/pkgconfig/teleop.pc'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/lib/python3.10/site-packages'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/bin'
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.ps1'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.sh'
+[0.989s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.bash'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.zsh'
+[0.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/teleop/share/colcon-core/packages/teleop)
+[0.996s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controls)
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls' for CMake module files
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls' for CMake config files
+[0.998s] Level 1:colcon.colcon_core.shell:create_environment_hook('controls', 'cmake_prefix_path')
+[0.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.ps1'
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.dsv'
+[1.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/hook/cmake_prefix_path.sh'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/bin'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib/pkgconfig/controls.pc'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/lib/python3.10/site-packages'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/controls/bin'
+[1.002s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.ps1'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.sh'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.bash'
+[1.005s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.zsh'
+[1.005s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/controls/share/colcon-core/packages/controls)
+[1.006s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception)
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception' for CMake module files
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception' for CMake config files
+[1.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/perception
+[1.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'cmake_prefix_path')
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.sh'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/bin'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib/pkgconfig/perception.pc'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib/python3.10/site-packages'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/bin'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.ps1'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.dsv'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.sh'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.bash'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.zsh'
+[1.022s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/perception/share/colcon-core/packages/perception)
+[1.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drive_station)
+[1.024s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station' for CMake module files
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station' for CMake config files
+[1.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('drive_station', 'cmake_prefix_path')
+[1.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.ps1'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.dsv'
+[1.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/hook/cmake_prefix_path.sh'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/bin'
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/lib/pkgconfig/drive_station.pc'
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/lib/python3.10/site-packages'
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/drive_station/bin'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.ps1'
+[1.054s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.sh'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.bash'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.zsh'
+[1.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/drive_station/share/colcon-core/packages/drive_station)
+[1.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop)
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop' for CMake module files
+[1.060s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop' for CMake config files
+[1.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop', 'cmake_prefix_path')
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.ps1'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/hook/cmake_prefix_path.sh'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/bin'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/lib/pkgconfig/teleop.pc'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/lib/python3.10/site-packages'
+[1.063s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/teleop/bin'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.ps1'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.sh'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.bash'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.zsh'
+[1.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/teleop/share/colcon-core/packages/teleop)
+[1.066s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(perception)
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception' for CMake module files
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception' for CMake config files
+[1.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('perception', 'cmake_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/hook/cmake_prefix_path.sh'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/bin'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib/pkgconfig/perception.pc'
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/lib/python3.10/site-packages'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/perception/bin'
+[1.074s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.sh'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.zsh'
+[1.081s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/perception/share/colcon-core/packages/perception)
+[1.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/PHOENIX/src/main_ws/src/joy_tester': PYTHONPATH=/workspaces/PHOENIX/src/main_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /workspaces/PHOENIX/src/main_ws/build/joy_tester/build install --record /workspaces/PHOENIX/src/main_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[1.580s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester' for CMake module files
+[1.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/PHOENIX/src/main_ws/src/joy_tester' returned '0': PYTHONPATH=/workspaces/PHOENIX/src/main_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /workspaces/PHOENIX/src/main_ws/build/joy_tester/build install --record /workspaces/PHOENIX/src/main_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[1.581s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester' for CMake config files
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester/bin'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/pkgconfig/joy_tester.pc'
+[1.583s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester/lib/python3.10/site-packages'
+[1.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'pythonpath')
+[1.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/pythonpath.ps1'
+[1.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/pythonpath.dsv'
+[1.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/hook/pythonpath.sh'
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/workspaces/PHOENIX/src/main_ws/install/joy_tester/bin'
+[1.585s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_tester)
+[1.585s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/package.ps1'
+[1.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/package.dsv'
+[1.586s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/package.sh'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/package.bash'
+[1.589s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/joy_tester/package.zsh'
+[1.590s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/PHOENIX/src/main_ws/install/joy_tester/share/colcon-core/packages/joy_tester)
+[1.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.592s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.596s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.599s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.600s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/PHOENIX/src/main_ws/install/local_setup.ps1'
+[1.602s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/PHOENIX/src/main_ws/install/_local_setup_util_ps1.py'
+[1.604s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/PHOENIX/src/main_ws/install/setup.ps1'
+[1.606s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/PHOENIX/src/main_ws/install/local_setup.sh'
+[1.606s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/PHOENIX/src/main_ws/install/_local_setup_util_sh.py'
+[1.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/PHOENIX/src/main_ws/install/setup.sh'
+[1.608s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/PHOENIX/src/main_ws/install/local_setup.bash'
+[1.610s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/PHOENIX/src/main_ws/install/setup.bash'
+[1.611s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/PHOENIX/src/main_ws/install/local_setup.zsh'
+[1.612s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/PHOENIX/src/main_ws/install/setup.zsh'

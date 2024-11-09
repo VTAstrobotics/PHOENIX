@@ -1,0 +1,38 @@
+[2.113s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/joy_tester': PYTHONPATH=/workspaces/PHOENIX/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_tester build --build-base /workspaces/PHOENIX/build/joy_tester/build install --record /workspaces/PHOENIX/build/joy_tester/install.log --single-version-externally-managed install_data
+[2.734s] running egg_info
+[2.743s] creating ../../../../build/joy_tester/joy_tester.egg-info
+[2.744s] writing ../../../../build/joy_tester/joy_tester.egg-info/PKG-INFO
+[2.746s] writing dependency_links to ../../../../build/joy_tester/joy_tester.egg-info/dependency_links.txt
+[2.751s] writing entry points to ../../../../build/joy_tester/joy_tester.egg-info/entry_points.txt
+[2.752s] writing requirements to ../../../../build/joy_tester/joy_tester.egg-info/requires.txt
+[2.753s] writing top-level names to ../../../../build/joy_tester/joy_tester.egg-info/top_level.txt
+[2.753s] writing manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[2.759s] reading manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[2.763s] adding license file 'LICENSE'
+[2.766s] writing manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[2.766s] running build
+[2.766s] running build_py
+[2.767s] creating /workspaces/PHOENIX/build/joy_tester/build
+[2.769s] creating /workspaces/PHOENIX/build/joy_tester/build/lib
+[2.771s] creating /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+[2.774s] copying joy_tester/__init__.py -> /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+[2.777s] copying joy_tester/test_joy.py -> /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+[2.778s] running install
+[2.778s] running install_lib
+[2.780s] creating /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[2.782s] copying /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester/__init__.py -> /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[2.783s] copying /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester/test_joy.py -> /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[2.787s] byte-compiling /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester/__init__.py to __init__.cpython-310.pyc
+[2.794s] byte-compiling /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester/test_joy.py to test_joy.cpython-310.pyc
+[2.796s] running install_data
+[2.796s] creating /workspaces/PHOENIX/install/joy_tester/share/ament_index
+[2.798s] creating /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index
+[2.801s] creating /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index/packages
+[2.805s] copying resource/joy_tester -> /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index/packages
+[2.806s] copying package.xml -> /workspaces/PHOENIX/install/joy_tester/share/joy_tester
+[2.806s] running install_egg_info
+[2.809s] Copying ../../../../build/joy_tester/joy_tester.egg-info to /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester-0.0.2-py3.10.egg-info
+[2.827s] running install_scripts
+[2.887s] Installing test_joy script to /workspaces/PHOENIX/install/joy_tester/lib/joy_tester
+[2.891s] writing list of installed files to '/workspaces/PHOENIX/build/joy_tester/install.log'
+[3.037s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/joy_tester' returned '0': PYTHONPATH=/workspaces/PHOENIX/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_tester build --build-base /workspaces/PHOENIX/build/joy_tester/build install --record /workspaces/PHOENIX/build/joy_tester/install.log --single-version-externally-managed install_data

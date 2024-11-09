@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_babel_fish_test_msgs/msg/TestSubArray.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module ros_babel_fish_test_msgs {
+  module msg {
+    typedef builtin_interfaces::msg::Time builtin_interfaces__msg__Time;
+    typedef builtin_interfaces__msg__Time builtin_interfaces__msg__Time__42[42];
+    struct TestSubArray {
+      sequence<int32> ints;
+
+      sequence<string, 10> strings;
+
+      builtin_interfaces__msg__Time__42 times;
+    };
+  };
+};

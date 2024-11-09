@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o[0m
+[100%] [32m[1mLinking CXX executable camera[0m
+[100%] Built target camera
+-- Install configuration: ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/lib/perception/camera
+-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/perception/lib/perception/camera" to ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/package_run_dependencies/perception
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/parent_prefix_path/perception
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.bash
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.zsh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/packages/perception
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig.cmake
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig-version.cmake
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.xml

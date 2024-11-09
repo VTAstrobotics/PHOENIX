@@ -1,0 +1,7 @@
+gmake[2]: *** [CMakeFiles/dump.dir/build.make:76: CMakeFiles/dump.dir/src/dump.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/drivetrain.dir/build.make:76: CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/dig.dir/build.make:76: CMakeFiles/dig.dir/src/dig.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/drivetrain.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/dig.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/dump.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

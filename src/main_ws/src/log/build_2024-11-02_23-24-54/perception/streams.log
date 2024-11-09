@@ -1,0 +1,25 @@
+[0.066s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/perception -- -j12 -l12
+[0.403s] [ 50%] [32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o[0m
+[65.130s] [100%] [32m[1mLinking CXX executable camera[0m
+[67.725s] [100%] Built target camera
+[68.116s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/perception -- -j12 -l12
+[68.466s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/perception
+[68.579s] -- Install configuration: ""
+[68.593s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/lib/perception/camera
+[68.684s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/perception/lib/perception/camera" to ""
+[68.691s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/package_run_dependencies/perception
+[68.695s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/parent_prefix_path/perception
+[68.699s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.sh
+[68.703s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.dsv
+[68.704s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.sh
+[68.706s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.dsv
+[68.710s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.bash
+[68.715s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.sh
+[68.718s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.zsh
+[68.722s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.dsv
+[68.734s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.dsv
+[68.744s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/packages/perception
+[68.745s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig.cmake
+[68.746s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig-version.cmake
+[68.747s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.xml
+[68.766s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/perception

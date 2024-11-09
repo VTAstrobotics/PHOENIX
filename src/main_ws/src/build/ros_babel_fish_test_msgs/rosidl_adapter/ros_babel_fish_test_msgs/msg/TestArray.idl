@@ -1,0 +1,55 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros_babel_fish_test_msgs/msg/TestArray.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "builtin_interfaces/msg/Time.idl"
+#include "ros_babel_fish_test_msgs/msg/TestSubArray.idl"
+
+module ros_babel_fish_test_msgs {
+  module msg {
+    typedef uint16 uint16__32[32];
+    typedef int64 int64__32[32];
+    typedef builtin_interfaces::msg::Duration builtin_interfaces__msg__Duration;
+    typedef builtin_interfaces__msg__Duration builtin_interfaces__msg__Duration__12[12];
+    typedef ros_babel_fish_test_msgs::msg::TestSubArray ros_babel_fish_test_msgs__msg__TestSubArray;
+    typedef ros_babel_fish_test_msgs__msg__TestSubArray ros_babel_fish_test_msgs__msg__TestSubArray__10[10];
+    struct TestArray {
+      sequence<boolean> bools;
+
+      sequence<uint8> uint8s;
+
+      uint16__32 uint16s;
+
+      sequence<uint32> uint32s;
+
+      sequence<uint64> uint64s;
+
+      sequence<int8> int8s;
+
+      sequence<int16> int16s;
+
+      sequence<int32> int32s;
+
+      @verbatim (language="comment", text=
+        "Comment")
+      int64__32 int64s;
+
+      sequence<float> float32s;
+
+      @verbatim (language="comment", text=
+        "Bounded array")
+      sequence<double, 16> float64s;
+
+      sequence<builtin_interfaces::msg::Time> times;
+
+      builtin_interfaces__msg__Duration__12 durations;
+
+      sequence<string> strings;
+
+      ros_babel_fish_test_msgs__msg__TestSubArray__10 subarrays_fixed;
+
+      sequence<ros_babel_fish_test_msgs::msg::TestSubArray> subarrays;
+    };
+  };
+};

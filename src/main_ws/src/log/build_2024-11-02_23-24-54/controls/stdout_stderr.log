@@ -1,0 +1,31 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/dump.dir/src/dump.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dig.dir/src/dig.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable dump[0m
+[ 83%] [32m[1mLinking CXX executable dig[0m
+[100%] [32m[1mLinking CXX executable drivetrain[0m
+[100%] Built target dump
+[100%] Built target dig
+[100%] Built target drivetrain
+-- Install configuration: ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/drivetrain
+-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/drivetrain" to ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dig
+-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dig" to ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dump
+-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dump" to ""
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.bash
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.sh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.zsh
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.dsv
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/packages/controls
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig.cmake
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig-version.cmake
+-- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.xml

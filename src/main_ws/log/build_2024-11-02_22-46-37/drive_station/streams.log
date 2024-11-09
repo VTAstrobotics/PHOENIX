@@ -1,0 +1,30 @@
+[0.105s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j12 -l12
+[0.512s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.947s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.160s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.319s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.322s] -- Added test 'lint_cmake' to check CMake code style
+[1.324s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.327s] -- Added test 'xmllint' to check XML markup files
+[1.332s] -- Configuring done
+[1.344s] -- Generating done
+[1.347s] -- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/drive_station
+[1.417s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/build/drive_station -- -j12 -l12
+[1.540s] Invoking command in '/workspaces/PHOENIX/src/main_ws/build/drive_station': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station
+[1.553s] -- Install configuration: ""
+[1.553s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/package_run_dependencies/drive_station
+[1.553s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/parent_prefix_path/drive_station
+[1.554s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.sh
+[1.557s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.dsv
+[1.558s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.sh
+[1.562s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.dsv
+[1.563s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.bash
+[1.565s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.sh
+[1.566s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.zsh
+[1.566s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.dsv
+[1.566s] -- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv
+[1.566s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/packages/drive_station
+[1.566s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig.cmake
+[1.566s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig-version.cmake
+[1.567s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.xml
+[1.574s] Invoked command in '/workspaces/PHOENIX/src/main_ws/build/drive_station' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/build/drive_station

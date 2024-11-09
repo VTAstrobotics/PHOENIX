@@ -1,0 +1,10 @@
+/workspaces/PHOENIX/build/perception/CMakeFiles/uninstall.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/perception_uninstall.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/camera.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/test.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/edit_cache.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/rebuild_cache.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/list_install_components.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/install.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/install/local.dir
+/workspaces/PHOENIX/build/perception/CMakeFiles/install/strip.dir

@@ -1,0 +1,26 @@
+[0.081s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/controls -- -j12 -l12
+[0.363s] [ 33%] Built target dump
+[0.364s] [ 66%] Built target drivetrain
+[0.373s] [100%] Built target dig
+[0.471s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/controls -- -j12 -l12
+[0.606s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/controls
+[0.618s] -- Install configuration: ""
+[0.620s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/drivetrain
+[0.621s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dig
+[0.623s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dump
+[0.623s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+[0.624s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+[0.625s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.sh
+[0.626s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.dsv
+[0.628s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.sh
+[0.629s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.dsv
+[0.629s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.bash
+[0.629s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.sh
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.zsh
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.dsv
+[0.630s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.dsv
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/packages/controls
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig.cmake
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig-version.cmake
+[0.630s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.xml
+[0.635s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/controls

@@ -1,0 +1,52 @@
+[0.054s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/qml_ros2_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/qml_ros2_plugin -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/qml_ros2_plugin
+[0.808s] -- The C compiler identification is GNU 11.4.0
+[1.318s] -- The CXX compiler identification is GNU 11.4.0
+[1.339s] -- Detecting C compiler ABI info
+[1.522s] -- Detecting C compiler ABI info - done
+[1.530s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.531s] -- Detecting C compile features
+[1.534s] -- Detecting C compile features - done
+[1.541s] -- Detecting CXX compiler ABI info
+[1.700s] -- Detecting CXX compiler ABI info - done
+[1.708s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.708s] -- Detecting CXX compile features
+[1.708s] -- Detecting CXX compile features - done
+[1.741s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.975s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.182s] -- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+[2.196s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[2.310s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.323s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.353s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.542s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.548s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.719s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.787s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.836s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.845s] -- Looking for pthread.h
+[2.945s] -- Looking for pthread.h - found
+[2.946s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.025s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.027s] -- Found Threads: TRUE  
+[3.274s] [31mCMake Error at CMakeLists.txt:16 (find_package):
+[3.274s]   By not providing "Findros_babel_fish.cmake" in CMAKE_MODULE_PATH this
+[3.274s]   project has asked CMake to find a package configuration file provided by
+[3.274s]   "ros_babel_fish", but CMake did not find one.
+[3.274s] 
+[3.274s]   Could not find a package configuration file provided by "ros_babel_fish"
+[3.274s]   with any of the following names:
+[3.274s] 
+[3.274s]     ros_babel_fishConfig.cmake
+[3.275s]     ros_babel_fish-config.cmake
+[3.275s] 
+[3.275s]   Add the installation prefix of "ros_babel_fish" to CMAKE_PREFIX_PATH or set
+[3.275s]   "ros_babel_fish_DIR" to a directory containing one of the above files.  If
+[3.275s]   "ros_babel_fish" provides a separate development package or SDK, be sure it
+[3.275s]   has been installed.
+[3.276s] 
+[3.276s] [0m
+[3.276s] -- Configuring incomplete, errors occurred!
+[3.276s] See also "/workspaces/PHOENIX/src/main_ws/src/build/qml_ros2_plugin/CMakeFiles/CMakeOutput.log".
+[3.300s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/qml_ros2_plugin' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/qml_ros2_plugin -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/qml_ros2_plugin

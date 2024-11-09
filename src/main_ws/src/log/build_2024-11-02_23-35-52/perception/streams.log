@@ -1,0 +1,21 @@
+[0.067s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/perception -- -j12 -l12
+[0.138s] [100%] Built target camera
+[0.186s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/perception -- -j12 -l12
+[0.230s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/perception
+[0.242s] -- Install configuration: ""
+[0.242s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/lib/perception/camera
+[0.242s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/package_run_dependencies/perception
+[0.242s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/parent_prefix_path/perception
+[0.242s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.sh
+[0.243s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/ament_prefix_path.dsv
+[0.243s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.sh
+[0.243s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/environment/path.dsv
+[0.243s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.bash
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.sh
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.zsh
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/local_setup.dsv
+[0.244s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.dsv
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/ament_index/resource_index/packages/perception
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig.cmake
+[0.244s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/cmake/perceptionConfig-version.cmake
+[0.245s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/perception/share/perception/package.xml

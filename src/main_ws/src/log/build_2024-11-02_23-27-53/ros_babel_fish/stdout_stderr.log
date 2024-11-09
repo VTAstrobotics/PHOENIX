@@ -1,0 +1,324 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[  9%] Built target gtest
+[  9%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target ros_babel_fish[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_subscription.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/messages/compound_message.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_publisher.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/detail/topic.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/messages/message.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/babel_fish.cpp.o[0m
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_publisher.cpp:[m[K In constructor ‘[01m[Kros_babel_fish::BabelFishPublisher::BabelFishPublisher(rclcpp::node_interfaces::NodeBaseInterface*, const rosidl_message_type_support_t&, const string&, const rclcpp::QoS&, const PublisherOptions&)[m[K’:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_publisher.cpp:20:25:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::PublisherBase::PublisherBase(rclcpp::node_interfaces::NodeBaseInterface*&, const string&, const rosidl_message_type_support_t&, rcl_publisher_options_t, const rclcpp::PublisherEventCallbacks&, const bool&)[m[K’
+   20 |       options_( options [01;31m[K)[m[K
+      |                         [01;31m[K^[m[K
+In file included from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_publisher.hpp:10[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_publisher.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:77:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::PublisherBase::PublisherBase(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rosidl_message_type_support_t&, const rcl_publisher_options_t&)[m[K’
+   77 |   [01;36m[KPublisherBase[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:77:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 6 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:60:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::PublisherBase::PublisherBase(const rclcpp::PublisherBase&)[m[K’
+   60 | class [01;36m[KPublisherBase[m[K : public std::enable_shared_from_this<PublisherBase>
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:60:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 6 provided
+gmake[2]: *** [CMakeFiles/ros_babel_fish.dir/build.make:104: CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_publisher.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:5[m[K:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   22 |       std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics[01;31m[K>[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KSubscriptionTopicStatistics[m[K’
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:7:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ has not been declared
+   33 |       [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics = nullptr );
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:59:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   59 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessageType::SharedPtr get_shared_dynamic_message_type() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:61:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   61 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr get_shared_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:63:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   63 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicSerializationSupport::SharedPtr
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:66:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   66 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr create_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:35:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::dynamic_typesupport[m[K’ has not been declared
+   69 |   return_dynamic_message( rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message ) override;
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:82:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+   69 |   return_dynamic_message( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr [01;31m[K&[m[Kmessage ) override;
+      |                                                                                  [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message,
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K::[m[KSharedPtr &message,
+      |                                                                                 [01;31m[K^~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message[34m[K([m[K const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K:[m[K[32m[K:[m[KSharedPtr &message,
+      |                              [34m[K~[m[K                                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                 [32m[K)[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::[01;31m[KDynamicMessage[m[K::SharedPtr &message,
+      |                                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                                 [32m[K;[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:83:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage::[01;31m[KSharedPtr[m[K &message,
+      |                                                                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ does not name a type
+   80 |   [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics_{ nullptr };
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:81:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   80 |   SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics_{ nullptr }[01;35m[K;[m[K
+      |                                                                                 [01;35m[K^[m[K
+      |                                                                                 [31m[K-[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid ros_babel_fish::BabelFishSubscription::return_dynamic_message(int)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   69 |   [01;31m[Kreturn_dynamic_message[m[K( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr &message ) override;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:76:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knullptr[m[K’ from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’
+   33 |       SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics = [01;31m[Knullptr[m[K );
+      |                                                                            [01;31m[K^~~~~~~[m[K
+      |                                                                            [01;31m[K|[m[K
+      |                                                                            [01;31m[Kstd::nullptr_t[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ has not been declared
+   21 |     [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics )
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:[m[K In constructor ‘[01m[Kros_babel_fish::BabelFishSubscription::BabelFishSubscription(rclcpp::node_interfaces::NodeBaseInterface*, ros_babel_fish::MessageTypeSupport::ConstSharedPtr, const string&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, const rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >&, int)[m[K’:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:23:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >::to_rcl_subscription_options(const rclcpp::QoS&) const[m[K’
+   23 |                                 [01;31m[Koptions.to_rcl_subscription_options( qos )[m[K, options.event_callbacks,
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:9[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:115:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT> rcl_subscription_options_t rclcpp::SubscriptionOptionsWithAllocator<Allocator>::to_rcl_subscription_options(const rclcpp::QoS&) const [with MessageT = MessageT; Allocator = std::allocator<void>][m[K’
+  115 |   [01;36m[Kto_rcl_subscription_options[m[K(const rclcpp::QoS & qos) const
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:115:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:23:68:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KMessageT[m[K’
+   23 |                                 [01;36m[Koptions.to_rcl_subscription_options( qos )[m[K, options.event_callbacks,
+      |                                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:26:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::DeliveredMessageKind[m[K’ has not been declared
+   26 |                                     ? rclcpp::[01;31m[KDeliveredMessageKind[m[K::SERIALIZED_MESSAGE
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:27:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::DeliveredMessageKind[m[K’ has not been declared
+   27 |                                     : rclcpp::[01;31m[KDeliveredMessageKind[m[K::ROS_MESSAGE ),
+      |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:32:38:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kint[m[K’ and ‘[01m[Kstd::nullptr_t[m[K’ to binary ‘[01m[Koperator!=[m[K’
+   32 |   if ( [01;31m[Ksubscription_topic_statistics != nullptr[m[K ) {
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:33:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ros_babel_fish::BabelFishSubscription[m[K’ has no member named ‘[01m[Ksubscription_topic_statistics_[m[K’
+   33 |     this->[01;31m[Ksubscription_topic_statistics_[m[K = std::move( subscription_topic_statistics );
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:[m[K In member function ‘[01m[Kvirtual void ros_babel_fish::BabelFishSubscription::handle_message(std::shared_ptr<void>&, const rclcpp::MessageInfo&)[m[K’:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:68:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_topic_statistics_[m[K’ was not declared in this scope
+   68 |   if ( [01;31m[Ksubscription_topic_statistics_[m[K ) {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:76:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_topic_statistics_[m[K’ was not declared in this scope
+   76 |   if ( [01;31m[Ksubscription_topic_statistics_[m[K ) {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:[m[K In member function ‘[01m[Kvirtual void ros_babel_fish::BabelFishSubscription::handle_serialized_message(const std::shared_ptr<rclcpp::SerializedMessage>&, const rclcpp::MessageInfo&)[m[K’:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:88:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_topic_statistics_[m[K’ was not declared in this scope
+   88 |   if ( [01;31m[Ksubscription_topic_statistics_[m[K ) {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:96:8:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_topic_statistics_[m[K’ was not declared in this scope
+   96 |   if ( [01;31m[Ksubscription_topic_statistics_[m[K ) {
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:[m[K At global scope:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:138:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+  138 | rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessageType::SharedPtr
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:145:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+  145 | rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:152:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+  152 | rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicSerializationSupport::SharedPtr
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:159:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+  159 | rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr BabelFishSubscription::create_dynamic_message()
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:165:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kreturn_dynamic_message[m[K’ declared void
+  165 | void [01;31m[KBabelFishSubscription[m[K::return_dynamic_message(
+      |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:166:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::dynamic_typesupport[m[K’ has not been declared
+  166 |     rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr & )
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:166:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  166 |     rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr & [01;31m[K)[m[K
+      |                                                              [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:173:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+  173 |     const rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &, const rclcpp::MessageInfo & )
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:173:54:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  173 |     const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K::[m[KSharedPtr &, const rclcpp::MessageInfo & )
+      |                                                      [01;31m[K^~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:173:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  173 |     const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K:[m[K[32m[K:[m[KSharedPtr &, const rclcpp::MessageInfo & )
+      |                                                      [01;31m[K^[m[K[32m[K~[m[K
+      |                                                      [32m[K)[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:172:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  172 | void BabelFishSubscription::handle_dynamic_message[01;36m[K([m[K
+      |                                                   [01;36m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/detail/babel_fish_subscription.cpp:173:54:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  173 |     const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K::[m[KSharedPtr &, const rclcpp::MessageInfo & )
+      |                                                      [01;31m[K^~[m[K
+In file included from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/babel_fish.hpp:12[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/babel_fish.cpp:4[m[K:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   22 |       std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics[01;31m[K>[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KSubscriptionTopicStatistics[m[K’
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:7:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ has not been declared
+   33 |       [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics = nullptr );
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:59:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   59 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessageType::SharedPtr get_shared_dynamic_message_type() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:61:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   61 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr get_shared_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:63:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   63 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicSerializationSupport::SharedPtr
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:66:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   66 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr create_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:35:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::dynamic_typesupport[m[K’ has not been declared
+   69 |   return_dynamic_message( rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message ) override;
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:82:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+   69 |   return_dynamic_message( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr [01;31m[K&[m[Kmessage ) override;
+      |                                                                                  [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message,
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K::[m[KSharedPtr &message,
+      |                                                                                 [01;31m[K^~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message[34m[K([m[K const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K:[m[K[32m[K:[m[KSharedPtr &message,
+      |                              [34m[K~[m[K                                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                 [32m[K)[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::[01;31m[KDynamicMessage[m[K::SharedPtr &message,
+      |                                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                                 [32m[K;[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:83:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage::[01;31m[KSharedPtr[m[K &message,
+      |                                                                                   [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/babel_fish.hpp:12[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/messages/message.cpp:6[m[K:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’
+   22 |       std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics[01;31m[K>[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:22:76:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[KSubscriptionTopicStatistics[m[K’
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:7:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ has not been declared
+   33 |       [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics = nullptr );
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:59:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   59 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessageType::SharedPtr get_shared_dynamic_message_type() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:61:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   61 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr get_shared_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:63:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   63 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicSerializationSupport::SharedPtr
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:66:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   66 |   rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr create_dynamic_message() override;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:35:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::dynamic_typesupport[m[K’ has not been declared
+   69 |   return_dynamic_message( rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message ) override;
+      |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:82:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K&[m[K’ token
+   69 |   return_dynamic_message( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr [01;31m[K&[m[Kmessage ) override;
+      |                                                                                  [01;31m[K^[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kdynamic_typesupport[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::[01;31m[Kdynamic_typesupport[m[K::DynamicMessage::SharedPtr &message,
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K::[m[KSharedPtr &message,
+      |                                                                                 [01;31m[K^~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:81:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   71 |   void handle_dynamic_message[34m[K([m[K const rclcpp::dynamic_typesupport::DynamicMessage[01;31m[K:[m[K[32m[K:[m[KSharedPtr &message,
+      |                              [34m[K~[m[K                                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                                 [32m[K)[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:67:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::[01;31m[KDynamicMessage[m[K::SharedPtr &message,
+      |                                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                                                                 [32m[K;[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:71:83:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   71 |   void handle_dynamic_message( const rclcpp::dynamic_typesupport::DynamicMessage::[01;31m[KSharedPtr[m[K &message,
+      |                                                                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ does not name a type
+   80 |   [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics_{ nullptr };
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:81:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   80 |   SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics_{ nullptr }[01;35m[K;[m[K
+      |                                                                                 [01;35m[K^[m[K
+      |                                                                                 [31m[K-[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid ros_babel_fish::BabelFishSubscription::return_dynamic_message(int)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   69 |   [01;31m[Kreturn_dynamic_message[m[K( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr &message ) override;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:76:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knullptr[m[K’ from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’
+   33 |       SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics = [01;31m[Knullptr[m[K );
+      |                                                                            [01;31m[K^~~~~~~[m[K
+      |                                                                            [01;31m[K|[m[K
+      |                                                                            [01;31m[Kstd::nullptr_t[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriptionTopicStatisticsSharedPtr[m[K’ does not name a type
+   80 |   [01;31m[KSubscriptionTopicStatisticsSharedPtr[m[K subscription_topic_statistics_{ nullptr };
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:80:81:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   80 |   SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics_{ nullptr }[01;35m[K;[m[K
+      |                                                                                 [01;35m[K^[m[K
+      |                                                                                 [31m[K-[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:69:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid ros_babel_fish::BabelFishSubscription::return_dynamic_message(int)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   69 |   [01;31m[Kreturn_dynamic_message[m[K( rclcpp::dynamic_typesupport::DynamicMessage::SharedPtr &message ) override;
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:76:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knullptr[m[K’ from ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’
+   33 |       SubscriptionTopicStatisticsSharedPtr subscription_topic_statistics = [01;31m[Knullptr[m[K );
+      |                                                                            [01;31m[K^~~~~~~[m[K
+      |                                                                            [01;31m[K|[m[K
+      |                                                                            [01;31m[Kstd::nullptr_t[m[K
+gmake[2]: *** [CMakeFiles/ros_babel_fish.dir/build.make:146: CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_subscription.cpp.o] Error 1
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/string:41[m[K,
+                 from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:18[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/exceptions/babel_fish_exception.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/messages/message.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/messages/compound_message.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_action.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_action_client.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/babel_fish.hpp:7[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/babel_fish.cpp:4[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ros_babel_fish::BabelFishSubscription; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; _Tp = ros_babel_fish::BabelFishSubscription][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ros_babel_fish::BabelFishSubscription; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; _Tp = ros_babel_fish::BabelFishSubscription; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<ros_babel_fish::BabelFishSubscription>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; _Tp = ros_babel_fish::BabelFishSubscription; _Alloc = std::allocator<ros_babel_fish::BabelFishSubscription>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ros_babel_fish::BabelFishSubscription; _Alloc = std::allocator<ros_babel_fish::BabelFishSubscription>; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ros_babel_fish::BabelFishSubscription>; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; _Tp = ros_babel_fish::BabelFishSubscription; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ros_babel_fish::BabelFishSubscription>; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}; _Tp = ros_babel_fish::BabelFishSubscription][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ros_babel_fish::BabelFishSubscription; _Alloc = std::allocator<ros_babel_fish::BabelFishSubscription>; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ros_babel_fish::BabelFishSubscription; _Args = {rclcpp::node_interfaces::NodeBaseInterface*, std::shared_ptr<const ros_babel_fish::MessageTypeSupport>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >}][m[K’
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/babel_fish.cpp:58:64:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::nullptr_t[m[K’ to ‘[01m[Kint[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |           [01;31m[K|[m[K
+      |           [01;31m[Kstd::nullptr_t[m[K
+In file included from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/babel_fish.hpp:12[m[K,
+                 from [01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/src/babel_fish.cpp:4[m[K:
+[01m[K/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish/include/ros_babel_fish/detail/babel_fish_subscription.hpp:33:44:[m[K [01;36m[Knote: [m[K  initializing argument 7 of ‘[01m[Kros_babel_fish::BabelFishSubscription::BabelFishSubscription(rclcpp::node_interfaces::NodeBaseInterface*, ros_babel_fish::MessageTypeSupport::ConstSharedPtr, const string&, const rclcpp::QoS&, rclcpp::AnySubscriptionCallback<ros_babel_fish::CompoundMessage, std::allocator<void> >, const rclcpp::SubscriptionOptionsWithAllocator<std::allocator<void> >&, int)[m[K’
+   33 |       [01;36m[KSubscriptionTopicStatisticsSharedPtr subscription_topic_statistics = nullptr[m[K );
+      |       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ros_babel_fish.dir/build.make:244: CMakeFiles/ros_babel_fish.dir/src/babel_fish.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/ros_babel_fish.dir/build.make:230: CMakeFiles/ros_babel_fish.dir/src/messages/message.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:179: CMakeFiles/ros_babel_fish.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

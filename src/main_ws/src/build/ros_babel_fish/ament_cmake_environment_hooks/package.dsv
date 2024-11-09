@@ -1,0 +1,4 @@
+source;share/ros_babel_fish/local_setup.bash
+source;share/ros_babel_fish/local_setup.dsv
+source;share/ros_babel_fish/local_setup.sh
+source;share/ros_babel_fish/local_setup.zsh

@@ -1,0 +1,35 @@
+[0.066s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/controls -- -j12 -l12
+[0.430s] [ 16%] [32mBuilding CXX object CMakeFiles/dump.dir/src/dump.cpp.o[0m
+[0.432s] [ 33%] [32mBuilding CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o[0m
+[0.449s] [ 50%] [32mBuilding CXX object CMakeFiles/dig.dir/src/dig.cpp.o[0m
+[64.770s] [ 66%] [32m[1mLinking CXX executable dump[0m
+[64.787s] [ 83%] [32m[1mLinking CXX executable dig[0m
+[65.565s] [100%] [32m[1mLinking CXX executable drivetrain[0m
+[67.687s] [100%] Built target dump
+[67.688s] [100%] Built target dig
+[67.741s] [100%] Built target drivetrain
+[68.169s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/controls -- -j12 -l12
+[68.642s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/controls': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/controls
+[68.697s] -- Install configuration: ""
+[68.703s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/drivetrain
+[68.783s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/drivetrain" to ""
+[68.783s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dig
+[68.855s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dig" to ""
+[68.856s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dump
+[68.915s] -- Set runtime path of "/workspaces/PHOENIX/src/main_ws/src/install/controls/lib/controls/dump" to ""
+[69.522s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/package_run_dependencies/controls
+[69.522s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/parent_prefix_path/controls
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.sh
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/ament_prefix_path.dsv
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.sh
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/environment/path.dsv
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.bash
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.sh
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.zsh
+[69.523s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/local_setup.dsv
+[69.524s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.dsv
+[69.524s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/ament_index/resource_index/packages/controls
+[69.524s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig.cmake
+[69.524s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/cmake/controlsConfig-version.cmake
+[69.524s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/controls/share/controls/package.xml
+[69.629s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/controls' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/controls

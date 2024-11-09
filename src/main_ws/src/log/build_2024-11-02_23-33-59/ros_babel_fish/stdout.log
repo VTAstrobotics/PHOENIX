@@ -1,0 +1,7 @@
+[  4%] Built target gtest_main
+[  9%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target ros_babel_fish[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_publisher.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/detail/babel_fish_subscription.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/messages/message.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ros_babel_fish.dir/src/babel_fish.cpp.o[0m

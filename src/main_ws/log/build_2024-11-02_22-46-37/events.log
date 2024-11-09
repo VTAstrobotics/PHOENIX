@@ -1,0 +1,740 @@
+[0.000000] (-) TimerEvent: {}
+[0.001862] (controls) JobQueued: {'identifier': 'controls', 'dependencies': OrderedDict()}
+[0.002239] (drive_station) JobQueued: {'identifier': 'drive_station', 'dependencies': OrderedDict()}
+[0.002327] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict()}
+[0.002359] (teleop) JobQueued: {'identifier': 'teleop', 'dependencies': OrderedDict()}
+[0.002385] (controls) JobStarted: {'identifier': 'controls'}
+[0.048680] (drive_station) JobStarted: {'identifier': 'drive_station'}
+[0.057121] (perception) JobStarted: {'identifier': 'perception'}
+[0.079087] (teleop) JobStarted: {'identifier': 'teleop'}
+[0.100385] (-) TimerEvent: {}
+[0.107941] (controls) JobProgress: {'identifier': 'controls', 'progress': 'cmake'}
+[0.118696] (controls) JobProgress: {'identifier': 'controls', 'progress': 'build'}
+[0.119054] (controls) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/controls', '--', '-j12', '-l12'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.143167] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'cmake'}
+[0.148105] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'build'}
+[0.148623] (drive_station) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/drive_station', '--', '-j12', '-l12'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/drive_station'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.156238] (perception) JobProgress: {'identifier': 'perception', 'progress': 'cmake'}
+[0.158631] (perception) JobProgress: {'identifier': 'perception', 'progress': 'build'}
+[0.164191] (perception) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/perception', '--', '-j12', '-l12'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/perception', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/perception'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.177143] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'cmake'}
+[0.177200] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'build'}
+[0.177230] (teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/PHOENIX/src/main_ws/build/teleop', '--', '-j12', '-l12'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/teleop'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200649] (-) TimerEvent: {}
+[0.301254] (-) TimerEvent: {}
+[0.401867] (-) TimerEvent: {}
+[0.502430] (-) TimerEvent: {}
+[0.561233] (controls) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.561984] (drive_station) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.562697] (teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.562947] (perception) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.602683] (-) TimerEvent: {}
+[0.703236] (-) TimerEvent: {}
+[0.803864] (-) TimerEvent: {}
+[0.904526] (-) TimerEvent: {}
+[0.997081] (drive_station) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002042] (perception) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002369] (teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002792] (controls) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.004638] (-) TimerEvent: {}
+[1.105055] (-) TimerEvent: {}
+[1.205522] (-) TimerEvent: {}
+[1.209733] (drive_station) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.210158] (teleop) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.210246] (perception) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.210321] (controls) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.305765] (-) TimerEvent: {}
+[1.349281] (controls) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.349736] (perception) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.364053] (perception) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.364443] (controls) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.369634] (drive_station) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.370150] (teleop) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.372506] (drive_station) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.374533] (drive_station) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.375160] (teleop) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.377476] (drive_station) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.380570] (teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.382485] (drive_station) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.390258] (perception) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.390581] (controls) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.393824] (drive_station) StdoutLine: {'line': b'-- Generating done\n'}
+[1.394568] (teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[1.397050] (teleop) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/teleop\n'}
+[1.397649] (drive_station) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/drive_station\n'}
+[1.405951] (-) TimerEvent: {}
+[1.429365] (perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.431576] (controls) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.457145] (teleop) CommandEnded: {'returncode': 0}
+[1.466915] (drive_station) CommandEnded: {'returncode': 0}
+[1.479700] (perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.480504] (controls) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.485987] (teleop) JobProgress: {'identifier': 'teleop', 'progress': 'install'}
+[1.496593] (teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/teleop'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/teleop', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/teleop'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.506144] (-) TimerEvent: {}
+[1.520048] (teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.520382] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/package_run_dependencies/teleop\n'}
+[1.520513] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/parent_prefix_path/teleop\n'}
+[1.520625] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.sh\n'}
+[1.534798] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/ament_prefix_path.dsv\n'}
+[1.535294] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.sh\n'}
+[1.536086] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/environment/path.dsv\n'}
+[1.536940] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.bash\n'}
+[1.537355] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.sh\n'}
+[1.537745] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.zsh\n'}
+[1.537977] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/local_setup.dsv\n'}
+[1.538821] (teleop) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.dsv\n'}
+[1.540287] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/ament_index/resource_index/packages/teleop\n'}
+[1.540525] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig.cmake\n'}
+[1.540657] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/cmake/teleopConfig-version.cmake\n'}
+[1.540769] (teleop) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/teleop/share/teleop/package.xml\n'}
+[1.542531] (teleop) CommandEnded: {'returncode': 0}
+[1.586353] (drive_station) JobProgress: {'identifier': 'drive_station', 'progress': 'install'}
+[1.589330] (drive_station) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/drive_station'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/drive_station', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/drive_station'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.602520] (drive_station) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.603076] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/package_run_dependencies/drive_station\n'}
+[1.603384] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/parent_prefix_path/drive_station\n'}
+[1.604601] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.sh\n'}
+[1.607142] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/ament_prefix_path.dsv\n'}
+[1.607563] (-) TimerEvent: {}
+[1.608405] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.sh\n'}
+[1.609146] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/environment/path.dsv\n'}
+[1.613058] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.bash\n'}
+[1.615335] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.sh\n'}
+[1.616077] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.zsh\n'}
+[1.616296] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/local_setup.dsv\n'}
+[1.616417] (drive_station) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.dsv\n'}
+[1.616528] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/ament_index/resource_index/packages/drive_station\n'}
+[1.616640] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig.cmake\n'}
+[1.616747] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/cmake/drive_stationConfig-version.cmake\n'}
+[1.616959] (drive_station) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/drive_station/share/drive_station/package.xml\n'}
+[1.622802] (drive_station) CommandEnded: {'returncode': 0}
+[1.667231] (teleop) JobEnded: {'identifier': 'teleop', 'rc': 0}
+[1.672956] (controls) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.674296] (perception) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.683132] (perception) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.683944] (controls) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.691123] (drive_station) JobEnded: {'identifier': 'drive_station', 'rc': 0}
+[1.707763] (-) TimerEvent: {}
+[1.808408] (-) TimerEvent: {}
+[1.909073] (-) TimerEvent: {}
+[1.969800] (controls) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.972964] (perception) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.009284] (-) TimerEvent: {}
+[2.109922] (-) TimerEvent: {}
+[2.123141] (perception) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.123591] (controls) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.210110] (-) TimerEvent: {}
+[2.305210] (perception) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.305584] (perception) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.305731] (perception) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.306378] (perception) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.307321] (perception) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.307617] (perception) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.307971] (perception) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.308510] (controls) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.308719] (controls) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.308941] (controls) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.309885] (controls) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.310273] (-) TimerEvent: {}
+[2.310916] (perception) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.311278] (controls) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.311480] (controls) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.312462] (controls) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.315991] (controls) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.347006] (perception) StdoutLine: {'line': b'-- Generating done\n'}
+[2.350195] (perception) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/perception\n'}
+[2.363042] (controls) StdoutLine: {'line': b'-- Generating done\n'}
+[2.365835] (controls) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/PHOENIX/src/main_ws/build/controls\n'}
+[2.393108] (perception) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera.dir/src/camera.cpp.o\x1b[0m\n'}
+[2.408848] (controls) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/dig.dir/src/dig.cpp.o\x1b[0m\n'}
+[2.410428] (controls) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/drivetrain.dir/src/drivetrain.cpp.o\x1b[0m\n'}
+[2.410691] (-) TimerEvent: {}
+[2.412521] (controls) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dump.dir/src/dump.cpp.o\x1b[0m\n'}
+[2.510986] (-) TimerEvent: {}
+[2.611713] (-) TimerEvent: {}
+[2.712810] (-) TimerEvent: {}
+[2.813406] (-) TimerEvent: {}
+[2.914003] (-) TimerEvent: {}
+[3.014656] (-) TimerEvent: {}
+[3.115181] (-) TimerEvent: {}
+[3.215733] (-) TimerEvent: {}
+[3.316346] (-) TimerEvent: {}
+[3.417078] (-) TimerEvent: {}
+[3.517719] (-) TimerEvent: {}
+[3.618567] (-) TimerEvent: {}
+[3.719314] (-) TimerEvent: {}
+[3.819971] (-) TimerEvent: {}
+[3.920624] (-) TimerEvent: {}
+[4.021322] (-) TimerEvent: {}
+[4.121977] (-) TimerEvent: {}
+[4.222627] (-) TimerEvent: {}
+[4.323375] (-) TimerEvent: {}
+[4.424247] (-) TimerEvent: {}
+[4.525080] (-) TimerEvent: {}
+[4.625667] (-) TimerEvent: {}
+[4.729101] (-) TimerEvent: {}
+[4.831211] (-) TimerEvent: {}
+[4.932167] (-) TimerEvent: {}
+[5.032909] (-) TimerEvent: {}
+[5.133706] (-) TimerEvent: {}
+[5.234619] (-) TimerEvent: {}
+[5.335342] (-) TimerEvent: {}
+[5.435996] (-) TimerEvent: {}
+[5.536779] (-) TimerEvent: {}
+[5.637379] (-) TimerEvent: {}
+[5.738170] (-) TimerEvent: {}
+[5.838959] (-) TimerEvent: {}
+[5.939756] (-) TimerEvent: {}
+[6.040337] (-) TimerEvent: {}
+[6.141246] (-) TimerEvent: {}
+[6.242551] (-) TimerEvent: {}
+[6.343190] (-) TimerEvent: {}
+[6.443846] (-) TimerEvent: {}
+[6.544512] (-) TimerEvent: {}
+[6.645073] (-) TimerEvent: {}
+[6.745718] (-) TimerEvent: {}
+[6.846235] (-) TimerEvent: {}
+[6.946855] (-) TimerEvent: {}
+[7.047375] (-) TimerEvent: {}
+[7.148116] (-) TimerEvent: {}
+[7.248658] (-) TimerEvent: {}
+[7.349367] (-) TimerEvent: {}
+[7.450005] (-) TimerEvent: {}
+[7.550654] (-) TimerEvent: {}
+[7.651248] (-) TimerEvent: {}
+[7.751932] (-) TimerEvent: {}
+[7.852559] (-) TimerEvent: {}
+[7.953170] (-) TimerEvent: {}
+[8.053973] (-) TimerEvent: {}
+[8.154683] (-) TimerEvent: {}
+[8.255309] (-) TimerEvent: {}
+[8.356242] (-) TimerEvent: {}
+[8.457082] (-) TimerEvent: {}
+[8.557887] (-) TimerEvent: {}
+[8.658612] (-) TimerEvent: {}
+[8.759479] (-) TimerEvent: {}
+[8.860221] (-) TimerEvent: {}
+[8.961241] (-) TimerEvent: {}
+[9.062022] (-) TimerEvent: {}
+[9.162625] (-) TimerEvent: {}
+[9.263278] (-) TimerEvent: {}
+[9.363956] (-) TimerEvent: {}
+[9.464871] (-) TimerEvent: {}
+[9.565685] (-) TimerEvent: {}
+[9.666459] (-) TimerEvent: {}
+[9.767053] (-) TimerEvent: {}
+[9.867747] (-) TimerEvent: {}
+[9.968594] (-) TimerEvent: {}
+[10.069429] (-) TimerEvent: {}
+[10.170070] (-) TimerEvent: {}
+[10.270686] (-) TimerEvent: {}
+[10.371415] (-) TimerEvent: {}
+[10.474118] (-) TimerEvent: {}
+[10.574806] (-) TimerEvent: {}
+[10.675456] (-) TimerEvent: {}
+[10.776253] (-) TimerEvent: {}
+[10.876859] (-) TimerEvent: {}
+[10.977709] (-) TimerEvent: {}
+[11.078600] (-) TimerEvent: {}
+[11.179401] (-) TimerEvent: {}
+[11.280138] (-) TimerEvent: {}
+[11.380879] (-) TimerEvent: {}
+[11.481777] (-) TimerEvent: {}
+[11.582416] (-) TimerEvent: {}
+[11.683115] (-) TimerEvent: {}
+[11.783877] (-) TimerEvent: {}
+[11.884671] (-) TimerEvent: {}
+[11.985393] (-) TimerEvent: {}
+[12.086099] (-) TimerEvent: {}
+[12.186860] (-) TimerEvent: {}
+[12.287655] (-) TimerEvent: {}
+[12.388317] (-) TimerEvent: {}
+[12.488976] (-) TimerEvent: {}
+[12.589648] (-) TimerEvent: {}
+[12.690383] (-) TimerEvent: {}
+[12.791271] (-) TimerEvent: {}
+[12.891982] (-) TimerEvent: {}
+[12.992643] (-) TimerEvent: {}
+[13.093268] (-) TimerEvent: {}
+[13.194080] (-) TimerEvent: {}
+[13.294913] (-) TimerEvent: {}
+[13.395656] (-) TimerEvent: {}
+[13.496484] (-) TimerEvent: {}
+[13.597399] (-) TimerEvent: {}
+[13.698263] (-) TimerEvent: {}
+[13.798897] (-) TimerEvent: {}
+[13.899614] (-) TimerEvent: {}
+[14.000435] (-) TimerEvent: {}
+[14.101171] (-) TimerEvent: {}
+[14.201854] (-) TimerEvent: {}
+[14.302602] (-) TimerEvent: {}
+[14.403299] (-) TimerEvent: {}
+[14.503960] (-) TimerEvent: {}
+[14.604582] (-) TimerEvent: {}
+[14.705349] (-) TimerEvent: {}
+[14.805972] (-) TimerEvent: {}
+[14.906687] (-) TimerEvent: {}
+[15.007285] (-) TimerEvent: {}
+[15.107977] (-) TimerEvent: {}
+[15.208715] (-) TimerEvent: {}
+[15.309486] (-) TimerEvent: {}
+[15.410206] (-) TimerEvent: {}
+[15.510836] (-) TimerEvent: {}
+[15.611626] (-) TimerEvent: {}
+[15.712248] (-) TimerEvent: {}
+[15.819746] (-) TimerEvent: {}
+[15.929335] (-) TimerEvent: {}
+[16.030010] (-) TimerEvent: {}
+[16.130706] (-) TimerEvent: {}
+[16.231366] (-) TimerEvent: {}
+[16.331967] (-) TimerEvent: {}
+[16.432731] (-) TimerEvent: {}
+[16.533316] (-) TimerEvent: {}
+[16.633970] (-) TimerEvent: {}
+[16.734780] (-) TimerEvent: {}
+[16.835568] (-) TimerEvent: {}
+[16.936434] (-) TimerEvent: {}
+[17.037060] (-) TimerEvent: {}
+[17.141188] (-) TimerEvent: {}
+[17.243183] (-) TimerEvent: {}
+[17.344115] (-) TimerEvent: {}
+[17.445463] (-) TimerEvent: {}
+[17.546080] (-) TimerEvent: {}
+[17.646705] (-) TimerEvent: {}
+[17.747395] (-) TimerEvent: {}
+[17.848125] (-) TimerEvent: {}
+[17.948751] (-) TimerEvent: {}
+[18.049452] (-) TimerEvent: {}
+[18.150095] (-) TimerEvent: {}
+[18.250816] (-) TimerEvent: {}
+[18.351759] (-) TimerEvent: {}
+[18.452417] (-) TimerEvent: {}
+[18.553233] (-) TimerEvent: {}
+[18.653962] (-) TimerEvent: {}
+[18.754548] (-) TimerEvent: {}
+[18.855088] (-) TimerEvent: {}
+[18.955720] (-) TimerEvent: {}
+[19.056368] (-) TimerEvent: {}
+[19.156967] (-) TimerEvent: {}
+[19.257559] (-) TimerEvent: {}
+[19.358251] (-) TimerEvent: {}
+[19.458958] (-) TimerEvent: {}
+[19.559647] (-) TimerEvent: {}
+[19.660340] (-) TimerEvent: {}
+[19.761156] (-) TimerEvent: {}
+[19.861946] (-) TimerEvent: {}
+[19.962676] (-) TimerEvent: {}
+[20.063376] (-) TimerEvent: {}
+[20.163985] (-) TimerEvent: {}
+[20.264860] (-) TimerEvent: {}
+[20.365560] (-) TimerEvent: {}
+[20.466293] (-) TimerEvent: {}
+[20.566913] (-) TimerEvent: {}
+[20.667525] (-) TimerEvent: {}
+[20.768282] (-) TimerEvent: {}
+[20.868943] (-) TimerEvent: {}
+[20.969505] (-) TimerEvent: {}
+[21.070128] (-) TimerEvent: {}
+[21.170832] (-) TimerEvent: {}
+[21.271458] (-) TimerEvent: {}
+[21.372037] (-) TimerEvent: {}
+[21.472548] (-) TimerEvent: {}
+[21.573296] (-) TimerEvent: {}
+[21.674171] (-) TimerEvent: {}
+[21.774869] (-) TimerEvent: {}
+[21.875865] (-) TimerEvent: {}
+[21.976445] (-) TimerEvent: {}
+[22.077112] (-) TimerEvent: {}
+[22.177915] (-) TimerEvent: {}
+[22.278729] (-) TimerEvent: {}
+[22.379412] (-) TimerEvent: {}
+[22.480025] (-) TimerEvent: {}
+[22.580722] (-) TimerEvent: {}
+[22.681434] (-) TimerEvent: {}
+[22.782169] (-) TimerEvent: {}
+[22.882746] (-) TimerEvent: {}
+[22.983428] (-) TimerEvent: {}
+[23.084310] (-) TimerEvent: {}
+[23.184941] (-) TimerEvent: {}
+[23.285559] (-) TimerEvent: {}
+[23.386266] (-) TimerEvent: {}
+[23.487181] (-) TimerEvent: {}
+[23.588033] (-) TimerEvent: {}
+[23.688752] (-) TimerEvent: {}
+[23.789719] (-) TimerEvent: {}
+[23.890494] (-) TimerEvent: {}
+[23.991232] (-) TimerEvent: {}
+[24.092099] (-) TimerEvent: {}
+[24.193206] (-) TimerEvent: {}
+[24.294020] (-) TimerEvent: {}
+[24.394797] (-) TimerEvent: {}
+[24.495507] (-) TimerEvent: {}
+[24.596242] (-) TimerEvent: {}
+[24.696974] (-) TimerEvent: {}
+[24.797707] (-) TimerEvent: {}
+[24.898363] (-) TimerEvent: {}
+[24.998969] (-) TimerEvent: {}
+[25.099586] (-) TimerEvent: {}
+[25.200244] (-) TimerEvent: {}
+[25.300907] (-) TimerEvent: {}
+[25.401514] (-) TimerEvent: {}
+[25.502226] (-) TimerEvent: {}
+[25.602919] (-) TimerEvent: {}
+[25.703525] (-) TimerEvent: {}
+[25.804109] (-) TimerEvent: {}
+[25.905496] (-) TimerEvent: {}
+[26.006174] (-) TimerEvent: {}
+[26.106804] (-) TimerEvent: {}
+[26.207437] (-) TimerEvent: {}
+[26.308038] (-) TimerEvent: {}
+[26.408589] (-) TimerEvent: {}
+[26.509199] (-) TimerEvent: {}
+[26.609850] (-) TimerEvent: {}
+[26.710583] (-) TimerEvent: {}
+[26.811227] (-) TimerEvent: {}
+[26.912009] (-) TimerEvent: {}
+[27.012651] (-) TimerEvent: {}
+[27.113680] (-) TimerEvent: {}
+[27.216814] (-) TimerEvent: {}
+[27.317514] (-) TimerEvent: {}
+[27.418125] (-) TimerEvent: {}
+[27.518882] (-) TimerEvent: {}
+[27.620610] (-) TimerEvent: {}
+[27.721307] (-) TimerEvent: {}
+[27.822046] (-) TimerEvent: {}
+[27.922729] (-) TimerEvent: {}
+[28.023468] (-) TimerEvent: {}
+[28.124204] (-) TimerEvent: {}
+[28.224969] (-) TimerEvent: {}
+[28.325756] (-) TimerEvent: {}
+[28.426618] (-) TimerEvent: {}
+[28.527279] (-) TimerEvent: {}
+[28.628137] (-) TimerEvent: {}
+[28.729000] (-) TimerEvent: {}
+[28.829646] (-) TimerEvent: {}
+[28.930348] (-) TimerEvent: {}
+[29.031024] (-) TimerEvent: {}
+[29.131771] (-) TimerEvent: {}
+[29.232379] (-) TimerEvent: {}
+[29.333333] (-) TimerEvent: {}
+[29.434347] (-) TimerEvent: {}
+[29.535458] (-) TimerEvent: {}
+[33.805593] (-) TimerEvent: {}
+[33.950624] (-) TimerEvent: {}
+[34.052044] (-) TimerEvent: {}
+[34.152617] (-) TimerEvent: {}
+[34.253293] (-) TimerEvent: {}
+[34.354561] (-) TimerEvent: {}
+[34.455459] (-) TimerEvent: {}
+[34.556455] (-) TimerEvent: {}
+[34.657337] (-) TimerEvent: {}
+[34.758807] (-) TimerEvent: {}
+[34.859729] (-) TimerEvent: {}
+[34.961322] (-) TimerEvent: {}
+[35.062302] (-) TimerEvent: {}
+[35.163548] (-) TimerEvent: {}
+[35.264689] (-) TimerEvent: {}
+[35.365453] (-) TimerEvent: {}
+[35.466150] (-) TimerEvent: {}
+[35.566858] (-) TimerEvent: {}
+[35.667483] (-) TimerEvent: {}
+[35.768069] (-) TimerEvent: {}
+[35.869155] (-) TimerEvent: {}
+[35.969789] (-) TimerEvent: {}
+[36.070606] (-) TimerEvent: {}
+[36.171296] (-) TimerEvent: {}
+[36.272227] (-) TimerEvent: {}
+[36.372961] (-) TimerEvent: {}
+[36.473632] (-) TimerEvent: {}
+[36.574259] (-) TimerEvent: {}
+[36.674848] (-) TimerEvent: {}
+[36.775462] (-) TimerEvent: {}
+[36.876074] (-) TimerEvent: {}
+[36.976797] (-) TimerEvent: {}
+[37.077424] (-) TimerEvent: {}
+[37.178039] (-) TimerEvent: {}
+[37.278657] (-) TimerEvent: {}
+[37.379578] (-) TimerEvent: {}
+[37.480185] (-) TimerEvent: {}
+[37.581372] (-) TimerEvent: {}
+[37.682073] (-) TimerEvent: {}
+[37.782679] (-) TimerEvent: {}
+[37.883249] (-) TimerEvent: {}
+[37.983826] (-) TimerEvent: {}
+[38.084423] (-) TimerEvent: {}
+[38.184942] (-) TimerEvent: {}
+[38.285523] (-) TimerEvent: {}
+[38.386079] (-) TimerEvent: {}
+[38.486706] (-) TimerEvent: {}
+[38.587307] (-) TimerEvent: {}
+[38.687868] (-) TimerEvent: {}
+[38.788474] (-) TimerEvent: {}
+[38.889050] (-) TimerEvent: {}
+[38.989675] (-) TimerEvent: {}
+[39.090372] (-) TimerEvent: {}
+[39.190969] (-) TimerEvent: {}
+[39.291619] (-) TimerEvent: {}
+[39.392237] (-) TimerEvent: {}
+[39.492832] (-) TimerEvent: {}
+[39.595036] (-) TimerEvent: {}
+[39.695818] (-) TimerEvent: {}
+[39.796755] (-) TimerEvent: {}
+[39.897940] (-) TimerEvent: {}
+[39.998586] (-) TimerEvent: {}
+[40.099354] (-) TimerEvent: {}
+[40.200069] (-) TimerEvent: {}
+[40.300934] (-) TimerEvent: {}
+[40.401979] (-) TimerEvent: {}
+[40.502643] (-) TimerEvent: {}
+[40.603429] (-) TimerEvent: {}
+[40.704113] (-) TimerEvent: {}
+[40.804661] (-) TimerEvent: {}
+[40.905255] (-) TimerEvent: {}
+[41.005805] (-) TimerEvent: {}
+[41.106385] (-) TimerEvent: {}
+[41.207024] (-) TimerEvent: {}
+[41.307642] (-) TimerEvent: {}
+[41.408263] (-) TimerEvent: {}
+[41.508845] (-) TimerEvent: {}
+[41.609484] (-) TimerEvent: {}
+[41.710179] (-) TimerEvent: {}
+[41.810930] (-) TimerEvent: {}
+[41.911569] (-) TimerEvent: {}
+[42.012341] (-) TimerEvent: {}
+[42.113143] (-) TimerEvent: {}
+[42.213742] (-) TimerEvent: {}
+[42.314290] (-) TimerEvent: {}
+[42.414869] (-) TimerEvent: {}
+[42.515449] (-) TimerEvent: {}
+[42.616085] (-) TimerEvent: {}
+[42.716708] (-) TimerEvent: {}
+[42.817330] (-) TimerEvent: {}
+[42.918100] (-) TimerEvent: {}
+[43.019017] (-) TimerEvent: {}
+[43.119618] (-) TimerEvent: {}
+[43.220255] (-) TimerEvent: {}
+[43.321088] (-) TimerEvent: {}
+[43.421875] (-) TimerEvent: {}
+[43.522447] (-) TimerEvent: {}
+[43.623117] (-) TimerEvent: {}
+[43.723739] (-) TimerEvent: {}
+[43.824361] (-) TimerEvent: {}
+[43.925045] (-) TimerEvent: {}
+[44.025900] (-) TimerEvent: {}
+[44.126893] (-) TimerEvent: {}
+[44.227829] (-) TimerEvent: {}
+[44.328517] (-) TimerEvent: {}
+[44.429115] (-) TimerEvent: {}
+[44.529832] (-) TimerEvent: {}
+[44.630439] (-) TimerEvent: {}
+[44.731028] (-) TimerEvent: {}
+[44.831674] (-) TimerEvent: {}
+[44.932250] (-) TimerEvent: {}
+[45.032761] (-) TimerEvent: {}
+[45.133330] (-) TimerEvent: {}
+[45.233891] (-) TimerEvent: {}
+[45.334573] (-) TimerEvent: {}
+[45.435202] (-) TimerEvent: {}
+[45.535783] (-) TimerEvent: {}
+[45.636998] (-) TimerEvent: {}
+[45.738241] (-) TimerEvent: {}
+[45.838913] (-) TimerEvent: {}
+[45.939541] (-) TimerEvent: {}
+[46.040193] (-) TimerEvent: {}
+[46.140676] (-) TimerEvent: {}
+[46.241157] (-) TimerEvent: {}
+[46.341705] (-) TimerEvent: {}
+[46.442306] (-) TimerEvent: {}
+[46.542857] (-) TimerEvent: {}
+[46.643370] (-) TimerEvent: {}
+[46.743911] (-) TimerEvent: {}
+[46.844413] (-) TimerEvent: {}
+[46.945030] (-) TimerEvent: {}
+[47.045625] (-) TimerEvent: {}
+[47.146655] (-) TimerEvent: {}
+[47.247462] (-) TimerEvent: {}
+[47.348283] (-) TimerEvent: {}
+[47.449059] (-) TimerEvent: {}
+[47.549723] (-) TimerEvent: {}
+[47.650320] (-) TimerEvent: {}
+[47.750968] (-) TimerEvent: {}
+[47.851709] (-) TimerEvent: {}
+[47.952423] (-) TimerEvent: {}
+[48.053153] (-) TimerEvent: {}
+[48.153752] (-) TimerEvent: {}
+[48.254614] (-) TimerEvent: {}
+[48.355268] (-) TimerEvent: {}
+[48.455912] (-) TimerEvent: {}
+[48.556529] (-) TimerEvent: {}
+[48.657144] (-) TimerEvent: {}
+[48.757673] (-) TimerEvent: {}
+[48.858350] (-) TimerEvent: {}
+[48.958884] (-) TimerEvent: {}
+[49.059546] (-) TimerEvent: {}
+[49.160078] (-) TimerEvent: {}
+[49.260708] (-) TimerEvent: {}
+[49.361355] (-) TimerEvent: {}
+[49.462079] (-) TimerEvent: {}
+[49.562807] (-) TimerEvent: {}
+[49.663698] (-) TimerEvent: {}
+[49.764399] (-) TimerEvent: {}
+[49.865222] (-) TimerEvent: {}
+[49.966266] (-) TimerEvent: {}
+[50.067451] (-) TimerEvent: {}
+[50.168901] (-) TimerEvent: {}
+[50.269550] (-) TimerEvent: {}
+[50.370111] (-) TimerEvent: {}
+[50.470690] (-) TimerEvent: {}
+[50.571361] (-) TimerEvent: {}
+[50.671970] (-) TimerEvent: {}
+[50.772571] (-) TimerEvent: {}
+[50.873115] (-) TimerEvent: {}
+[50.974085] (-) TimerEvent: {}
+[51.074905] (-) TimerEvent: {}
+[51.175462] (-) TimerEvent: {}
+[51.276105] (-) TimerEvent: {}
+[51.377076] (-) TimerEvent: {}
+[51.477647] (-) TimerEvent: {}
+[51.578245] (-) TimerEvent: {}
+[51.679072] (-) TimerEvent: {}
+[51.779903] (-) TimerEvent: {}
+[51.880747] (-) TimerEvent: {}
+[51.981471] (-) TimerEvent: {}
+[52.082182] (-) TimerEvent: {}
+[52.182892] (-) TimerEvent: {}
+[52.283759] (-) TimerEvent: {}
+[52.384479] (-) TimerEvent: {}
+[52.485039] (-) TimerEvent: {}
+[52.585602] (-) TimerEvent: {}
+[52.686278] (-) TimerEvent: {}
+[52.786913] (-) TimerEvent: {}
+[52.887416] (-) TimerEvent: {}
+[53.004273] (-) TimerEvent: {}
+[53.104676] (-) TimerEvent: {}
+[53.205239] (-) TimerEvent: {}
+[53.305810] (-) TimerEvent: {}
+[53.406389] (-) TimerEvent: {}
+[53.507284] (-) TimerEvent: {}
+[53.611746] (-) TimerEvent: {}
+[53.712439] (-) TimerEvent: {}
+[53.813008] (-) TimerEvent: {}
+[53.913835] (-) TimerEvent: {}
+[54.014958] (-) TimerEvent: {}
+[54.116387] (-) TimerEvent: {}
+[54.219409] (-) TimerEvent: {}
+[54.320234] (-) TimerEvent: {}
+[54.420889] (-) TimerEvent: {}
+[54.521571] (-) TimerEvent: {}
+[54.622106] (-) TimerEvent: {}
+[54.722679] (-) TimerEvent: {}
+[54.823284] (-) TimerEvent: {}
+[54.923925] (-) TimerEvent: {}
+[55.024583] (-) TimerEvent: {}
+[55.125226] (-) TimerEvent: {}
+[55.225884] (-) TimerEvent: {}
+[55.326517] (-) TimerEvent: {}
+[55.427265] (-) TimerEvent: {}
+[55.528520] (-) TimerEvent: {}
+[55.629252] (-) TimerEvent: {}
+[55.729876] (-) TimerEvent: {}
+[55.831398] (-) TimerEvent: {}
+[55.932247] (-) TimerEvent: {}
+[56.032910] (-) TimerEvent: {}
+[56.133516] (-) TimerEvent: {}
+[56.234118] (-) TimerEvent: {}
+[56.334688] (-) TimerEvent: {}
+[56.435328] (-) TimerEvent: {}
+[56.535887] (-) TimerEvent: {}
+[56.636545] (-) TimerEvent: {}
+[56.737178] (-) TimerEvent: {}
+[56.837733] (-) TimerEvent: {}
+[56.938274] (-) TimerEvent: {}
+[57.038825] (-) TimerEvent: {}
+[57.139389] (-) TimerEvent: {}
+[57.240112] (-) TimerEvent: {}
+[57.340814] (-) TimerEvent: {}
+[57.441492] (-) TimerEvent: {}
+[57.542093] (-) TimerEvent: {}
+[57.642748] (-) TimerEvent: {}
+[57.743685] (-) TimerEvent: {}
+[57.844341] (-) TimerEvent: {}
+[57.944980] (-) TimerEvent: {}
+[58.010488] (perception) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera\x1b[0m\n'}
+[58.038646] (controls) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable drivetrain\x1b[0m\n'}
+[58.042012] (controls) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dump\x1b[0m\n'}
+[58.042149] (controls) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dig\x1b[0m\n'}
+[58.045111] (-) TimerEvent: {}
+[58.145735] (-) TimerEvent: {}
+[58.247094] (-) TimerEvent: {}
+[58.348325] (-) TimerEvent: {}
+[58.449846] (-) TimerEvent: {}
+[58.551612] (-) TimerEvent: {}
+[58.653359] (-) TimerEvent: {}
+[58.754882] (-) TimerEvent: {}
+[58.856337] (-) TimerEvent: {}
+[58.957118] (-) TimerEvent: {}
+[59.057639] (-) TimerEvent: {}
+[59.158353] (-) TimerEvent: {}
+[59.262685] (-) TimerEvent: {}
+[59.367168] (-) TimerEvent: {}
+[59.432054] (controls) StdoutLine: {'line': b'[100%] Built target dig\n'}
+[59.454317] (controls) StdoutLine: {'line': b'[100%] Built target drivetrain\n'}
+[59.467321] (-) TimerEvent: {}
+[59.472942] (controls) StdoutLine: {'line': b'[100%] Built target dump\n'}
+[59.501179] (perception) StdoutLine: {'line': b'[100%] Built target camera\n'}
+[59.567493] (-) TimerEvent: {}
+[59.673795] (controls) CommandEnded: {'returncode': 0}
+[59.719513] (-) TimerEvent: {}
+[59.720161] (perception) CommandEnded: {'returncode': 0}
+[59.748323] (controls) JobProgress: {'identifier': 'controls', 'progress': 'install'}
+[59.756563] (controls) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/controls'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/controls', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/controls'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[59.773444] (controls) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[59.778044] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/drivetrain\n'}
+[59.778546] (perception) JobProgress: {'identifier': 'perception', 'progress': 'install'}
+[59.778637] (controls) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/drivetrain" to ""\n'}
+[59.778975] (perception) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/PHOENIX/src/main_ws/build/perception'], 'cwd': '/workspaces/PHOENIX/src/main_ws/build/perception', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/helpers/browser.sh'), ('HOME', '/home/astro-dev'), ('OLDPWD', '/workspaces/PHOENIX'), ('TERM_PROGRAM_VERSION', '1.95.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4305f2c2-fbc9-4567-9a61-576335fa3745.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-add80304-9b35-4dea-9699-155775e78890.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-06759e66-60d5-4e1e-ac76-e4979fa5fa64.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/65edc4939843c90c34d61f4ce11704f09d3e5cb6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X4","/home/astro-dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-3b1b65a35e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/PHOENIX/src/main_ws/build/perception'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[59.781387] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dig\n'}
+[59.782729] (controls) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dig" to ""\n'}
+[59.784065] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dump\n'}
+[59.785866] (perception) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[59.787235] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/lib/perception/camera\n'}
+[59.789948] (controls) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/controls/lib/controls/dump" to ""\n'}
+[59.790162] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/package_run_dependencies/controls\n'}
+[59.790251] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/parent_prefix_path/controls\n'}
+[59.793579] (perception) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/PHOENIX/src/main_ws/install/perception/lib/perception/camera" to ""\n'}
+[59.794044] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/package_run_dependencies/perception\n'}
+[59.794327] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/parent_prefix_path/perception\n'}
+[59.795270] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/ament_prefix_path.sh\n'}
+[59.795430] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.sh\n'}
+[59.796025] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/ament_prefix_path.dsv\n'}
+[59.796136] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/ament_prefix_path.dsv\n'}
+[59.796206] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.sh\n'}
+[59.797500] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/environment/path.dsv\n'}
+[59.798097] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/path.sh\n'}
+[59.798358] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.bash\n'}
+[59.798877] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.sh\n'}
+[59.799507] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.zsh\n'}
+[59.799675] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/local_setup.dsv\n'}
+[59.799801] (perception) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.dsv\n'}
+[59.799921] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/environment/path.dsv\n'}
+[59.800036] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.bash\n'}
+[59.800145] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/ament_index/resource_index/packages/perception\n'}
+[59.800272] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig.cmake\n'}
+[59.800382] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/cmake/perceptionConfig-version.cmake\n'}
+[59.800517] (perception) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/perception/share/perception/package.xml\n'}
+[59.800763] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.sh\n'}
+[59.800943] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.zsh\n'}
+[59.801119] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/local_setup.dsv\n'}
+[59.801288] (controls) StdoutLine: {'line': b'-- Installing: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.dsv\n'}
+[59.801458] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/ament_index/resource_index/packages/controls\n'}
+[59.801618] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake/controlsConfig.cmake\n'}
+[59.801840] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/cmake/controlsConfig-version.cmake\n'}
+[59.802102] (controls) StdoutLine: {'line': b'-- Up-to-date: /workspaces/PHOENIX/src/main_ws/install/controls/share/controls/package.xml\n'}
+[59.809326] (controls) CommandEnded: {'returncode': 0}
+[59.822269] (-) TimerEvent: {}
+[59.874981] (perception) CommandEnded: {'returncode': 0}
+[59.922415] (-) TimerEvent: {}
+[59.925788] (controls) JobEnded: {'identifier': 'controls', 'rc': 0}
+[59.945034] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[59.950062] (-) EventReactorShutdown: {}

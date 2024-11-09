@@ -1,0 +1,215 @@
+[0.070s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs -- -j12 -l12
+[0.296s] [  1%] Built target ros_babel_fish_test_msgs__cpp
+[0.338s] [ 12%] Built target ros_babel_fish_test_msgs__rosidl_generator_c
+[0.342s] [ 12%] Built target ament_cmake_python_copy_ros_babel_fish_test_msgs
+[0.394s] [ 23%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_c
+[0.398s] [ 38%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_introspection_c
+[0.403s] [ 56%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_cpp
+[0.405s] [ 56%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cpp
+[0.413s] [ 67%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_introspection_cpp
+[0.419s] [ 78%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_c
+[0.460s] [ 78%] Built target ros_babel_fish_test_msgs
+[0.516s] [ 80%] Built target ros_babel_fish_test_msgs__py
+[0.554s] [ 89%] Built target ros_babel_fish_test_msgs__rosidl_generator_py
+[0.593s] [ 96%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_c__pyext
+[0.596s] [ 96%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.596s] [100%] Built target ros_babel_fish_test_msgs__rosidl_typesupport_introspection_c__pyext
+[0.718s] running egg_info
+[0.720s] writing ros_babel_fish_test_msgs.egg-info/PKG-INFO
+[0.720s] writing dependency_links to ros_babel_fish_test_msgs.egg-info/dependency_links.txt
+[0.721s] writing top-level names to ros_babel_fish_test_msgs.egg-info/top_level.txt
+[0.725s] reading manifest file 'ros_babel_fish_test_msgs.egg-info/SOURCES.txt'
+[0.726s] writing manifest file 'ros_babel_fish_test_msgs.egg-info/SOURCES.txt'
+[0.757s] [100%] Built target ament_cmake_python_build_ros_babel_fish_test_msgs_egg
+[0.769s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs -- -j12 -l12
+[0.886s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs
+[0.892s] -- Install configuration: ""
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ament_index/resource_index/rosidl_interfaces/ros_babel_fish_test_msgs
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/simple_test.h
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.892s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__struct.h
+[0.893s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__functions.h
+[0.893s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__functions.c
+[0.893s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__type_support.h
+[0.893s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_message.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_sub_array.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__struct.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__type_support.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__type_support.h
+[0.894s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__functions.c
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__struct.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__type_support.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__functions.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__functions.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__functions.c
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__struct.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__functions.h
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__functions.c
+[0.895s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_array.h
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/library_path.sh
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/library_path.dsv
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_generator_c.so
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__rosidl_typesupport_fastrtps_c.h
+[0.896s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.897s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.897s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__rosidl_typesupport_fastrtps_c.h
+[0.897s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__rosidl_typesupport_fastrtps_c.h
+[0.897s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__rosidl_typesupport_fastrtps_c.h
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_c.so
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.898s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__type_support.c
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__rosidl_typesupport_introspection_c.h
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__type_support.c
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__type_support.c
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__type_support.c
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__rosidl_typesupport_introspection_c.h
+[0.899s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__rosidl_typesupport_introspection_c.h
+[0.900s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__rosidl_typesupport_introspection_c.h
+[0.900s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.900s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_introspection_c.so
+[0.900s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_c.so
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__traits.hpp
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__struct.hpp
+[0.901s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__builder.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/simple_test.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_array.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__traits.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__builder.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__builder.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__traits.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__traits.hpp
+[0.902s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__struct.hpp
+[0.903s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__struct.hpp
+[0.903s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__builder.hpp
+[0.903s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__struct.hpp
+[0.903s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_message.hpp
+[0.903s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/test_sub_array.hpp
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__rosidl_typesupport_fastrtps_cpp.hpp
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/dds_fastrtps
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.904s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.905s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.905s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.905s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__rosidl_typesupport_fastrtps_cpp.hpp
+[0.905s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/dds_fastrtps
+[0.906s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.906s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.906s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs
+[0.906s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__type_support.cpp
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/action/detail/simple_test__rosidl_typesupport_introspection_cpp.hpp
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__rosidl_typesupport_introspection_cpp.hpp
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__type_support.cpp
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__rosidl_typesupport_introspection_cpp.hpp
+[0.907s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_message__type_support.cpp
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_sub_array__type_support.cpp
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/include/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs/msg/detail/test_array__rosidl_typesupport_introspection_cpp.hpp
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_introspection_cpp.so
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_typesupport_cpp.so
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/pythonpath.sh
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/pythonpath.dsv
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs-0.10.0-py3.10.egg-info
+[0.908s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs-0.10.0-py3.10.egg-info/SOURCES.txt
+[0.908s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs-0.10.0-py3.10.egg-info/PKG-INFO
+[0.908s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs-0.10.0-py3.10.egg-info/dependency_links.txt
+[0.908s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs-0.10.0-py3.10.egg-info/top_level.txt
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs
+[0.908s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.909s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.909s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/_ros_babel_fish_test_msgs_s.ep.rosidl_typesupport_c.c
+[0.909s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/_ros_babel_fish_test_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.910s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/action
+[0.910s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/action/_simple_test.py
+[0.910s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/action/_simple_test_s.c
+[0.910s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/action/__init__.py
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/_ros_babel_fish_test_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/__init__.py
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/libros_babel_fish_test_msgs__rosidl_generator_py.so
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_message_s.c
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_message.py
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_sub_array.py
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_sub_array_s.c
+[0.911s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/__init__.py
+[0.912s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_array_s.c
+[0.912s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg/_test_array.py
+[0.912s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.945s] Listing '/workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs'...
+[0.945s] Listing '/workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/action'...
+[0.945s] Listing '/workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/msg'...
+[0.954s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.955s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.956s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/local/lib/python3.10/dist-packages/ros_babel_fish_test_msgs/ros_babel_fish_test_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.957s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/lib/libros_babel_fish_test_msgs__rosidl_generator_py.so
+[0.957s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/action/SimpleTest.idl
+[0.958s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestArray.idl
+[0.958s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestMessage.idl
+[0.958s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestSubArray.idl
+[0.959s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/action/SimpleTest.action
+[0.959s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestArray.msg
+[0.959s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestMessage.msg
+[0.959s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/msg/TestSubArray.msg
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ament_index/resource_index/package_run_dependencies/ros_babel_fish_test_msgs
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ament_index/resource_index/parent_prefix_path/ros_babel_fish_test_msgs
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/ament_prefix_path.sh
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/ament_prefix_path.dsv
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/path.sh
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/environment/path.dsv
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/local_setup.bash
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/local_setup.sh
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/local_setup.zsh
+[0.960s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/local_setup.dsv
+[0.960s] -- Installing: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/package.dsv
+[0.961s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ament_index/resource_index/packages/ros_babel_fish_test_msgs
+[0.962s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_generator_cExport.cmake
+[0.962s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.963s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.964s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.964s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.964s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.965s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_cExport.cmake
+[0.966s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.966s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_generator_cppExport.cmake
+[0.967s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.967s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.968s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.968s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.969s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_cppExport.cmake
+[0.969s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.970s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_generator_pyExport.cmake
+[0.970s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/export_ros_babel_fish_test_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.970s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/rosidl_cmake-extras.cmake
+[0.970s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.971s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgsConfig.cmake
+[0.972s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/cmake/ros_babel_fish_test_msgsConfig-version.cmake
+[0.972s] -- Up-to-date: /workspaces/PHOENIX/src/main_ws/src/install/ros_babel_fish_test_msgs/share/ros_babel_fish_test_msgs/package.xml
+[0.974s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish_test_msgs

@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/qml_ros2_plugin': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/qml_ros2_plugin -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/qml_ros2_plugin
+Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/qml_ros2_plugin' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/PHOENIX/src/main_ws/src/qml_ros2_plugin -DCMAKE_INSTALL_PREFIX=/workspaces/PHOENIX/src/main_ws/src/install/qml_ros2_plugin

@@ -1,0 +1,9 @@
+{
+  "package_name": "ros_babel_fish_test_msgs",
+  "non_idl_tuples": [
+    "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish_test_msgs:action/SimpleTest.action",
+    "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish_test_msgs:msg/TestArray.msg",
+    "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish_test_msgs:msg/TestMessage.msg",
+    "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish_test_msgs:msg/TestSubArray.msg"
+  ]
+}

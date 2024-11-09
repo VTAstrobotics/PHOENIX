@@ -1,0 +1,5 @@
+[0.056s] Invoking command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish -- -j12 -l12
+[0.065s] [0mCMake Error: The source directory "/workspaces/PHOENIX/src/main_ws/src/ros_babel_fish/ros_babel_fish" does not exist.
+[0.065s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.068s] gmake: *** [Makefile:1138: cmake_check_build_system] Error 1
+[0.077s] Invoked command in '/workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/PHOENIX/src/main_ws/src/build/ros_babel_fish -- -j12 -l12

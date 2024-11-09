@@ -1,0 +1,36 @@
+running egg_info
+creating ../../../../build/joy_tester/joy_tester.egg-info
+writing ../../../../build/joy_tester/joy_tester.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/joy_tester/joy_tester.egg-info/dependency_links.txt
+writing entry points to ../../../../build/joy_tester/joy_tester.egg-info/entry_points.txt
+writing requirements to ../../../../build/joy_tester/joy_tester.egg-info/requires.txt
+writing top-level names to ../../../../build/joy_tester/joy_tester.egg-info/top_level.txt
+writing manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspaces/PHOENIX/build/joy_tester/build
+creating /workspaces/PHOENIX/build/joy_tester/build/lib
+creating /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+copying joy_tester/__init__.py -> /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+copying joy_tester/test_joy.py -> /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester
+running install
+running install_lib
+creating /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+copying /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester/__init__.py -> /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+copying /workspaces/PHOENIX/build/joy_tester/build/lib/joy_tester/test_joy.py -> /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester
+byte-compiling /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester/test_joy.py to test_joy.cpython-310.pyc
+running install_data
+creating /workspaces/PHOENIX/install/joy_tester/share/ament_index
+creating /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index
+creating /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index/packages
+copying resource/joy_tester -> /workspaces/PHOENIX/install/joy_tester/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/PHOENIX/install/joy_tester/share/joy_tester
+running install_egg_info
+Copying ../../../../build/joy_tester/joy_tester.egg-info to /workspaces/PHOENIX/install/joy_tester/lib/python3.10/site-packages/joy_tester-0.0.2-py3.10.egg-info
+running install_scripts
+Installing test_joy script to /workspaces/PHOENIX/install/joy_tester/lib/joy_tester
+writing list of installed files to '/workspaces/PHOENIX/build/joy_tester/install.log'

@@ -1,83 +1,109 @@
-# Import necessary libraries for ROS2, PyQt5, and messages
-import rclpy  # ROS2 library for handling nodes
-from rclpy.node import Node  # To create a custom ROS2 node
-from sensor_msgs.msg import Image  # Message type for camera images
-from std_msgs.msg import Float32  # Message type for position and battery data
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QApplication  # GUI components from PyQt5
-import sys
-app = QApplication(sys.argv)
-# Define the GUI class using PyQt5 to create the user interface
-class MCCGuiWidget(QWidget):
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+from std_msgs.msg import String, Float32
+from tkinter import Tk, Label, StringVar
+from PIL import Image as PILImage, ImageTk
+from cv_bridge import CvBridge
+import cv2
+from datetime import datetime, timedelta
+
+# Settings located below
+
+class TopicDisplay:
+    def __init__(self, name, topic_type, x, y, root, node, timeout=5):
+        self.name = name
+        self.type = topic_type
+        self.x = x
+        self.y = y
+        self.node = node
+        self.root = root
+        self.bridge = CvBridge()
+        self.last_message_time = None
+        self.timeout = timedelta(seconds=timeout)
+
+        if topic_type == 'string' or topic_type == 'float':
+            self.var = StringVar()
+            self.label = Label(root, textvariable=self.var, font=("Helvetica", 12))
+            self.label.place(x=x, y=y)
+            self.var.set(f"{self.name}: No data received")
+        elif topic_type == 'camera':
+            self.label = Label(root, text="No data received")
+            self.label.place(x=x, y=y)
+
+        self.create_subscription()
+
+    def create_subscription(self):
+        if self.type == 'string':
+            self.node.create_subscription(String, self.name, self.string_callback, 10)
+        elif self.type == 'float':
+            self.node.create_subscription(Float32, self.name, self.float_callback, 10)
+        elif self.type == 'camera':
+            self.node.create_subscription(Image, self.name, self.image_callback, 10)
+
+    def string_callback(self, msg):
+        self.var.set(f"{self.name}: {msg.data}")
+        self.last_message_time = datetime.now()
+
+    def float_callback(self, msg):
+        self.var.set(f"{self.name}: {msg.data:.2f}")
+        self.last_message_time = datetime.now()
+
+    def image_callback(self, msg):
+        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        pil_image = PILImage.fromarray(cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB))
+        tk_image = ImageTk.PhotoImage(pil_image)
+        self.label.config(image=tk_image)
+        self.label.image = tk_image
+        self.last_message_time = datetime.now()
+
+    def check_timeout(self):
+        if self.last_message_time is None or datetime.now() - self.last_message_time > self.timeout:
+            if self.type == 'string' or self.type == 'float':
+                self.var.set(f"{self.name}: No data received")
+            elif self.type == 'camera':
+                self.label.config(text="No camera data received")
+
+class RosTkApp(Node):
     def __init__(self):
-        super().__init__()  # Initialize the QWidget (base class)
-        self.setWindowTitle("MCC GUI")  # Set the title of the window
 
-        # Create a vertical layout to stack labels
-        self.layout = QVBoxLayout()
+        # Change the resolution and title
+        super().__init__('ros_tk_display')
+        self.root = Tk()
+        self.root.title("Test GUI Display")
+        self.root.geometry("800x600")
+        self.topics = []
 
-        # Create labels to display the robot's status (initial values are 'Unknown')
-        self.robot_position_label = QLabel("Robot Position: Unknown")
-        self.battery_voltage_label = QLabel("Battery Voltage: Unknown")
-        self.camera_feed_label = QLabel("Camera Feed: (Loading...)")
+        # Add topics and change the location
+        self.add_topic('string_topic_1', 'string', 10, 10)
+        self.add_topic('string_topic_2', 'string', 10, 110)
+        self.add_topic('float_topic_1', 'float', 10, 210)
+        self.add_topic('float_topic_2', 'float', 10, 310)
+        self.add_topic('camera_topic_1', 'camera', 300, 10)
+        self.add_topic('camera_topic_1', 'camera', 300, 310)
 
-        # Add the labels to the layout
-        self.layout.addWidget(self.robot_position_label)
-        self.layout.addWidget(self.battery_voltage_label)
-        self.layout.addWidget(self.camera_feed_label)
+        self.update()
 
-        # Set the layout for the GUI window
-        self.setLayout(self.layout)
+    def add_topic(self, name, topic_type, x, y):
+        topic_display = TopicDisplay(name, topic_type, x, y, self.root, self)
+        self.topics.append(topic_display)
 
-    # Function to update the robot's position label in the GUI
-    def update_robot_position(self, position):
-        self.robot_position_label.setText(f"Robot Position: {position}")
+    def update(self):
+        for topic in self.topics:
+            topic.check_timeout()
+        self.root.update()
+        self.root.after(10, self.update)
 
-    # Function to update the battery voltage label
-    def update_battery_voltage(self, voltage):
-        self.battery_voltage_label.setText(f"Battery Voltage: {voltage} V")
+def main(args=None):
+    rclpy.init(args=args)
+    app = RosTkApp()
+    try:
+        rclpy.spin(app)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        app.destroy_node()
+        rclpy.shutdown()
 
-    # Function to update the camera feed label (placeholder for now)
-    def update_camera_feed(self, frame):
-        self.camera_feed_label.setText("Camera Feed: [New Image Frame]")
-
-# Define the ROS2 node class that handles subscriptions to robot data
-class MCCNode(Node):
-    def __init__(self):
-        super().__init__('mcc_gui_node')  # Initialize the node with a name
-        # Subscribe to the robot's position topic (Float32 message)
-        self.position_sub = self.create_subscription(Float32, '/robot/position', self.position_callback, 10)
-        # Subscribe to the battery voltage topic (Float32 message)
-        self.battery_sub = self.create_subscription(Float32, '/robot/battery_voltage', self.battery_callback, 10)
-        # Subscribe to the camera feed topic (Image message)
-        self.camera_sub = self.create_subscription(Image, '/robot/camera_feed', self.camera_callback, 10)
-
-    # Callback function to update the robot's position in the GUI
-    def position_callback(self, msg):
-        gui_widget.update_robot_position(msg.data)  # Pass new position data to the GUI
-
-    # Callback function to update the battery voltage in the GUI
-    def battery_callback(self, msg):
-        gui_widget.update_battery_voltage(msg.data)  # Pass new voltage data to the GUI
-
-    # Callback function to update the camera feed status in the GUI
-    def camera_callback(self, msg):
-        gui_widget.update_camera_feed(msg)  # Pass new camera data to the GUI (placeholder)
-
-# Main function to start the GUI and ROS2 node
-def main():
-    rclpy.init()  # Initialize the ROS2 system
-
-    global gui_widget  # Make the GUI widget accessible throughout the program
-    gui_widget = MCCGuiWidget()  # Create an instance of the GUI
-
-    node = MCCNode()  # Create an instance of the ROS2 node
-
-    gui_widget.show()  # Display the GUI window
-    rclpy.spin(node)  # Keep the node running and listening for new data
-
-    node.destroy_node()  # Clean up the node when done
-    rclpy.shutdown()  # Shut down the ROS2 system
-
-# Entry point to run the program
 if __name__ == '__main__':
-    main()  # Run the main function
+    main()

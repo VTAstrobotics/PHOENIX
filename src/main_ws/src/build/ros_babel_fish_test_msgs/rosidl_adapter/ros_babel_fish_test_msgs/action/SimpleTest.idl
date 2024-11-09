@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from ros_babel_fish_test_msgs/action/SimpleTest.action
+// generated code does not contain a copyright notice
+
+
+module ros_babel_fish_test_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal")
+    struct SimpleTest_Goal {
+      int32 target;
+    };
+    @verbatim (language="comment", text=
+      "result")
+    struct SimpleTest_Result {
+      int32 final_value;
+    };
+    @verbatim (language="comment", text=
+      "feedback")
+    struct SimpleTest_Feedback {
+      int32 current_value;
+    };
+  };
+};

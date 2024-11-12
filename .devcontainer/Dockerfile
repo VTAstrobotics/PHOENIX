@@ -52,3 +52,17 @@ RUN sudo apt-get install -y lsb-release \
     && sudo ./llvm.sh 16 \
     && sudo apt-get install -y clang-format-16 \
     && sudo ln -s $(which clang-format-16) /usr/local/bin/clang-format
+
+#### Begin Navigation Stack #####
+RUN sudo apt-get install -y \
+    ros-humble-navigation2 \
+    ros-humble-nav2-bringup
+
+# install turtlebot demo, including gz
+RUN sudo apt-get install -y ros-humble-turtlebot3-gazebo
+
+# set environment variables for navigation
+ENV TURTLEBOT3_MODEL waffle
+ENV GAZEBO_MODEL_PATH $GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+
+#### End Navigation Stack #####

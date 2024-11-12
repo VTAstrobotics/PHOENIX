@@ -25,3 +25,5 @@ If that fails, try to clone the repository again. It may be that your version is
 If it builds but still does not work, navigate to the `.devcontainer/build.log` file. This outputs information from the entrypoint.
 
 If you cannot even build the container, you should see a popup that allows you to edit the files in a recovery container. Select this option (`Edit devcontainer.json in Recovery Container`). Read the error messages. I repeat **read the error messages.** If you don't understand one, google it. If that yields nothing, look at a different one. If you changed the Dockerfile, inspect your changes.
+
+If you are struggling to see a GUI in the developer container, ensure that you have run the command `xhost +local:root` *on your host*.

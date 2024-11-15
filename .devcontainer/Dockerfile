@@ -62,7 +62,7 @@ RUN sudo apt-get install -y \
 RUN sudo apt-get install -y ros-humble-turtlebot3-gazebo
 
 # set environment variables for navigation
-ENV TURTLEBOT3_MODEL waffle
-ENV GAZEBO_MODEL_PATH $GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
-
+ENV TURTLEBOT3_MODEL=waffle \
+    GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+# ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
 #### End Navigation Stack #####

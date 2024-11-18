@@ -59,7 +59,7 @@ RUN sudo apt-get install -y \
     ros-humble-nav2-bringup
 
 # install turtlebot demo, including gz, unless on a Jetson
-RUN if grep -q "Jetson" /proc/device-tree/model; then \
+RUN if ! grep -q "Jetson" /proc/device-tree/model; then \
         sudo apt-get install -y ros-humble-turtlebot3-gazebo; \
     fi
 

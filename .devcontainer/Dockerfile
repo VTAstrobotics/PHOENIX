@@ -58,8 +58,10 @@ RUN sudo apt-get install -y \
     ros-humble-navigation2 \
     ros-humble-nav2-bringup
 
-# install turtlebot demo, including gz
-RUN sudo apt-get install -y ros-humble-turtlebot3-gazebo
+# install turtlebot demo, including gz, unless on a Jetson
+RUN if grep -q "Jetson" /proc/device-tree/model; then \
+        sudo apt-get install -y ros-humble-turtlebot3-gazebo; \
+    fi
 
 # set environment variables for navigation
 ENV TURTLEBOT3_MODEL=waffle \

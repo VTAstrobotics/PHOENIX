@@ -1,11 +1,12 @@
 FROM ros:humble-ros-base-jammy
 
+# Basic ROS2 setup
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-desktop=0.10.0-1* \
     python3 \
     python3-pip \
     && pip3 install setuptools==58.2.0 \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 
 # Add nonroot user with same UID and GID as your host system
 # (copied from https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
@@ -27,8 +28,13 @@ RUN sudo usermod --append --groups video $USERNAME
 # Update all packages (bloat, but dev container so we feel worth it. do not recommend for final container)
 RUN sudo apt update && sudo apt upgrade -y
 
-# Install Git
-RUN sudo apt install -y git
+ENV PICO_SDK_PATH=$HOME/pico-sdk
+
+# MicroROS dependencies
+RUN sudo apt install -y \
+    gcc-arm-none-eabi \
+    doxygen \
+    && git clone --recurse-submodules https://github.com/raspberrypi/pico-sdk.git $HOME/pico-sdk
 
 # Rosdep update
 RUN rosdep update

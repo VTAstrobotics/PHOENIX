@@ -10,7 +10,7 @@ colcon build --symlink-install
 echo "Sourcing main ws"
 source install/setup.bash
 
-cd /workspaces/PHOENIX/micro_ws
+cd /workspaces/PHOENIX/src/micro_ws
 
 echo "Building micro ws"
 cd micro_ros_raspberrypi_pico_sdk

@@ -12,6 +12,9 @@ sudo chmod 777 /workspaces/PHOENIX/.devcontainer/build.log
 #                                                                             #
 ###############################################################################
 
+# MicroROS with Pico environment variable setup (doesn't work with Docker ENV)
+echo "export PICO_SDK_PATH=$HOME/pico-sdk" >> ~/.bashrc
+
 # ROS basic build and source
 cd /workspaces/PHOENIX/
 ./build.sh

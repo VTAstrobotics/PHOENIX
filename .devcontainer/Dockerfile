@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-pip \
     && pip3 install setuptools==58.2.0 \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add nonroot user with same UID and GID as your host system
 # (copied from https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
@@ -27,8 +27,6 @@ RUN sudo usermod --append --groups video $USERNAME
 
 # Update all packages (bloat, but dev container so we feel worth it. do not recommend for final container)
 RUN sudo apt update && sudo apt upgrade -y
-
-ENV PICO_SDK_PATH=$HOME/pico-sdk
 
 # MicroROS dependencies
 RUN sudo apt install -y \

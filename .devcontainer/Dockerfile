@@ -34,6 +34,9 @@ RUN sudo apt install -y \
     doxygen \
     && git clone --recurse-submodules https://github.com/raspberrypi/pico-sdk.git $HOME/pico-sdk
 
+# Set up MicroROS pico build environment variable
+RUN echo "export PICO_SDK_PATH=/home/astro-dev/pico-sdk" >> ~/.bashrc
+
 # Rosdep update
 RUN rosdep update
 

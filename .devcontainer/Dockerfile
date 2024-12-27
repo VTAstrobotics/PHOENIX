@@ -65,4 +65,8 @@ RUN sudo apt-get install -y ros-humble-turtlebot3-gazebo
 ENV TURTLEBOT3_MODEL=waffle \
     GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
 # ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+
+# install joint state publisher and xacro (XML macro; URDF helper)
+RUN sudo apt install -y ros-humble-joint-state-publisher-gui ros-humble-xacro
+
 #### End Navigation Stack #####

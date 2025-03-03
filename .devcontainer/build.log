@@ -1,0 +1,17 @@
+entrypoint.sh:
+
+build.sh:
+Changing directory
+Building project
+Starting >>> src
+--- stderr: src
+error: package directory 'src' does not exist
+---
+Failed   <<< src [11.5s, exited with code 1]
+
+Summary: 0 packages finished [12.3s]
+  1 package failed: src
+  1 package had stderr output: src
+Sourcing
+build.sh done.
+

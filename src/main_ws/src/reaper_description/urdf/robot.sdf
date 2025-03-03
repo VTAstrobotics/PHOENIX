@@ -1,0 +1,138 @@
+<sdf version="1.7">
+  <model name="REAPER">
+    <link name="Chassis">
+      <inertial>
+        <pose>0.268042 0.102022 -0 0 -0 0</pose>
+        <mass>146.225</mass>
+        <inertia>
+          <ixx>10.52</ixx>
+          <ixy>-1.93496</ixy>
+          <ixz>1.65925e-07</ixz>
+          <iyy>22.9867</iyy>
+          <iyz>1.82289e-06</iyz>
+          <izz>18.0208</izz>
+        </inertia>
+      </inertial>
+      <collision name="Chassis_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/collision/Chassis.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Chassis_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/visual/Chassis.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="Linkage" type="revolute">
+      <pose relative_to="Chassis">-0.33975 0 0.23217 1.5708 0.26832 0</pose>
+      <parent>Chassis</parent>
+      <child>Linkage</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="Linkage">
+      <pose relative_to="Linkage">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.163262 -0.165382 0 0 -0 0</pose>
+        <mass>1.57935</mass>
+        <inertia>
+          <ixx>0.0206926</ixx>
+          <ixy>-0.0199108</ixy>
+          <ixz>-3.58706e-19</ixz>
+          <iyy>0.0202093</iyy>
+          <iyz>-1.26738e-19</iyz>
+          <izz>0.0404826</izz>
+        </inertia>
+      </inertial>
+      <collision name="Linkage_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/collision/Linkage.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Linkage_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/visual/Linkage.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="Bucket" type="revolute">
+      <pose relative_to="Linkage">-0.29504 -0.29876 0 0 -0 0.5499</pose>
+      <parent>Linkage</parent>
+      <child>Bucket</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name="Bucket">
+      <pose relative_to="Bucket">0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.002213 -0.016008 -0 0 -0 0</pose>
+        <mass>10.7697</mass>
+        <inertia>
+          <ixx>0.352456</ixx>
+          <ixy>-0.0833393</ixy>
+          <ixz>-4.80946e-17</ixz>
+          <iyy>0.508759</iyy>
+          <iyz>4.84926e-17</iyz>
+          <izz>0.288541</izz>
+        </inertia>
+      </inertial>
+      <collision name="Bucket_collision">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/collision/Bucket.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="Bucket_visual">
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>package://reaper_description/meshes/visual/Bucket.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

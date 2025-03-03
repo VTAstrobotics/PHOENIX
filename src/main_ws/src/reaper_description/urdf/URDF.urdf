@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="REAPER">
+  <link
+    name="Chassis">
+    <inertial>
+      <origin
+        xyz="0.268041600725968 0.102021849345525 -6.48544629737818E-08"
+        rpy="0 0 0" />
+      <mass
+        value="146.224560356707" />
+      <inertia
+        ixx="10.5200179364845"
+        ixy="-1.93496024812939"
+        ixz="1.65925274358814E-07"
+        iyy="22.9867369537623"
+        iyz="1.82289041966192E-06"
+        izz="18.0208175606407" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/visual/Chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/collision/Chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Linkage">
+    <inertial>
+      <origin
+        xyz="-0.163261636855882 -0.165382057279213 5.27223021939055E-17"
+        rpy="0 0 0" />
+      <mass
+        value="1.57934542654535" />
+      <inertia
+        ixx="0.0206926077974767"
+        ixy="-0.0199107734055339"
+        ixz="-3.58706485090842E-19"
+        iyy="0.0202092785023025"
+        iyz="-1.26737522063389E-19"
+        izz="0.0404826417999642" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/visual/Linkage.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/collision/Linkage.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Linkage"
+    type="revolute">
+    <origin
+      xyz="-0.33975 0 0.23217"
+      rpy="1.5708 0.26832 0" />
+    <parent
+      link="Chassis" />
+    <child
+      link="Linkage" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bucket">
+    <inertial>
+      <origin
+        xyz="-0.00221313093485331 -0.0160077237789516 -6.72159216717413E-16"
+        rpy="0 0 0" />
+      <mass
+        value="10.7696762355229" />
+      <inertia
+        ixx="0.352455755561628"
+        ixy="-0.0833393361479293"
+        ixz="-4.80945718975859E-17"
+        iyy="0.508758902375544"
+        iyz="4.84925708785236E-17"
+        izz="0.288540549981325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/visual/Bucket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://reaper_description/meshes/collision/Bucket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Bucket"
+    type="revolute">
+    <origin
+      xyz="-0.29504 -0.29876 0"
+      rpy="0 0 0.5499" />
+    <parent
+      link="Linkage" />
+    <child
+      link="Bucket" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

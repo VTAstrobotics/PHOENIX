@@ -37,6 +37,9 @@ RUN rosdep update
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 RUN echo "source /workspaces/PHOENIX/src/main_ws/install/setup.bash" >> ~/.bashrc
 
+# To view UI applications in developer container :D
+ENV DISPLAY=host.docker.internal:0
+
 ###############################################################################
 #                                                                             #
 # Add dependencies below using RUN <command you used to install>              #

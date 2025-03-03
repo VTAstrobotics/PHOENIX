@@ -3,15 +3,29 @@ entrypoint.sh:
 build.sh:
 Changing directory
 Building project
-Starting >>> src
---- stderr: src
-error: package directory 'src' does not exist
+Starting >>> controls_msgs
+Starting >>> drive_station
+Starting >>> perception
+Starting >>> reaper_description
+Finished <<< drive_station [1.78s]
+Finished <<< reaper_description [4.05s]
+Finished <<< perception [4.43s]
+--- stderr: controls_msgs
+failed to create symbolic link '/workspaces/PHOENIX/src/main_ws/build/controls_msgs/ament_cmake_python/controls_msgs/controls_msgs' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_controls_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_controls_msgs] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_controls_msgs.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2
 ---
-Failed   <<< src [11.5s, exited with code 1]
+Failed   <<< controls_msgs [4.68s, exited with code 2]
 
-Summary: 0 packages finished [12.3s]
-  1 package failed: src
-  1 package had stderr output: src
+Summary: 3 packages finished [5.48s]
+  1 package failed: controls_msgs
+  1 package had stderr output: controls_msgs
+  2 packages not processed
 Sourcing
+not found: "/workspaces/PHOENIX/src/main_ws/install/robot_description/share/robot_description/local_setup.bash"
 build.sh done.
 
+chmod: cannot access '/dev/input/event*': No such file or directory
+chmod: cannot access '/dev/input/js*': No such file or directory
